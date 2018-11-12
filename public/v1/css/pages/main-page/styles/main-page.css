@@ -1,0 +1,8 @@
+body{
+    background-color: #efefef;
+}
+
+.main-page-header nav .logo-svg{
+    width: 120px;
+    height: auto;
+}
