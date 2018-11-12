@@ -6,3 +6,7 @@ body{
     width: 120px;
     height: auto;
 }
+
+.main-page-header nav .nav-item {
+    font-size: 1.1rem;
+}
