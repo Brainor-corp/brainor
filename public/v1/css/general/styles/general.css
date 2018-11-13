@@ -1,0 +1,9 @@
+.green-btn{
+    border: 1px solid #48b71a;
+    background: transparent;
+}
+
+.green-btn:focus{
+    box-shadow: none;
+    outline: none;
+}

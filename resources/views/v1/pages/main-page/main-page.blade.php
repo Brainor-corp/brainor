@@ -9,7 +9,7 @@
 @endsection
 
 @section("content")
-
+    @include("v1.pages.main-page.fragments.top-form")
 @endsection
 
 @section('footScripts')

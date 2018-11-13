@@ -34,6 +34,37 @@ body{
     cursor: hand; cursor: pointer;
 }
 
+.top-form-container:before, .top-form-container:after {
+    content: '';
+    background: #000;
+    position: absolute;
+}
+.top-form-container:before {
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+}
+.top-form-container:after {
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+}
+
+.top-form-container .form-group input:focus{
+    box-shadow: none;
+    outline: none;
+}
+.top-form-container .form-group input{
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid grey;
+}
+
+
+
 /*.main-page-header .navbar {*/
     /*position: relative;*/
     /*width: 250px;*/
