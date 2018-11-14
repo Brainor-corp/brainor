@@ -7,3 +7,14 @@
     box-shadow: none;
     outline: none;
 }
+
+.green-block{
+    border: 2px solid #48b71a;
+}
+
+.green-link{
+    color: #48b71a;
+}
+.green-link:hover{
+    color: #48b71a;
+}

@@ -10,6 +10,12 @@
 
 @section("content")
     @include("v1.pages.main-page.fragments.top-form")
+    @include("v1.pages.main-page.fragments.about-pricing")
+    @include("v1.pages.main-page.fragments.our-clients")
+    @include("v1.pages.main-page.fragments.technologies")
+    @include("v1.pages.main-page.fragments.price-calculation")
+    @include("v1.pages.main-page.fragments.descending-fears")
+    @include("v1.pages.main-page.fragments.start-now-banner")
 @endsection
 
 @section('footScripts')

@@ -1,4 +1,4 @@
-body{
+.top-form, .main-page-header, .price-calculation-section, .our-clients-section, .start-now-banner{
     background-color: #efefef;
 }
 
@@ -63,7 +63,52 @@ body{
     border-bottom: 1px solid grey;
 }
 
+.bl-box{
+    border-left: 1px solid #48b71a;
+    padding-left: 10px;
+}
+.bl-box .fas{
+    color: #a8b1b9;
+}
 
+.bl-box-header{
+    color: #48b71a;
+    font-size: 1.5rem;
+}
+
+.our-clients-img{
+    height: 400px;
+    background-size: cover;
+    background-image: url("../../../../../../img/prec.png");
+}
+
+.our-clients-img-blur{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.our-clients-img-inner{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #48b71a;
+}
+
+.technology-section .technology-img{
+    width: 80px;
+    height: auto;
+}
+
+.start-now-banner .start-now-text{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.start-now-banner .red-btn{
+    width: 200px;
+    border: 2px solid #b73645;
+    background: transparent;
+}
 
 /*.main-page-header .navbar {*/
     /*position: relative;*/
