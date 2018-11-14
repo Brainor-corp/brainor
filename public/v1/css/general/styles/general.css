@@ -18,3 +18,14 @@
 .green-link:hover{
     color: #48b71a;
 }
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
