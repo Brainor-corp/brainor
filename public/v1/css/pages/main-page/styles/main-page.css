@@ -8,6 +8,7 @@ body{
 
 .main-page-header {
     position: relative;
+    margin-top: -10px;
 }
 
 .main-page-header nav .logo-svg{
@@ -82,6 +83,15 @@ body{
     left: 0;
     position: absolute;
     filter: blur(4px);
+}
+.blur-color-block{
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    left: 0;
+    background: #efefef;
+    opacity: 0.6;
+    filter: blur(2px);
 }
 
 .top-form-container .form-group input:focus{

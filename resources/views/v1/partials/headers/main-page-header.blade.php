@@ -6,12 +6,13 @@
     <img src="{{asset('img/bg/pen.png')}}" alt="" class="bg-pics bg-pic-pen">
     <img src="{{asset('img/bg/mouse.png')}}" alt="" class="bg-pics bg-pic-mouse">
     <div class="w-100 h-100 blur-block">
-        <img src="{{asset('img/bg/flower.png')}}" alt="" style="filter: blur(10px)" class="bg-pics bg-pic-flower">
+        <img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics bg-pic-flower">
         <img src="{{asset('img/bg/keyboard.png')}}" alt="" class="bg-pics bg-pic-keyboard">
         <img src="{{asset('img/bg/notebook.png')}}" alt="" class="bg-pics bg-pic-notebook">
         <img src="{{asset('img/bg/pen.png')}}" alt="" class="bg-pics bg-pic-pen">
         <img src="{{asset('img/bg/mouse.png')}}" alt="" class="bg-pics bg-pic-mouse">
     </div>
+    <div class="blur-color-block"></div>
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="{{route('/')}}"><img src="{{asset('img/logo/logo.svg')}}" alt="" class="logo-svg"></a>
