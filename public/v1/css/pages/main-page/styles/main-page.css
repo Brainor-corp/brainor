@@ -58,22 +58,22 @@ body{
     left: 70%;
 }
 .main-page-header .bg-pic-notebook{
-    top: 250px;
+    top: 300px;
     left: 40%;
-    width: 400px;
-    height: 467px;
+    /*width: 400px;*/
+    /*height: 467px;*/
 }
 .main-page-header .bg-pic-pen{
-    top: 350px;
-    left: 60%;
-    width: 195px;
-    height: 300px;
+    top: 520px;
+    left: 68%;
+    /*width: 195px;*/
+    /*height: 300px;*/
 }
 .main-page-header .bg-pic-mouse{
     top: 400px;
     left: 80%;
-    width: 326px;
-    height: 400px;
+    /*width: 326px;*/
+    /*height: 400px;*/
 }
 
 .blur-block{
@@ -82,24 +82,6 @@ body{
     left: 0;
     position: absolute;
     filter: blur(4px);
-}
-
-.top-form-container:before, .top-form-container:after {
-    content: '';
-    background: #000;
-    position: absolute;
-}
-.top-form-container:before {
-    top: 50%;
-    bottom: 0;
-    right: 0;
-    width: 1px;
-}
-.top-form-container:after {
-    bottom: 0;
-    left: 20px;
-    right: 20px;
-    height: 1px;
 }
 
 .top-form-container .form-group input:focus{
@@ -160,7 +142,58 @@ body{
     background: transparent;
 }
 
+.triangle-border {
+    position: relative;
+}
 
-/*.main-page-header {*/
-    /*background-color: white;*/
-/*}*/
+.triangle-border .left-right-border {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.triangle-border::before {
+    background: #48b71a;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.triangle-border::after {
+    background: #48b71a;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.triangle-border .left-right-border::before {
+    background: #48b71a;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009c49', endColorstr='#ffec00',GradientType=0 ); /* IE6-9 */
+    content: "";
+    display: inline-block;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+}
+
+.triangle-border .left-right-border::after {
+    background: #48b71a;
+    content: "";
+    display: inline-block;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+}
