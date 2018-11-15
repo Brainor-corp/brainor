@@ -1,11 +1,14 @@
-{{--<img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics">--}}
-{{--<img src="{{asset('img/bg/')}}" alt="" class="bg-pics">--}}
-{{--<img src="{{asset('img/bg/')}}" alt="" class="bg-pics">--}}
-{{--<img src="{{asset('img/bg/')}}" alt="" class="bg-pics">--}}
 <div class="container-fluid px-0 main-page-header">
+    <img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics">
+    <div class="w-100 h-100 blur-block">
+        <img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics">
+    </div>
     <div class="container">
+        {{--<img src="{{asset('img/bg/')}}" alt="" class="bg-pics">--}}
+        {{--<img src="{{asset('img/bg/')}}" alt="" class="bg-pics">--}}
+        {{--<img src="{{asset('img/bg/')}}" alt="" class="bg-pics">--}}
         <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="{{route('/')}}"><img src="{{asset('img/logo/logo.svg')}}" alt="" class="logo-svg"></a>
+            <a class="navbar-brand" href="{{route('/')}}"><img src="{{asset('img/logo/logo.svg')}}" alt="" class="logo-svg"></a>
                 <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

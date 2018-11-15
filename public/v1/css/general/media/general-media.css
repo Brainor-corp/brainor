@@ -3,3 +3,8 @@
         font-size: 1.7rem;
     }
 }
+@media (max-width: 644px) {
+    .start-now-banner .start-now-text{
+        font-size: 1.8rem!important;
+    }
+}

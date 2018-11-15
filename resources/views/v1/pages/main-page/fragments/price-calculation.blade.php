@@ -4,24 +4,24 @@
         </div>
     <div class="container">
         <div class="price-calculation-steps-row mb-5 d-flex flex-row justify-content-around">
-            <div>Шаг 1</div>
-            <div>Шаг 2</div>
-            <div>Шаг 3</div>
-            <div>Шаг 4</div>
-            <div>Шаг 5</div>
+            <span>Шаг 1</span>
+            <span>Шаг 2</span>
+            <span>Шаг 3</span>
+            <span>Шаг 4</span>
+            <span>Шаг 5</span>
         </div>
-        <div class="price-calculation-icons mt-5 d-flex justify-content-around">
-            <div class="text-center">
+        <div class="price-calculation-icons mt-5 d-flex flex-wrap justify-content-around">
+            <div class="my-4 my-md-0 text-center">
                 <img src="{{asset('img/calculator/cart.png')}}" alt="">
                 <br>
                 <span>Интеренет магазин</span>
             </div>
-            <div class="text-center">
+            <div class="my-4 my-md-0 text-center">
                 <img src="{{asset('img/calculator/cart.png')}}" alt="">
                 <br>
                 <span>Интеренет магазин</span>
             </div>
-            <div class="text-center">
+            <div class="my-4 my-md-0 text-center">
                 <img src="{{asset('img/calculator/cart.png')}}" alt="">
                 <br>
                 <span>Интеренет магазин</span>

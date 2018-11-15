@@ -39,7 +39,7 @@
             <div class="flex-grow-1">Создание тех задания</div>
         </div>
         <div class="d-flex justify-content-between flex-wrap my-5 text-center mt-5">
-            <div class="bl-box row text-center my-2">
+            <div class="bl-box row text-center my-2 mr-3">
                 <i class="fas col-5 fa-4x fa-headset"></i>
                 <div class="col-7">
                     <span class="bl-box-header">asdasdaas</span>
@@ -47,7 +47,7 @@
                     <span>asdasdasdasda</span>
                 </div>
             </div>
-            <div class="bl-box row text-center my-2">
+            <div class="bl-box row text-center my-2 mr-3">
                 <i class="fas col-5 fa-4x fa-headset"></i>
                 <div class="col-7">
                     <span class="bl-box-header">asdasdaas</span>
@@ -55,7 +55,7 @@
                     <span>asdasdasdasda</span>
                 </div>
             </div>
-            <div class="bl-box row text-center my-2">
+            <div class="bl-box row text-center my-2 mr-3">
                 <i class="fas col-5 fa-4x fa-headset"></i>
                 <div class="col-7">
                     <span class="bl-box-header">asdasdaas</span>
@@ -63,7 +63,7 @@
                     <span>asdasdasdasda</span>
                 </div>
             </div>
-            <div class="bl-box row text-center my-2">
+            <div class="bl-box row text-center my-2 mr-3">
                 <i class="fas col-5 fa-4x fa-headset"></i>
                 <div class="col-7">
                     <span class="bl-box-header">asdasdaas</span>

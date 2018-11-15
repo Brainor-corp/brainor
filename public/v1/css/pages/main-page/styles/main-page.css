@@ -2,6 +2,10 @@
     background-color: #efefef;
 }
 
+.main-page-header {
+    position: relative;
+}
+
 .main-page-header nav .logo-svg{
     width: 120px;
     height: auto;
@@ -11,7 +15,7 @@
     font-size: 1.1rem;
 }
 
-.searchbox {
+.main-page-header .searchbox {
     border: 1px solid #000000;
     border-radius: 5px;
     outline: none;
@@ -22,17 +26,61 @@
     padding-left: 10px;
 }
 
-.searchboxwrapper {
+.main-page-header .searchboxwrapper {
     position: relative;
 }
 
-.searchsubmit {
+
+.main-page-header .searchsubmit {
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: 5%;
     border: none;
     cursor: hand; cursor: pointer;
 }
+
+.main-page-header .bg-pics{
+    position: absolute;
+    top: -20px;
+    left: 800px;
+    /*z-index: 1;*/
+}
+
+.blur-block{
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    /*box-shadow: inset 0 0 0 200px rgba(255,255,255,0.4);*/
+    filter: blur(5px);
+    opacity: 0.8;
+    /*z-index: 10;*/
+    /*background: #efefef;*/
+    /*content: "";*/
+    /*position: absolute;*/
+}
+
+
+/*.main-page-header .navbar {*/
+/*position: relative;*/
+/*top: 0px;*/
+/*left: 0px;*/
+/*background: inherit;*/
+/*border-radius: 2px;*/
+/*overflow: hidden;*/
+/*}*/
+
+/*.main-page-header .navbar:after{*/
+/*content: '';*/
+/*background: inherit;*/
+/*position: absolute;*/
+/*left: -25px;*/
+/*right: 0;*/
+/*top: -25px;*/
+/*bottom: 0;*/
+/*box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);*/
+/*filter: blur(10px);*/
+/*}*/
 
 .top-form-container:before, .top-form-container:after {
     content: '';
@@ -63,15 +111,15 @@
     border-bottom: 1px solid grey;
 }
 
-.bl-box{
+.about-pricing-section .bl-box{
     border-left: 1px solid #48b71a;
-    padding-left: 10px;
 }
-.bl-box .fas{
+
+.about-pricing-section .bl-box .fas{
     color: #a8b1b9;
 }
 
-.bl-box-header{
+.about-pricing-section .bl-box-header{
     color: #48b71a;
     font-size: 1.5rem;
 }
@@ -110,37 +158,7 @@
     background: transparent;
 }
 
-/*.main-page-header .navbar {*/
-    /*position: relative;*/
-    /*width: 250px;*/
-    /*height: 350px;*/
-    /*top: 0px;*/
-    /*left: 0px;*/
-    /*background: inherit;*/
-    /*border-radius: 2px;*/
-    /*overflow: hidden;*/
-/*}*/
-
-/*.main-page-header .navbar:after{*/
-    /*content: '';*/
-    /*width: 300px;*/
-    /*height: 300px;*/
-    /*background: inherit;*/
-    /*position: absolute;*/
-    /*left: -25px;*/
-    /*right: 0;*/
-    /*top: -25px;*/
-    /*bottom: 0;*/
-    /*box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);*/
-    /*filter: blur(10px);*/
-/*}*/
 
 /*.main-page-header {*/
     /*background-color: white;*/
-/*}*/
-
-/*.bg-pics{*/
-    /*position: absolute;*/
-    /*top: -20px;*/
-    /*left: 400px;*/
 /*}*/
