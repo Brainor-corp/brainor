@@ -159,6 +159,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Bradmin\Providers\BrAdminServiceProvider::class,
 
         /*
          * Package Service Providers...
