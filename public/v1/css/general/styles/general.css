@@ -1,0 +1,39 @@
+@import "../../../fonts/Raleway/raleway.css";
+
+.raleway{
+    font-family: Raleway;
+}
+.green-btn{
+    border: 1px solid #48b71a;
+    background: transparent;
+}
+
+.green-btn:focus{
+    box-shadow: none;
+    outline: none;
+}
+.w-270px{
+    width: 270px;
+}
+.green-block{
+    border: 2px solid #48b71a;
+}
+
+.green-link{
+    color: #000;
+}
+.green-link:hover{
+    text-decoration: none;
+    color: #48b71a;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}

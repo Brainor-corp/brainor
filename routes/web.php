@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => ['web']], function () {
+    Route::get('/', "MainPageController@index")->name('/');
+    Route::get('/ins', "MainPageController@inside")->name('/i');
 });
