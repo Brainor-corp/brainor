@@ -1,6 +1,6 @@
-<div class="container-fluid price-calculation-section py-5">
+<div class="container-fluid price-calculation-section py-5 px-0">
         <div class="section-name my-5 text-center">
-            <h1>lelel</h1>
+            <h1>Расчет стоимости проекта</h1>
         </div>
     <div class="container">
         <div class="price-calculation-steps-row mb-5 d-flex flex-row justify-content-around">

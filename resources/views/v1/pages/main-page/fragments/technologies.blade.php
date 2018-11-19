@@ -1,6 +1,6 @@
-<div class="container-fluid technology-section py-5">
+<div class="container-fluid technology-section py-5 px-0">
     <div class="section-name my-5 text-center">
-        <h1>lelel</h1>
+        <h1>Технологии</h1>
     </div>
     <div class="d-flex justify-content-around flex-wrap my-5">
             <div class="row text-center my-4">
