@@ -1,0 +1,228 @@
+.top-form, .main-page-header, .price-calculation-section, .our-clients-section, .start-now-banner{
+    background-color: #efefef;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.main-page-header {
+    position: relative;
+    margin-top: -10px;
+}
+
+.main-page-header nav .logo-svg{
+    width: 120px;
+    height: auto;
+}
+
+.main-page-header nav .nav-item {
+    font-size: 1.1rem;
+}
+
+.main-page-header .searchbox {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+    color: #777;
+    /*width: 170px;*/
+    /*height: 26px;*/
+    background: inherit;
+    padding-left: 10px;
+}
+
+.main-page-header .searchboxwrapper {
+    position: relative;
+}
+
+
+.main-page-header .searchsubmit {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    border: none;
+    cursor: hand; cursor: pointer;
+}
+
+.blur-block{
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    filter: blur(5px);
+}
+.blur-color-block{
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    left: 0;
+    background: #efefef;
+    opacity: 0.6;
+    filter: blur(2px);
+}
+
+.top-form-container .form-group input:focus{
+    box-shadow: none;
+    outline: none;
+}
+.top-form-container .form-group input{
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid grey;
+}
+
+.about-pricing-section .bl-box{
+    border-left: 1px solid #48b71a;
+}
+
+.about-pricing-section .br-box{
+    border-right: 1px solid #48b71a;
+    height: 70px;
+}
+.counts{
+    font-size: 2.5rem;
+    color: #a9a9a9;
+}
+.about-pricing-section .fas{
+    color: #a8b1b9;
+}
+
+.about-pricing-section .bl-box-header{
+    color: #48b71a;
+    font-size: 1.5rem;
+}
+
+.our-clients-img{
+    height: 400px;
+    background-size: cover;
+    background-image: url("../../../../../../img/prec.png");
+}
+
+.our-clients-img-blur{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.our-clients-img-inner{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #48b71a;
+}
+
+.technology-section .technology-img{
+    width: 80px;
+    height: auto;
+}
+
+.start-now-banner .start-now-text{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.start-now-banner .red-btn{
+    width: 200px;
+    border: 2px solid #b73645;
+    background: transparent;
+}
+
+.triangle-border {
+    position: relative;
+}
+
+.triangle-border .left-right-border {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.triangle-border::before {
+    background: #48b71a;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.triangle-border::after {
+    background: #48b71a;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.triangle-border .left-right-border::before {
+    background: #48b71a;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009c49', endColorstr='#ffec00',GradientType=0 ); /* IE6-9 */
+    content: "";
+    display: inline-block;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+}
+
+.triangle-border .left-right-border::after {
+    background: #48b71a;
+    content: "";
+    display: inline-block;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+}
+
+/*.section-name{*/
+    /*border-bottom: 1px solid;*/
+    /*border-top: #0b2e13 1px solid;*/
+    /*border-bottom-width: 50px;*/
+/*}*/
+
+div .section-name{
+    position:relative;
+}
+div .section-name:before{
+    background: #48b71a;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009c49', endColorstr='#ffec00',GradientType=0 ); /* IE6-9 */
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    width: 35%;
+ }
+.section-name:after{
+    background: #48b71a;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 35%;
+}
+svg {
+    position: absolute;
+    background-color: none;
+}
+.dotted-line {
+    fill: none;
+    stroke: #48b71a;
+    stroke-width: 1.5px;
+    marker: url(#circle-marker);
+}
+#circle-marker circle {
+    fill: #48b71a;
+}
