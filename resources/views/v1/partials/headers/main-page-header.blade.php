@@ -24,7 +24,6 @@
             <div class="col-12">
                 @include('v1.partials.headers.partials.navbar-top')
             </div>
-
         </div>
     </nav>
     <nav class="navbar navbar-expand-xl navbar-light py-xl-0">

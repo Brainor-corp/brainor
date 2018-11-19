@@ -240,7 +240,10 @@
     .about-pricing-section .bl-box{
         border-left: none;
     }
+    .border-pricing{
+        border-bottom: 1px solid #a6a6a66a;
+    }
 }
-@media (max-width: 577px){
+@media (max-width: 575px){
 
 }
