@@ -94,9 +94,9 @@ body{
 }
 
 .our-clients-img{
+    display: block;
     height: 400px;
     background-size: cover;
-    background-image: url("../../../../../../img/prec.png");
 }
 
 .our-clients-img-blur{

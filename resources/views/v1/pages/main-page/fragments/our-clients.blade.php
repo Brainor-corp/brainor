@@ -6,56 +6,58 @@
 
 <div class="container-fluid our-clients-section">
     <div class="row p-0">
-        <div class="our-clients-img col-12 p-0 col-xl-4 w-100">
-            <div class="our-clients-img-blur p-3">
-                <div class="our-clients-img-inner">
-                    <div class="row text-center">
-                        <div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>
-                        <div class="col-12 my-5">asdasd</div>
+        @foreach($works as $work)
+            <a href="{{$work->url}}" class="our-clients-img col-12 p-0 col-xl-4 w-100" style="background-image: url({{'../../../../../img/works/' . $work->slug . '.png'}})">
+                <div class="our-clients-img-blur p-3">
+                    <div class="our-clients-img-inner">
+                        <div class="row text-center">
+                            <div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/works/logo-' . $work->slug . '.png')}}" alt=""></div>
+                            <div class="col-12 my-5"><b>{{$work->description}}</b></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="our-clients-img col-12 p-0 col-xl-4 w-100">
-            <div class="our-clients-img-blur p-3">
-                <div class="our-clients-img-inner">
-                    <div class="row text-center">
-                        <div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>
-                        <div class="col-12 my-5">asdasd</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="our-clients-img col-12 p-0 col-xl-4 w-100">
-            <div class="our-clients-img-blur p-3">
-                <div class="our-clients-img-inner">
-                    <div class="row text-center">
-                        <div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>
-                        <div class="col-12 my-5">asdasd</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="our-clients-img col-12 p-0 col-xl-4 w-100">
-            <div class="our-clients-img-blur p-3">
-                <div class="our-clients-img-inner">
-                    <div class="row text-center">
-                        <div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>
-                        <div class="col-12 my-5">asdasd</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="our-clients-img col-12 p-0 col-xl-4 w-100">
-            <div class="our-clients-img-blur p-3">
-                <div class="our-clients-img-inner">
-                    <div class="row text-center">
-                        <div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>
-                        <div class="col-12 my-5">asdasd</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </a>
+        @endforeach
+        {{--<div class="our-clients-img col-12 p-0 col-xl-4 w-100">--}}
+            {{--<div class="our-clients-img-blur p-3">--}}
+                {{--<div class="our-clients-img-inner">--}}
+                    {{--<div class="row text-center">--}}
+                        {{--<div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>--}}
+                        {{--<div class="col-12 my-5">asdasd</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="our-clients-img col-12 p-0 col-xl-4 w-100">--}}
+            {{--<div class="our-clients-img-blur p-3">--}}
+                {{--<div class="our-clients-img-inner">--}}
+                    {{--<div class="row text-center">--}}
+                        {{--<div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>--}}
+                        {{--<div class="col-12 my-5">asdasd</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="our-clients-img col-12 p-0 col-xl-4 w-100">--}}
+            {{--<div class="our-clients-img-blur p-3">--}}
+                {{--<div class="our-clients-img-inner">--}}
+                    {{--<div class="row text-center">--}}
+                        {{--<div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>--}}
+                        {{--<div class="col-12 my-5">asdasd</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="our-clients-img col-12 p-0 col-xl-4 w-100">--}}
+            {{--<div class="our-clients-img-blur p-3">--}}
+                {{--<div class="our-clients-img-inner">--}}
+                    {{--<div class="row text-center">--}}
+                        {{--<div class="col-12 my-5"><img class="img-fluid" src="{{asset('img/praecedens.png')}}" alt=""></div>--}}
+                        {{--<div class="col-12 my-5">asdasd</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
         <div class="our-clients-img col-12 p-0 col-xl-4 w-100">
             <div class="our-clients-img-blur p-3">
                 <div class="our-clients-img-inner">
