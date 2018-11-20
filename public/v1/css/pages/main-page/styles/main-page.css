@@ -113,8 +113,10 @@ body{
 }
 
 .technology-section .technology-img{
-    width: 80px;
+    width: auto;
     height: auto;
+    max-width: 75px;
+    max-height: 75px;
 }
 
 .start-now-banner .start-now-text{
