@@ -59,8 +59,8 @@ return [
     */
 
 
-//    'logo'      => '/images/user-logo.jpg',
-    'logo'      => '/bradmin/images/logo.jpg',
+    'logo'      => '/img/logo/logo.svg',
+//    'logo'      => '/bradmin/images/logo.jpg',
 
 //    'logo_mini' => '',
 
