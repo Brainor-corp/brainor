@@ -15,8 +15,8 @@ class CreateFearsTable extends Migration
     {
         Schema::create('fears', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fear_title');
-            $table->string('fear_answer');
+            $table->text('fear_title');
+            $table->text('fear_answer');
             $table->dateTime('published_at');
             $table->timestamps();
         });

@@ -40,6 +40,7 @@ class Fears extends Section
                 FormField::Wysiwyg('fear_answer', 'Ответ')->setRequired(true),
                 FormField::datepicker('published_at', 'Время публикации')
                     ->setLanguage('ru')
+                    ->setValue(Carbon::now())
                     ->setFormat('yyyy-mm-dd hh:ii:00')
                     ->setTodayBtn(true)
                     ->setClearBtn(true)
