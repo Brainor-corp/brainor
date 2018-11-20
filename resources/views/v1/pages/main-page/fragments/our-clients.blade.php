@@ -61,7 +61,7 @@
                 <div class="our-clients-img-inner">
                     <div class="row text-center">
                         <div class="col-12 my-5"><h1 class="text-uppercase">еще работы</h1></div>
-                        <div class="col-12 my-5"><button class="green-btn btn">Смотреть все работы</button></div>
+                        <div class="col-12 my-5"><a href="#" class="hvr-bounce-to-bottom btn">Смотреть все работы</a></div>
                     </div>
                 </div>
             </div>

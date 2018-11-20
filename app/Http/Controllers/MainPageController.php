@@ -12,4 +12,7 @@ class MainPageController extends Controller
 
         return view("v1.pages.main-page.main-page")->with(compact('fears'));
     }
+    public function search(){
+        return view("v1.pages.inside-pages.search-page");
+    }
 }
