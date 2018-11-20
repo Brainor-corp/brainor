@@ -226,3 +226,23 @@ svg {
 #circle-marker circle {
     fill: #48b71a;
 }
+
+.descend-fears-section .fear-block{
+    border-right: 1px solid #48b71a;
+    position: relative;
+}
+.descend-fears-section .fear-block a{
+    color: #000000;
+}
+.descend-fears-section .fear-block .active{
+    color: #949393;
+}
+
+.descend-fears-section .fear-block .active::after{
+    content: "•";
+    color: #48b71a;
+    font-size: 3rem;
+    position: absolute;
+    right: -9px;
+    line-height: 0.7;
+}
