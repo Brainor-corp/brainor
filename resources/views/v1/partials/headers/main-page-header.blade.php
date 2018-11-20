@@ -2,9 +2,9 @@
 
         <img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics bg-pic-flower">
         <img src="{{asset('img/bg/keyboard.png')}}" alt="" class="bg-pics bg-pic-keyboard">
-        <img src="{{asset('img/bg/notebook.png')}}" alt="" class="bg-pics bg-pic-notebook">
-        <img src="{{asset('img/bg/pen.png')}}" alt="" class="bg-pics bg-pic-pen">
-        <img src="{{asset('img/bg/mouse.png')}}" alt="" class="bg-pics bg-pic-mouse">
+        <img src="{{asset('img/bg/notebook.png')}}" alt="" class="bg-pics floating bg-pic-notebook">
+        <img src="{{asset('img/bg/pen.png')}}" alt="" class="bg-pics tossing bg-pic-pen">
+        <img src="{{asset('img/bg/mouse.png')}}" alt="" class="bg-pics floating-lr bg-pic-mouse">
     <div class="w-100 h-100 blur-block">
         <img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics bg-pic-flower">
         <img src="{{asset('img/bg/keyboard.png')}}" alt="" class="bg-pics bg-pic-keyboard">
@@ -15,7 +15,7 @@
     <div class="blur-color-block"></div>
 
     <nav class="navbar navbar-expand-xl navbar-light pb-0">
-        <a class="navbar-brand" href="#"><img src="{{asset('img/logo/animate-logo.svg')}}" alt="" class="logo-svg"></a></a>
+        <a class="navbar-brand" href="/"><img src="{{asset('img/logo/animate-logo.svg')}}" alt="" class="logo-svg"></a></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
