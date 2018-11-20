@@ -17,6 +17,11 @@ class NavigationDefault
                 'url' => '/bradmin/contacts',
                 'icon' => 'fas fa-address-book',
                 'text' => 'Контакты'
+            ],
+            [
+                'url' => '/bradmin/fears',
+                'icon' => 'fas fa-pastafarianism',
+                'text' => 'Развенчаем страхи'
             ]
         ];
 
