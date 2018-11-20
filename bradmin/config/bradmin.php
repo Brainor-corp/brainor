@@ -59,7 +59,7 @@ return [
     */
 
 
-    'logo'      => '/img/logo/logo.svg',
+    'logo'      => '/img/logo/white-logo.png',
 //    'logo'      => '/bradmin/images/logo.jpg',
 
 //    'logo_mini' => '',
