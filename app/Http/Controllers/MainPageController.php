@@ -14,6 +14,8 @@ class MainPageController extends Controller
         $works = BRPost::whereHas('tags', function ($tag) {
             return $tag->where('slug','nasha-rabota');
         })
+            ->orderBy('published_at', 'desc')
+            ->limit(5)
             ->get();
 
         return view("v1.pages.main-page.main-page")->with(compact('fears', 'works'));
