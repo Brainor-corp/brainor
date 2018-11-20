@@ -12,4 +12,7 @@ class MainPageController extends Controller
     public function inside(){
         return view("v1.pages.inside-pages.about-us-page");
     }
+    public function search(){
+        return view("v1.pages.inside-pages.search-page");
+    }
 }

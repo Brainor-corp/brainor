@@ -14,4 +14,5 @@
 Route::group(['middleware' => ['web']], function () {
     Route::get('/', "MainPageController@index")->name('/');
     Route::get('/ins', "MainPageController@inside")->name('/i');
+    Route::get('/search', "MainPageController@search")->name('/search');
 });

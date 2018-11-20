@@ -26,8 +26,9 @@
 
 .inside-pages-header .searchsubmit {
     position: absolute;
-    top: 20%;
-    right: 5%;
+    top: 7px;
+    right: 15px;
     border: none;
-    cursor: hand; cursor: pointer;
+    cursor: hand;
+    cursor: pointer;
 }
