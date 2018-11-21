@@ -6,10 +6,10 @@
 @endsection
 
 @section('headScripts')
+    <title>Поиск по сайту</title>
 @endsection
 
 @section('page-title')
-    asdasd
 @endsection
 
 @section('content')
