@@ -9,7 +9,12 @@ use Illuminate\Http\Request;
 class MainPageController extends Controller
 {
     public function index(){
-        $fears = Fear::orderBy('published_at', 'desc')->limit(3)->get();
+        $fears = BRPost::whereHas('tags', function ($tag) {
+            return $tag->where('slug','strah');
+        })
+            ->orderBy('published_at', 'desc')
+            ->limit(3)
+            ->get();
 
         $works = BRPost::whereHas('tags', function ($tag) {
             return $tag->where('slug','nasha-rabota');
