@@ -38,10 +38,11 @@ body{
 
 .main-page-header .searchsubmit {
     position: absolute;
-    top: 7px;
-    right: 15px;
+    top: 3px;
+    right: 10px;
     border: none;
-    cursor: hand; cursor: pointer;
+    background: transparent;
+    cursor: pointer;
 }
 
 .blur-block{
