@@ -26,9 +26,14 @@
 
 .inside-pages-header .searchsubmit {
     position: absolute;
-    top: 7px;
-    right: 15px;
+    top: 3px;
+    right: 10px;
     border: none;
-    cursor: hand;
+    background: transparent;
     cursor: pointer;
+}
+
+.child-list{
+    font-size: 1.3rem;
+    color: #48b71a;
 }

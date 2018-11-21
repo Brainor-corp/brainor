@@ -5,6 +5,7 @@ namespace Bradmin\Cms\Models;
 use Illuminate\Database\Eloquent\Model;
 use Kalnoy\Nestedset\NodeTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Laravel\Scout\Searchable;
 
 class BRPost extends Model
 {
@@ -12,6 +13,19 @@ class BRPost extends Model
         NodeTrait::replicate as replicateNode;
         Sluggable::replicate as replicateSlug;
     }
+
+    use Searchable;
+
+    public function toSearchableArray()
+    {
+        return [
+            'id' => $this->id,
+            'title' => $this->title,
+            'description' => $this->description,
+            'content' => $this->content
+        ];
+    }
+
 
     public function replicate(array $except = null)
     {

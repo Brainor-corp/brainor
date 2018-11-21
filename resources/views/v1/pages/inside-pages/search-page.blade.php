@@ -6,51 +6,36 @@
 @endsection
 
 @section('headScripts')
-    <title>Поиск по сайту</title>
 @endsection
 
 @section('page-title')
+    Поиск
 @endsection
 
 @section('content')
 
     <div class="container">
         <div class="row mb-5">
-            <div class="col-12 mt-5">
-                <h2>Результаты поиска по запросу: «Ёлочки»</h2>
-            </div>
-            <div class="col-md-6 col-12 mt-5">
-                <a href="" class="hvr-grow decoration-none">
-                    <div class="rounded p-3">
-                        <h3>Ёлочки</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, voluptatem...</p>
+            @if(count($results)>0)
+                <div class="col-12 mt-5">
+                    <h2>Результаты поиска по запросу: «{{ app('request')->input('term') }}»</h2>
+                </div>
+                @foreach($results as $result)
+                    <div class="col-md-6 col-12 mt-5">
+                        <a href="{{$result->url}}" class="hvr-grow decoration-none">
+                            <div class="rounded p-3">
+                                <h3>{{$result->title}}</h3>
+                                <p>{!! strlen(strip_tags($result->content)) > 75 ? substr(html_entity_decode(strip_tags($result->content)),0,75)."..." : html_entity_decode(strip_tags($result->content))!!}</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-6 col-12 mt-5">
-                <a href="" class="hvr-grow decoration-none">
-                    <div class="rounded p-3">
-                        <h3>Ёлочки</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, voluptatem...</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 col-12 mt-5">
-                <a href="" class="hvr-grow decoration-none">
-                    <div class="rounded p-3">
-                        <h3>Ёлочки</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, voluptatem...</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 col-12 mt-5">
-                <a href="" class="hvr-grow decoration-none">
-                    <div class="rounded p-3">
-                        <h3>Ёлочки</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, voluptatem...</p>
-                    </div>
-                </a>
-            </div>
+                @endforeach
+            @else
+                <div class="col-12 mt-5">
+                    <h2>Результатов по запросу «{{ app('request')->input('term') }}» не найдено.</h2>
+                </div>
+            @endif
+
         </div>
     </div>
 
