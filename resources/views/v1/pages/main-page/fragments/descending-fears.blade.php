@@ -12,7 +12,7 @@
                             <span class="text-nowrap mr-3">Страх #
                                 <span class="descend-fears-fear-number">{{++$i}}</span>:
                             </span>
-                            <span class="descend-fears-fear">{!! html_entity_decode(strip_tags($fear->fear_title)) !!}</span>
+                            <span class="descend-fears-fear">{!! html_entity_decode(strip_tags($fear->description)) !!}</span>
                         </a>
                     </li>
                 @endforeach
@@ -23,7 +23,7 @@
                 @php($i=1)
                 @foreach($fears as $fear)
                     <div class="tab-pane fade py-5 @if($i==1) show active @endif" id="fear{{$fear->id}}" role="tabpanel" aria-labelledby="tab{{$fear->id}}">
-                        {!! html_entity_decode(strip_tags($fear->fear_answer)) !!}
+                        {!! html_entity_decode(strip_tags($fear->content)) !!}
                     </div>
                     @php($i++)
                 @endforeach
