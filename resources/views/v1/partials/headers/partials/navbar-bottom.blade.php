@@ -14,7 +14,7 @@
                 <a class="nav-link black-link py-xl-0" href="#"><b>Компания</b></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link black-link py-xl-0" href="#"><b>Контакты</b></a>
+                <a class="nav-link black-link py-xl-0" href="/contacts"><b>Контакты</b></a>
             </li>
         </ul>
     </div>
