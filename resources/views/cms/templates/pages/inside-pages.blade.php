@@ -20,16 +20,27 @@
 @endsection
 @section('content')
     <div class="container mt-5">
-        <div class="row my-5">
-            <div class="col-lg-9 col-md-8 col-12">
-                <div class="align-items-start">
-                    <div class="text-justify">
-                        <div class="text-justify">
-                        </div>
-                    </div>
+        <div class="mb-5 fs-breadcrumbs decoration-links">
+            @php
+                foreach ($page->ancestors as $ancestor)
+                {
+                    $ancestors[] = $ancestor;
+                }
+                $ancestors[] = $page;
+            @endphp
+            <a href="/"><i class="fas fa-home green-link"></i></a>
+            @foreach($ancestors as $ancestor)
+                /<a class="black-link" href="{{ url($ancestor->url) }}">{{ $ancestor->title }}</a>
+            @endforeach
+        </div>
+        <div class="my-5">
+            <div class="align-items-start">
+                <div class="text-justify my-5">
+                    <h3>"{!! $page->description !!}"</h3>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-12 main-content">
+                <div class="text-justify">
+                    {!! $page->content !!}
+                </div>
             </div>
         </div>
     </div>

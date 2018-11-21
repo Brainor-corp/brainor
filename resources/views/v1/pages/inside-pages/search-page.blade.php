@@ -9,14 +9,14 @@
 @endsection
 
 @section('page-title')
-    asdasd
+    Поиск
 @endsection
 
 @section('content')
 
     <div class="container">
         <div class="row mb-5">
-            @if(isset($results))
+            @if(($results))
                 <div class="col-12 mt-5">
                     <h2>Результаты поиска по запросу: «{{ app('request')->input('term') }}»</h2>
                 </div>

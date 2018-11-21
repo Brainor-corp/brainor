@@ -32,3 +32,8 @@
     background: transparent;
     cursor: pointer;
 }
+
+.child-list{
+    font-size: 1.3rem;
+    color: #48b71a;
+}
