@@ -16,7 +16,7 @@
 
     <div class="container">
         <div class="row mb-5">
-            @if(($results))
+            @if(count($results)>0)
                 <div class="col-12 mt-5">
                     <h2>Результаты поиска по запросу: «{{ app('request')->input('term') }}»</h2>
                 </div>
