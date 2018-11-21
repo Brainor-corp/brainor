@@ -1,4 +1,4 @@
-<footer class="p-3">
+<footer class="p-3 container-fluid">
     <div class="d-flex flex-wrap justify-content-around">
         <div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">
             <b>Услуги</b>
