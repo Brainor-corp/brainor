@@ -12,10 +12,12 @@
         <span><a href="http://youtube.ru" class="black-link"><i class="fab fa-2x fa-youtube"></i></a></span>
     </li>
     <li class="nav-item col-xl-4 col-12 my-3 my-xl-0 p-0 align-self-center">
-        <div class="searchboxwrapper text-center">
-            <input class="searchbox float-xl-right w-270px" type="text" value="" name="search_input" placeholder="Поиск по сайту..." id="search_input">
-            <i class="fas fa-1x fa-search searchsubmit"></i>
-        </div>
+        <form action="/search">
+            <div class="searchboxwrapper text-center">
+                <input class="searchbox float-xl-right w-270px" type="text" value="{{ app('request')->input('term') }}" name="term" placeholder="Поиск по сайту..." id="term">
+                <button type="submit" class="text-black-50 searchsubmit"><i class="fas fa-1x fa-search"></i></button>
+            </div>
+        </form>
     </li>
 </ul>
 

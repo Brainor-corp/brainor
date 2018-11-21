@@ -8,7 +8,7 @@
     @yield('styles')
     @yield('headScripts')
 
-    <title>@yield('title')</title>
+    <title>@yield('page-title')</title>
 </head>
 
 <body class="raleway">
