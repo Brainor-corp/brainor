@@ -13,18 +13,22 @@
 @endsection
 
 @section('headScripts')
+    <title>{{$page->title}}</title>
 @endsection
 
 @section('page-title')
-    {{$page->title}}
 @endsection
 @section('content')
     <div class="container">
         <div class="row my-5">
-            <div class="col-lg-12">
+            <div class="col-12">
                 <div class="align-items-start">
                     <div class="text-justify">
                         <div class="text-justify">
+                            <h1>{{$page->title}}</h1>
+                            <p>
+                                {!! html_entity_decode($page->content) !!}
+                            </p>
                         </div>
                     </div>
                 </div>

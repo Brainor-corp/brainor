@@ -112,7 +112,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    opacity: 0.5;
+    opacity: 0.9;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opactiy 1s ease-in-out;
     -ms-transition: opacity 1s ease-in-out;
@@ -122,7 +122,7 @@ body{
 
 .our-clients-img:hover .our-clients-img-blur{
     filter: alpha(opacity=90);
-    opacity: 0.9;
+    opacity: 0.5;
     -webkit-transition: opacity .7s ease-in-out;
     -moz-transition: opactiy .7s ease-in-out;
     -ms-transition: opacity .7s ease-in-out;

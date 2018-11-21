@@ -1,7 +1,7 @@
 <?php
 /**
  * class: BRPageTemplate
- * title: Шаблон страницы "контакты"
+ * title: Шаблон страницы "портфолио"
  */
 ?>
 
@@ -32,9 +32,45 @@
                             <p>
                                 {!! html_entity_decode($page->content) !!}
                             </p>
-                            <div class="my-5">
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A52e1c98fe6a29e60cd7de5ac23f3d86a4cc80194dd61f37f697a33a03047750e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-                            </div>
+                           <div class="col-12">
+                               @php
+                                   $dateFrom = app('request')->input('filterDateFrom');
+                                   $dateTo = app('request')->input('filterDateTo');
+                                   $args = [
+                                       'type' => 'page',
+                                       'tags' => ['nasha-rabota']
+                                   ];
+                                   $works = \Bradmin\Cms\Helpers\CMSHelper::getQueryBuilder($args)
+                                   ->when(isset($dateFrom), function ($query) use ($dateFrom){
+                                       return $query->where('published_at', '>=', $dateFrom);
+                                   })
+                                   ->when(isset($dateTo), function ($query) use ($dateTo){
+                                       return $query->where('published_at', '<=', date('Y-m-d', strtotime($dateTo. ' + 1 days')));
+                                   })
+                                   ->paginate(3);
+                               @endphp
+                               @foreach($works as $work)
+                                   <div class="our-clients-img col-12 p-3 w-100" style="background-image: url({{'../../../../../img/works/' . $work->slug . '.png'}})">
+                                       <a href="{{$work->url}}">
+                                           <div class="our-clients-img-blur"></div>
+                                           <div class="our-clients-img-inner">
+                                                   <div class="row text-center h-100">
+                                                       <div class="col-12 align-self-center"><img class="img-fluid work-logo" src="{{asset('img/works/logo-' . $work->slug . '.png')}}" alt=""></div>
+                                                       @if(isset($work->description))<div class="col-12 align-self-center green-hover-link work-description w-100"><h4 class="my-2">{{$work->description}}</h4></div>@endif
+                                                   </div>
+                                           </div>
+
+                                       </a>
+                                   </div>
+                               @endforeach
+                               <div class="col-12 mt-3">
+                                   <div class="row justify-content-center">
+                                       <div class="col-auto page-link-no-focus">
+                                           {{ $works->appends(request()->query())->links('vendor.pagination.bootstrap-4') }}
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
                         </div>
                     </div>
                 </div>
