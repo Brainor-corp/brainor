@@ -15,7 +15,7 @@
                                 <span class="technology-header"><b class="text-uppercase">HTML5</b></span>
                             </div>
                             <div class="col-12">
-                                <span>средство для структурирования и представления содержимого веб-страниц</span>
+                                <span>Средство для структурирования и представления содержимого веб-страниц</span>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                 <span class="technology-header"><b class="text-uppercase">kotlin</b></span>
                             </div>
                             <div class="col-12">
-                                <span>средство для структурирования и представления содержимого веб-страниц</span>
+                                <span>Статически типизированный язык программирования, работающий поверх JVM</span>
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                                 <span class="technology-header"><b class="text-uppercase">linux</b></span>
                             </div>
                             <div class="col-12">
-                                <span>средство для структурирования и представления содержимого веб-страниц</span>
+                                <span>Семейство Unix-подобных операционных систем на базе ядра Linux</span>
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                                 <span class="technology-header"><b class="text-uppercase">ios</b></span>
                             </div>
                             <div class="col-12">
-                                <span>Мобильная операционная система для смартфонов, электронных планшетов и др. разработанная для продуктов компании Apple</span>
+                                <span>Операционная система для смартфонов, планшетов и др. разработанная для продуктов компании Apple</span>
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                                 <span class="technology-header"><b class="text-uppercase">api</b></span>
                             </div>
                             <div class="col-12">
-                                <span>средство для структурирования и представления содержимого веб-страниц</span>
+                                <span>Описание способов, которыми одна компьютерная программа может взаимодействовать с другой программой</span>
                             </div>
                         </div>
                     </div>
