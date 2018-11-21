@@ -22,6 +22,11 @@
 .green-link{
     color: #48b71a!important;
 }
+.green-hover-link:hover{
+    color: #48b71a!important;
+    text-decoration: none;
+    outline: none;
+}
 .black-link{
     color: #000!important;
 }

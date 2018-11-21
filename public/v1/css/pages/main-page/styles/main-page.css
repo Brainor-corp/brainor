@@ -94,22 +94,51 @@ body{
 }
 
 .our-clients-img{
-    height: 400px;
+    display: block;
+    height: 350px;
     background-size: cover;
-    background-image: url("../../../../../../img/prec.png");
+    color: #000000;
+}
+.our-clients-img:hover{
+    color: #000000;
+    text-decoration: none;
+    outline: none;
 }
 
 .our-clients-img-blur{
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    opacity: 0.7;
+    opacity: 0.5;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opactiy 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.our-clients-img:hover .our-clients-img-blur{
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    -webkit-transition: opacity .7s ease-in-out;
+    -moz-transition: opactiy .7s ease-in-out;
+    -ms-transition: opacity .7s ease-in-out;
+    -o-transition: opacity .7s ease-in-out;
+    transition: opacity .7s ease-in-out;
 }
 
 .our-clients-img-inner{
     width: 100%;
     height: 100%;
     border: 2px solid #48b71a;
+}
+
+.our-clients-section .work-logo{
+    height: auto;
+    width: auto;
 }
 
 .technology-section .technology-img{
