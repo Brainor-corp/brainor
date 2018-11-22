@@ -18,6 +18,11 @@ class NavigationDefault
                 'icon' => 'fas fa-address-book',
                 'text' => 'Контакты'
             ],
+            [
+                'url' => '/bradmin/ReportGenerator',
+                'icon' => 'fas fa-archive',
+                'text' => 'Генератор отчетов'
+            ]
         ];
 
         return $navigation;
