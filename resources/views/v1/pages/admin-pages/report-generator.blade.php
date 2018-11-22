@@ -16,6 +16,9 @@
         <div class="col-5 p-2">
             <input class="w-100 form-control" name="name" type="text" value="Выходцев Антон Игоревич"><span>Введи имя того, кто будет в отчете</span>
         </div>
+        <div class="col-5 p-2">
+            <input class="w-100 form-control" name="date" type="date" value="{{\Carbon\Carbon::now()->format('Y-m-d')}}"><span>Введи дату, которая будет в отчете</span>
+        </div>
         <div class="col-12 p-2">
             <button type="submit" class="btn btn-success"><span>Сгенерировать</span></button>
         </div>

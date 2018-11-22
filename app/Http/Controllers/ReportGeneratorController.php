@@ -22,6 +22,7 @@ class ReportGeneratorController extends Controller
         $vars = array();
         $c=0;
         $vals['reporter'] = $request->name;
+        $vals['report_date'] = $request->date;
 
         File::delete(File::allfiles(storage_path('app/uploads/')));
 
@@ -90,11 +91,12 @@ class ReportGeneratorController extends Controller
 
             $TBS->LoadTemplate($template_path);
 
-            $TBS->SetOption('charset', '');
+            $TBS->SetOption('charset', false);
             $TBS->SetOption('render', TBS_OUTPUT);
 
             $TBS->MergeField('project_name', $name);
             $TBS->MergeField('reporter', $vals['reporter']);
+            $TBS->MergeField('report_date', $vals['report_date']);
             $TBS->MergeField('week_start', $values['week_start']);
             $TBS->MergeField('week_end', $values['week_end']);
             $TBS->MergeField('minutes_summary', $values['minutes_summary']);
