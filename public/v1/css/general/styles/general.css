@@ -27,6 +27,22 @@
     text-decoration: none;
     outline: none;
 }
+.work-description{
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    color: #000000;
+    text-shadow:
+            -0   -1px 20px rgba(255, 255, 255, 0.8),
+             0   -1px 20px rgba(255, 255, 255, 0.8),
+            -0    1px 20px rgba(255, 255, 255, 0.8),
+             0    1px 20px rgba(255, 255, 255, 0.8),
+            -1px -0   20px rgba(255, 255, 255, 0.8),
+             1px -0   20px rgba(255, 255, 255, 0.8),
+            -1px  0   20px rgba(255, 255, 255, 0.8),
+             1px  0   20px rgba(255, 255, 255, 0.8)
+}
+
 .black-link{
     color: #000!important;
 }
