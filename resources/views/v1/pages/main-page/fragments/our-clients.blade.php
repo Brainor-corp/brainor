@@ -13,12 +13,12 @@
 
                     <div class="our-clients-img-blur"></div>
                     <div class="our-clients-img-inner">
-                            <div class="row text-center h-100">
-                                <div class="col-12 align-self-center"><img class="img-fluid work-logo" src="{{asset('img/works/logo-' . $work->slug . '.png')}}" alt=""></div>
+                        <div class="row text-center h-100">
+                            <div class="col-12 align-self-center"><img class="img-fluid work-logo" src="{{asset('img/works/logo-' . $work->slug . '.png')}}" alt=""></div>
                             @if(isset($work->description))<div class="col-12 align-self-center green-hover-link work-description w-100"><h4 class="my-2">{{$work->description}}</h4></div>@endif
-                            </div>
                         </div>
-                    </a>
+                    </div>
+                </a>
                 </div>
 
         @endforeach
