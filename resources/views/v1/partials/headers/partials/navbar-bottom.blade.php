@@ -8,7 +8,7 @@
                 <a class="nav-link black-link py-xl-0" href="#"><b>Технологии</b></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link black-link py-xl-0" href="#"><b>Протфолио</b></a>
+                <a class="nav-link black-link py-xl-0" href="/portfolio"><b>Портфолио</b></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link black-link py-xl-0" href="#"><b>Компания</b></a>

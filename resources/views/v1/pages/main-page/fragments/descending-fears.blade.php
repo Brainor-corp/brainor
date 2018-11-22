@@ -29,7 +29,7 @@
                 @endforeach
             </div>
             <div class="row px-3">
-                <button class="btn green-btn col-12 col-md-6">Просчитать стоимость проекта</button>
+                <button class="btn hvr-bounce-to-bottom green-btn col-12 col-md-6">Просчитать стоимость проекта</button>
             </div>
         </div>
     </div>
