@@ -11,14 +11,9 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 use clsTinyButStrong;
 use clsOpenTBS;
 
-use App\Company;
 
 class ReportGeneratorController extends Controller
 {
-    public function index()
-    {
-        return view('adm.reports.reports');
-    }
 
     public function generateReport(Request $request)
     {
@@ -90,7 +85,7 @@ class ReportGeneratorController extends Controller
         }
 
         foreach ($vals['projects'] as $name => $values){
-            $TBS = new clsTinyButStrong; // new instance of TBS
+            $TBS = new clsTinyButStrong;
             $TBS->Plugin(TBS_INSTALL, clsOpenTBS::class);
 
             $TBS->LoadTemplate($template_path);
