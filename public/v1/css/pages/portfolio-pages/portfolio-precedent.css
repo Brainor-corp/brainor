@@ -1,0 +1,29 @@
+.project-logo{
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 80px);
+    width: 160px;
+    height: auto;
+}
+
+.mocups-row div,
+.mocups-row {
+    display: inline-block;
+}
+
+.mocups-row .ipad,
+.mocups-row .iphone {
+    position: relative;
+}
+
+.mocups-row .mac {
+    margin-left: -500px;
+}
+
+.mocups-row .ipad {
+    margin-left: -950px;
+}
+
+.mocups-row .iphone {
+    margin-left: -50px;
+}

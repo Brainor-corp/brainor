@@ -1,0 +1,54 @@
+@media (max-width: 750px){
+    .mac-mocup .screen{
+        margin: 100px auto 0;
+        height: 53%;
+    }
+    .mac-mocup .screen img {
+        width: calc(100% - 50px);
+    }
+}
+
+@media (max-width: 640px){
+    .mac-mocup .screen{
+        margin: 120px auto 0;
+        height: 47%;
+    }
+    .mac-mocup .screen img {
+        width: calc(100% - 60px);
+    }
+}
+
+@media (max-width: 570px){
+    .mac-mocup .screen{
+        margin: 140px auto 0;
+        height: 43%;
+    }
+}
+
+@media (max-width: 520px){
+    .mac-mocup .screen{
+        margin: 150px auto 0;
+        height: 40%;
+    }
+}
+
+@media (max-width: 485px){
+    .mac-mocup .screen{
+        margin: 160px auto 0;
+        height: 37%;
+    }
+}
+
+@media (max-width: 460px){
+    .mac-mocup .screen{
+        margin: 180px auto 0;
+        height: 35%;
+    }
+}
+
+@media (max-width: 430px){
+    .mac-mocup .screen{
+        margin: 180px auto 0;
+        height: 35%;
+    }
+}
