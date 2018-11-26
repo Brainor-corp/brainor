@@ -244,6 +244,10 @@
         border-bottom: 1px solid #a6a6a66a;
     }
 }
-@media (max-width: 575px){
 
+@media (max-width: 420px){
+    .about-pricing-section .fas,
+    .about-pricing-section .far{
+        font-size: 2rem;
+    }
 }
