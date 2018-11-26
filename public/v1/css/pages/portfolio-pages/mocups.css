@@ -2,11 +2,6 @@
     display: block !important;
 }
 
-.mocups-container {
-    margin-bottom: -80px;
-    position: relative;
-}
-
 /*________MAC_________*/
 
 .mac-mocup {
@@ -24,10 +19,13 @@
     margin: 50px auto 0;
     height: 65%;
     overflow-y: scroll;
+    top: 40px;
+    position: relative;
 }
 .mac-mocup .screen img {
     width: 100%;
     height: auto;
+
 }
 
 /*________IPAD_________*/
@@ -81,6 +79,8 @@
     height: auto;
 }
 
-::-webkit-scrollbar{
+.mac-mocup ::-webkit-scrollbar,
+.ipad-mocup ::-webkit-scrollbar,
+.iphone-mocup ::-webkit-scrollbar {
     display: none;
 }

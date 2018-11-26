@@ -5,6 +5,8 @@
     @include('v1.head.meta')
     @include('v1.head.head')
 
+    <link rel="stylesheet" href="{{asset('v1/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('v1/plugins/OwlCarousel2/dist/assets/owl.theme.default.min.css')}}">
     @yield('styles')
     @yield('headScripts')
 
@@ -111,6 +113,7 @@
 
 <!-- Scripts -->
 @include('v1.foot.scripts')
+    <script src="{{asset('v1/plugins/OwlCarousel2/dist/owl.carousel.js')}}"></script>
 @yield('footScripts')
 
 </body>

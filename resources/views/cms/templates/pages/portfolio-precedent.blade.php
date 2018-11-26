@@ -128,17 +128,57 @@
 @endsection
 
 @section('mocups')
-    <div class="mocups-container text-center">
-        <div class="mocups-row">
-            <div class="mac">
-                @include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/precedent/full-height-main.png')])
-            </div>
-            <div class="ipad">
-                @include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/precedent/full-main-ipad.png')])
-            </div>
-            <div class="iphone">
-                @include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/precedent/full-main-iphone.png')])
+
+    <div class="container-fluid d-md-block d-none mocups-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mocups-row">
+                    <div class="mac">
+                        @include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/precedent/full-height-main.png')])
+                    </div>
+                    <div class="ipad">
+                        @include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/precedent/full-main-ipad.png')])
+                    </div>
+                    <div class="iphone">
+                        @include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/precedent/full-main-iphone.png')])
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="container-fluid d-md-none d-block">
+        <div class="row">
+            <div class="col-12">
+                <div class="owl-carousel owl-theme mocups-carousel">
+                    <div class="item text-center">
+                        <img src="{{asset('img/portfolios/precedent/full-mac.png')}}" alt="">
+                    </div>
+                    <div class="item text-center">
+                        <img src="{{asset('img/portfolios/precedent/full-ipad.png')}}" alt="">
+                    </div>
+                    <div class="item text-center">
+                        <img src="{{asset('img/portfolios/precedent/full-iphone.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{--<div class="mocups-container text-center d-none d-lg-block">--}}
+        {{--<div class="mocups-row">--}}
+            {{--<div class="mac">--}}
+                {{--@include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/precedent/full-height-main.png')])--}}
+            {{--</div>--}}
+            {{--<div class="ipad">--}}
+                {{--@include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/precedent/full-main-ipad.png')])--}}
+            {{--</div>--}}
+            {{--<div class="iphone">--}}
+                {{--@include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/precedent/full-main-iphone.png')])--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+@endsection
+
+@section('footScripts')
+    <script src="{{asset('v1/js/portfolio-pages/precedent.js')}}"></script>
 @endsection
