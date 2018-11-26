@@ -9,15 +9,15 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
 
 
-class ReportGenerator extends Section
+class Generator extends Section
 {
-    protected $title = 'Генератор отчетов';
+    protected $title = 'Генератор';
 
 
     public static function onDisplay(Request $request){
 
         $display = Display::custom([])
-            ->setView(View::make('v1/pages/admin-pages/report-generator'));
+            ->setView(View::make('v1/pages/admin-pages/generator'));
 
         return $display;
     }
