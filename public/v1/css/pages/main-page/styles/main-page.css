@@ -73,6 +73,10 @@ body{
     border-bottom: 1px solid grey;
 }
 
+.about-pricing-section{
+    max-width: 1400px !important;
+}
+
 .about-pricing-section .bl-box{
     border-left: 1px solid #48b71a;
 }
@@ -85,7 +89,8 @@ body{
     font-size: 2.5rem;
     color: #a9a9a9;
 }
-.about-pricing-section .fas{
+.about-pricing-section .fas,
+.about-pricing-section .far{
     color: #a8b1b9;
 }
 
