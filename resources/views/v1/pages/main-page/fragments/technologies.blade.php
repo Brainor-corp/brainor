@@ -6,10 +6,10 @@
         <div class="row">
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/html5.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">HTML5</b></span>
@@ -23,10 +23,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/js.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">JS</b></span>
@@ -40,10 +40,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/php.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">PHP</b></span>
@@ -57,10 +57,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/Kotlin.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">kotlin</b></span>
@@ -74,10 +74,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/laravel.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">laravel</b></span>
@@ -91,10 +91,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/vue.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">vue</b></span>
@@ -108,10 +108,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/wordpress.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">wordpress</b></span>
@@ -125,10 +125,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/bitrics.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">1c bitrix</b></span>
@@ -142,10 +142,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/windows.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">windows</b></span>
@@ -159,10 +159,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/linux.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">linux</b></span>
@@ -176,10 +176,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/android.jpg')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">android</b></span>
@@ -193,10 +193,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/ios.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">ios</b></span>
@@ -210,10 +210,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/api.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">api</b></span>
@@ -227,10 +227,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/ajax.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">ajax</b></span>
@@ -244,10 +244,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/json.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">json</b></span>
@@ -261,10 +261,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/xml.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">xml</b></span>
@@ -278,10 +278,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/nginx.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">nginx</b></span>
@@ -295,10 +295,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/apache.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">apache</b></span>
@@ -312,10 +312,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/postgesql.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">postgresql</b></span>
@@ -329,10 +329,10 @@
             </div>
             <div class="col-12 col-md-6 col-xl-3 text-center my-4">
                 <div class="row">
-                    <div class="col-3 pr-0 align-self-center">
+                    <div class="col-12 col-md-3 pr-md-0 align-self-center">
                         <img class="technology-img" src="{{asset('img/technologies/mysql.png')}}" alt="">
                     </div>
-                    <div class="col-9 pl-0 align-self-center">
+                    <div class="col-12 col-md-9 pl-md-0 align-self-center">
                         <div class="row">
                             <div class="col-12">
                                 <span class="technology-header"><b class="text-uppercase">mysql</b></span>
