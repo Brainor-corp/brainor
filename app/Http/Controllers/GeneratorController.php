@@ -34,12 +34,17 @@ class GeneratorController extends Controller
             $currentUrl->appendChild($base->createElement('priority',      '0.8'));
         }
 
-        foreach (BRPost::whereNotselect('slug')->get() as $producer)
+        $posts = BRPost::whereDoesntHave('tags', function ($tag) {
+            return $tag->where('slug', 'tehnicheskaya');
+        })->get();
+
+
+        foreach ($posts as $post)
         {
             $currentUrl = $base->createElement("url");
             $currentUrl = $xmlRoot->appendChild($currentUrl);
 
-            $currentUrl->appendChild($base->createElement('loc',           url("/brand/" . $producer->slug)));
+            $currentUrl->appendChild($base->createElement('loc',           url($post->url)));
             $currentUrl->appendChild($base->createElement('lastmod',       Carbon::today()->format('Y-m-d')));
             $currentUrl->appendChild($base->createElement('changefreq',    'monthly'));
             $currentUrl->appendChild($base->createElement('priority',      '0.8'));
