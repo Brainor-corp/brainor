@@ -12,7 +12,6 @@ use Illuminate\Http\Request;
 class ReportGenerator extends Section
 {
     protected $title = 'Генератор отчетов';
-    protected $model = 'App\User';
 
 
     public static function onDisplay(Request $request){

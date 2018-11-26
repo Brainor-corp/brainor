@@ -1,0 +1,13 @@
+@media (max-width: 1199px){
+    .mocups-row .mac {
+        margin-left: 0!important;
+    }
+
+    .mocups-row .ipad {
+        margin-left: 0!important;
+    }
+
+    .mocups-row .iphone {
+        margin-left: 0!important;
+    }
+}

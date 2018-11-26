@@ -1,0 +1,58 @@
+.project-logo{
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 80px);
+    width: 160px;
+    height: auto;
+}
+
+/*.mocups-row div,*/
+/*.mocups-row {*/
+    /*display: inline-block;*/
+/*}*/
+
+.mocups-carousel img{
+    width: auto !important;
+    max-height: 400px;
+    max-width: 100%;
+    display: inline-block !important;
+}
+
+.mocups-container {
+    margin-bottom: -70px;
+}
+
+.mocups-row .mac{
+    left: calc(50% - 400px);
+}
+.mocups-row .ipad{
+    top: 303px;
+    left: calc(50% - 420px);
+}
+.mocups-row .iphone{
+    top: 403px;
+    left: calc(50% - 200px);
+}
+
+.mocups-row {
+    position: relative;
+    height: 700px;
+}
+
+.mocups-row .mac,
+.mocups-row .ipad,
+.mocups-row .iphone {
+    position: absolute;
+}
+
+/*.mocups-row .mac {*/
+    /*margin-left: -500px;*/
+/*}*/
+
+/*.mocups-row .ipad {*/
+    /*margin-left: -950px;*/
+/*}*/
+
+/*.mocups-row .iphone {*/
+    /*margin-left: -50px;*/
+/*}*/

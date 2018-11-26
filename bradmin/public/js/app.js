@@ -35676,7 +35676,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             } else {
                 ajaxUrl = this.$route.path;
             }
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(ajaxUrl, { 'page': this.currentPage }).then(function (response) {
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(ajaxUrl + document.location.search, { 'page': this.currentPage }).then(function (response) {
                 if (typeof response.data.data !== 'undefined') {
                     _this.responseData = response.data.data;
                     if (typeof response.data.data.pagination !== 'undefined') {
