@@ -16,4 +16,5 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/ins', "MainPageController@inside")->name('/i');
     Route::get('/search', "SearchController@search")->name('search');
     Route::post('/ReportGenerate', ['uses' => 'ReportGeneratorController@generateReport'])->name("generateReport");
+    Route::post('/SitemapGenerate', ['uses' => 'GeneratorController@generateSitemap'])->name("generateSitemap");
 });
