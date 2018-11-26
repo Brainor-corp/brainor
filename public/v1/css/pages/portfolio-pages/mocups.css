@@ -1,0 +1,86 @@
+.screen {
+    display: block !important;
+}
+
+/*________MAC_________*/
+
+.mac-mocup {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../../img/mocups/iMac.png);
+    background-size: contain;
+    width: 100%;
+    height: 655px;
+}
+
+.mac-mocup .screen {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto 0;
+    height: 65%;
+    overflow-y: scroll;
+    top: 40px;
+    position: relative;
+}
+.mac-mocup .screen img {
+    width: 100%;
+    height: auto;
+
+}
+
+/*________IPAD_________*/
+
+.ipad-mocup {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../../img/mocups/iPad.png);
+    background-size: contain;
+    width: 100%;
+    height: 400px;
+    padding-top: 1px;
+}
+
+.ipad-mocup .screen {
+    width: 80%;
+    max-width: 290px;
+    margin: 30px auto 0;
+    height: 85%;
+    overflow-y: scroll;
+}
+
+.ipad-mocup .screen img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*________IPHONE_________*/
+
+.iphone-mocup {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../../img/mocups/iPhone.png);
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+    padding-top: 1px;
+}
+
+.iphone-mocup .screen {
+    width: 80%;
+    max-width: 150px;
+    margin: 35px auto 0;
+    height: 75%;
+    overflow-y: scroll;
+}
+
+.iphone-mocup .screen img {
+    width: 100%;
+    height: auto;
+}
+
+.mac-mocup ::-webkit-scrollbar,
+.ipad-mocup ::-webkit-scrollbar,
+.iphone-mocup ::-webkit-scrollbar {
+    display: none;
+}

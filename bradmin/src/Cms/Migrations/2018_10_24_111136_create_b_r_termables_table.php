@@ -27,8 +27,6 @@ class CreateBRTermablesTable extends Migration
      */
     public function down()
     {
-        Schema::table('b_r_termables', function (Blueprint $table) {
-            Schema::dropIfExists('b_r_termables');
-        });
+        Schema::dropIfExists('b_r_termables');
     }
 }

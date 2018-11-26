@@ -5,7 +5,6 @@ namespace Bradmin\Cms\Models;
 use Illuminate\Database\Eloquent\Model;
 use Kalnoy\Nestedset\NodeTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
-use Laravel\Scout\Searchable;
 
 class BRPost extends Model
 {
@@ -13,19 +12,6 @@ class BRPost extends Model
         NodeTrait::replicate as replicateNode;
         Sluggable::replicate as replicateSlug;
     }
-
-    use Searchable;
-
-    public function toSearchableArray()
-    {
-        return [
-            'id' => $this->id,
-            'title' => $this->title,
-            'description' => $this->description,
-            'content' => $this->content
-        ];
-    }
-
 
     public function replicate(array $except = null)
     {
@@ -94,6 +80,11 @@ class BRPost extends Model
     public function categories()
     {
         return $this->morphToMany('Bradmin\Cms\Models\BRTerm', 'b_r_termable', 'b_r_termables', 'b_r_termable_id', 'b_r_term_id')->where('type', 'category');
+    }
+
+    public function comments()
+    {
+        return $this->morphToMany('Bradmin\Cms\Models\BRComment', 'b_r_commentable', 'b_r_commentables', 'b_r_commentable_id', 'b_r_comment_id');
     }
 
     public function scopePages($query)

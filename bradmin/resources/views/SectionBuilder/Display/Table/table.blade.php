@@ -1,12 +1,19 @@
 <div class="row pb-3">
     <div class="col-12">
-        @if($firedSection->isCreatable())
-            <div class="card">
-                <div class="card-body">
-                    <a @click.prevent="$emit('redirectTo',$event)" href="{{ Request::url() }}/create" class="btn btn-primary">Создать</a>
+        <div class="card">
+            <div class="card-body">
+                <div class="row w-100 align-items-center">
+                    <div class="col-auto">
+                        @if($firedSection->isCreatable())
+                            <a @click.prevent="$emit('redirectTo',$event)" href="{{ Request::url() }}/create" class="btn btn-primary">Создать</a>
+                        @endif
+                    </div>
+                    <div class="col">
+                        {!! $nav !!}
+                    </div>
                 </div>
             </div>
-        @endif
+        </div>
     </div>
 </div>
 
@@ -25,9 +32,7 @@
             <tr>
                 @foreach($columns as $column)
                     <td scope="col">
-                        @if(!$field[$column->getName()] instanceof Countable)
-                            {!! $field[$column->getName()] !!}
-                        @else
+                        @if($field[$column->getName()] instanceof Countable)
                             @php
                                 $path = explode('.', $column->getName());
                                 $name = end($path);
@@ -35,6 +40,18 @@
                             @foreach($field[$column->getName()] as $value)
                                 <span class="badge badge-info text-white">{!! $value->{$name} !!}</span>
                             @endforeach
+                        @else
+                            @switch(basename(get_class($column)))
+                                @case('Text')
+                                    {!! $field[$column->getName()] !!}
+                                    @break
+                                @case('Link')
+                                    <a href="{{ parse_url(Request::url(), PHP_URL_PATH) . '/' . $field['brRowId'] . '/edit' }}">{!! $field[$column->getName()] !!}</a>
+                                    @break
+                                @default
+                                    {!! $field[$column->getName()] !!}
+                                    @break
+                            @endswitch
                         @endif
                     </td>
                 @endforeach

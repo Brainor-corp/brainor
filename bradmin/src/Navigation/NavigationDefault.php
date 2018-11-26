@@ -20,8 +20,13 @@ class NavigationDefault
             ],
             [
                 'url' => '/bradmin/ReportGenerator',
-                'icon' => 'fas fa-archive',
+                'icon' => 'fas fa-address-book',
                 'text' => 'Генератор отчетов'
+            ],
+            [
+                'url' => '/bradmin/generator',
+                'icon' => 'fas fa-address-book',
+                'text' => 'Генератор'
             ]
         ];
 

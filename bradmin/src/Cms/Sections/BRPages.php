@@ -24,7 +24,7 @@ class BRPages extends Section
         $pluginsFields = app()['PluginsData']['CmsData']['Pages']['DisplayField'] ?? [];
         $brFields = [
             '0.01' => Column::text('id', '#'),
-            '0.02' => Column::text('title', 'Заголовок'),
+            '0.02' => Column::link('title', 'Заголовок'),
             '0.03' => Column::text('description', 'Краткое описание'),
             '0.04' => Column::text('tags.title', 'Метки'),
             '0.05' => Column::text('categories.title', 'Рубрики'),
@@ -100,12 +100,8 @@ class BRPages extends Section
                 ])
                 ->setDefaultSelected(0)
                 ->setRequired(true),
-            '0.05' => FormField::datepicker('published_at', 'Дата публикации')
+            '0.05' => FormField::input('published_at', 'Дата публикации')
                 ->setValue(Carbon::now())
-                ->setLanguage('ru')
-                ->setFormat('yyyy-mm-dd hh:ii:ss')
-                ->setTodayBtn(true)
-                ->setClearBtn(true)
                 ->setRequired(true),
             '0.06' => FormField::input('thumb', 'Миниатюра'),
             '99.99' => FormField::hidden('type')->setValue("page"),
