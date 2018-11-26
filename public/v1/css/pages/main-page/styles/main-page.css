@@ -91,7 +91,10 @@ body{
 
 .about-pricing-section .bl-box-header{
     color: #48b71a;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+.about-pricing-section .bl-box-desc{
+    font-size: 0.8rem;
 }
 
 .our-clients-img{
