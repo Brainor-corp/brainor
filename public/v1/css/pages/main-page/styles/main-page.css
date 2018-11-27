@@ -52,6 +52,7 @@ body{
     position: absolute;
     filter: blur(5px);
 }
+
 .blur-color-block{
     position: absolute;
     width: 100%;
@@ -66,6 +67,7 @@ body{
     box-shadow: none;
     outline: none;
 }
+
 .top-form-container .form-group input{
     border: none;
     border-radius: 0;
@@ -85,10 +87,12 @@ body{
     border-right: 1px solid #48b71a;
     height: 70px;
 }
+
 .counts{
     font-size: 2.5rem;
     color: #a9a9a9;
 }
+
 .about-pricing-section .fas,
 .about-pricing-section .far{
     color: #a8b1b9;
@@ -162,13 +166,12 @@ body{
 }
 
 .start-now-banner .start-now-text{
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: lighter;
 }
-.start-now-banner .red-btn{
-    width: 200px;
-    border: 2px solid #b73645;
-    background: transparent;
+
+.start-now-banner a{
+    max-width: 300px;
 }
 
 
@@ -181,9 +184,10 @@ body{
 div .section-name{
     position:relative;
 }
+
 div .section-name:before{
     background: #48b71a;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009c49', endColorstr='#ffec00',GradientType=0 ); /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009c49', endColorstr='#ffec00', GradientType=0 ); /* IE6-9 */
     content: "";
     display: inline-block;
     height: 2px;
@@ -192,6 +196,7 @@ div .section-name:before{
     bottom: -14px;
     width: 35%;
  }
+
 .section-name:after{
     background: #48b71a;
     content: "";
@@ -202,16 +207,19 @@ div .section-name:before{
     left: 0;
     width: 35%;
 }
+
 svg {
     position: absolute;
     background-color: none;
 }
+
 .dotted-line {
     fill: none;
     stroke: #48b71a;
     stroke-width: 1.5px;
     marker: url(#circle-marker);
 }
+
 #circle-marker circle {
     fill: #48b71a;
 }
@@ -220,9 +228,11 @@ svg {
     border-right: 1px solid #48b71a;
     position: relative;
 }
+
 .descend-fears-section .fear-block a{
     color: #000000;
 }
+
 .descend-fears-section .fear-block .active{
     color: #949393;
 }
