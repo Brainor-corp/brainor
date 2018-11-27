@@ -1,0 +1,178 @@
+    .project-logo{
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 80px);
+    width: 160px;
+    height: auto;
+}
+
+/*.mocups-row div,*/
+/*.mocups-row {*/
+    /*display: inline-block;*/
+/*}*/
+
+.mocups-carousel img{
+    width: auto !important;
+    max-height: 400px;
+    max-width: 100%;
+    display: inline-block !important;
+}
+
+.mocups-container {
+    margin-bottom: -70px;
+}
+
+.mocups-row .mac{
+    left: calc(50% - 400px);
+}
+.mocups-row .ipad{
+    top: 303px;
+    left: calc(50% - 420px);
+}
+.mocups-row .iphone{
+    top: 403px;
+    left: calc(50% - 200px);
+}
+
+.mocups-row {
+    position: relative;
+    height: 700px;
+}
+
+.mocups-row .mac,
+.mocups-row .ipad,
+.mocups-row .iphone {
+    position: absolute;
+}
+
+.first-bg-item{
+    position: absolute;
+    width: 250px;
+    left:30px ;
+    top: -250px;
+    animation-name: floating-first;
+    -webkit-animation-name: floating-first;
+
+
+    animation-duration: 15.5s;
+    -webkit-animation-duration: 15.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes floating-first {
+    0% {
+        transform: translateY(10%) rotate(15deg);
+    }
+    25%{
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: translateY(-10%) rotate(-15deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: translateY(10%) rotate(15deg);
+    }
+}
+@-webkit-keyframes floating-first {
+
+    0% {
+        -webkit-transform: translateY(0%) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(20%) rotate(-150deg);
+    }
+    100% {
+        -webkit-transform: translateY(0%) rotate(0deg);
+    }
+}
+
+.second-bg-item{
+    position: absolute;
+    width: 270px;
+    right: 20px;
+    animation-name: floating-second;
+    -webkit-animation-name: floating-second;
+
+
+    animation-duration: 10.5s;
+    -webkit-animation-duration: 10.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes floating-second {
+    0% {
+        transform: translateY(0%) rotate(-95deg);
+    }
+    50% {
+        transform: translateY(40%) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0%) rotate(-95deg);
+    }
+}
+@-webkit-keyframes floating-second {
+
+    0% {
+        -webkit-transform: translateY(0%) rotate(5deg);
+    }
+    50% {
+        -webkit-transform: translateY(20%) rotate(-5deg);
+    }
+    100% {
+        -webkit-transform: translateY(0%) rotate(5deg);
+    }
+}
+
+.last-bg-item {
+    position: absolute;
+    width: 150px;
+    right: 30px;
+    top: 50px;
+    animation-name: floating-last;
+    -webkit-animation-name: floating-last;
+    animation-duration: 9.5s;
+    -webkit-animation-duration: 9.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes floating-last {
+    0% {
+        transform: translateY(0%) rotate(-15deg);
+    }
+    50% {
+        transform: translateY(40%) rotate(15deg);
+    }
+    100% {
+        transform: translateY(0%) rotate(-15deg);
+    }
+}
+@-webkit-keyframes floating-last {
+
+    0% {
+        -webkit-transform: translateY(0%) rotate(-15deg);
+    }
+    50% {
+        -webkit-transform: translateY(40%) rotate(15deg);
+    }
+    100% {
+        -webkit-transform: translateY(0%) rotate(-15deg);
+    }
+}
+
+
+/*.mocups-row .mac {*/
+    /*margin-left: -500px;*/
+/*}*/
+
+/*.mocups-row .ipad {*/
+    /*margin-left: -950px;*/
+/*}*/
+
+/*.mocups-row .iphone {*/
+    /*margin-left: -50px;*/
+/*}*/
