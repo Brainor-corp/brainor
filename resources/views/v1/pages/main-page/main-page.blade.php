@@ -15,7 +15,7 @@
     @include("v1.pages.main-page.fragments.technologies")
     @include("v1.pages.main-page.fragments.price-calculation")
     @include("v1.pages.main-page.fragments.descending-fears")
-    @include("v1.pages.main-page.fragments.start-now-banner")
+    @include("v1.partials.banners.start-now-banner")
 @endsection
 
 @section('footScripts')
