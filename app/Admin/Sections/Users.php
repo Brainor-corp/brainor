@@ -37,6 +37,9 @@ class Users extends Section
                 FormField::input('password', 'Пароль')
                     ->setRequired(true)
                     ->setType('password'),
+                FormField::input('repeat_password', 'Повторите пароль')
+                    ->setRequired(true)
+                    ->setType('password'),
             ]),
         ]);
 
@@ -58,6 +61,10 @@ class Users extends Section
 
     public function beforeSave(Request $request, $model = null)
     {
+        if($request->password !== $request->repeat_password){
+            throw  new \Exception("Пароли не совпадают, попытайтесь снова");
+        }
+
         $duplicate = User::where([['email', $request->email],['id', '!=', $request->id]])->first();
         if($duplicate){
             throw  new \Exception("Пользователь с таким адресом электронной почты уже зарегестрирован!");
