@@ -144,7 +144,7 @@
 
 @section('site-link')
     <div class="my-5">
-        <i class="fas fa-link"></i> <a href="http://assol34.ru" class="black-link text-uppercase">Ассоль</a>
+        <i class="fas fa-link"></i> <a href="http://assol34.ru" class="black-link text-uppercase" target="_blank">Ассоль</a>
     </div>
 @endsection
 
