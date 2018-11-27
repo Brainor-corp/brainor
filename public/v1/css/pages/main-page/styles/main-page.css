@@ -270,3 +270,7 @@ svg {
     right: 11px;
     line-height: 0.7;
 }
+
+.price-calculation-section .price-calculation-content .next:hover{
+    cursor: pointer;
+}
