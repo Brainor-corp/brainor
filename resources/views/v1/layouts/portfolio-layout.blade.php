@@ -19,6 +19,24 @@
 @include('v1.partials.headers.inside-pages-header')
 
 {{--Контент страницы--}}
+@yield('mocups')
+
+
+<div class="container-fluid technical-details mt-5">
+    <div class="container">
+        <div class="row align-items-center text-center my-5">
+
+            <div class="col-12">
+                <h1>
+                    Технические нюансы проекта
+                </h1>
+            </div>
+
+            @yield('project-details')
+
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row justify-content-center text-center mt-5">
         <div class="col-12 col-md-8">
@@ -40,37 +58,24 @@
     </div>
 </div>
 
+<div class="container col-12">
+    @yield('anim-images-bg')
+</div>
+
 <div class="container">
     <div class="row justify-content-center text-center my-5">
         <div class="col-12">
             <h1>
-                Дизайн
+                @yield('design')
             </h1>
         </div>
         <div class="col-5 my-5 text-center">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, obcaecati.</span>
+            <span>@yield('design-description')</span>
         </div>
     </div>
 </div>
 
-@yield('mocups')
 
-
-<div class="container-fluid technical-details mt-5">
-    <div class="container">
-        <div class="row align-items-center text-center my-5">
-
-            <div class="col-12">
-                <h1>
-                    Технические нюансы проекта
-                </h1>
-            </div>
-
-            @yield('project-details')
-
-        </div>
-    </div>
-</div>
 <div class="container-fluid project-functionality pt-5">
     <div class="container text-center">
         <h1 class="text-uppercase">
