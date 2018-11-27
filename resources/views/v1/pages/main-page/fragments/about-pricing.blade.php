@@ -61,7 +61,7 @@
         </div>
     </div>
     <div class="d-flex cards-container justify-content-between flex-wrap my-5 text-center mt-5">
-        <div class="col-lg-3 align-self-center col-md-6 col-12 my-lg-0 my-2 bl-box">
+        <div class="col-lg-3 align-self-center col-md-6 col-12 my-lg-0 my-2">
             <div class="row text-left my-2 mr-3 mr-md-0">
                 <i class="bl-box-icon align-self-center fas col-3 fa-3x fa-money-bill-alt"></i>
                 <div class="col-9">
