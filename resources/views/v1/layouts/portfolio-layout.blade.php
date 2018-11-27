@@ -107,11 +107,12 @@
             <div class="col-12 mt-5">
                 <h1>ПЛАНИРУЕТЕ ЗАПУСТИТЬ ПОДОБНЫЙ ПРОЕКТ?</h1>
                 <h4>Давайте обсудим возможное сотрудничество</h4>
-                <button class="hvr-bounce-to-bottom btn mt-5">Предложить проект</button>
+                <button class="hvr-bounce-to-bottom btn mt-5 bg-transparent">Предложить проект</button>
             </div>
         </div>
     </div>
 </div>
+
 
 {{--Подвал--}}
 @include('v1.foot.footer')

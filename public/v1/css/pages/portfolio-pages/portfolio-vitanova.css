@@ -92,7 +92,7 @@
 
 .second-bg-item{
     position: absolute;
-    width: 150px;
+    width: 180px;
     right: 80px;
     animation-name: floating-second;
     -webkit-animation-name: floating-second;
