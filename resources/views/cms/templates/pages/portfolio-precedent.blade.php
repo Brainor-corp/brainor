@@ -18,6 +18,13 @@
 @endsection
 
 
+@section('anim-images-bg')
+    <img src="{{asset('img/portfolios/precedent/partials-bg/vesy.png')}}" alt="" class="img-fluid first-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/precedent/partials-bg/molot_top.png')}}" alt="" class="img-fluid second-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/precedent/partials-bg/molot_bottom.png')}}" alt="" class="img-fluid last-bg-item floating-portfolio-bg">
+@endsection
+
+
 @section('project-name')
     Lorem ipsum dolor sit.
 @endsection
@@ -28,11 +35,17 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 @endsection
 
+@section('design')
+    Дизайн
+@endsection
 
+@section('design-description')
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, obcaecati.
+@endsection
 
 @section('project-details')
     <div class="col-12 col-md-4 mt-5">
-        <img src="{{asset('img/works/logo-precedent.png')}}" alt="" class="details-picture my-3">
+        <img src="{{asset('img/works/laravel.png')}}" alt="" class="details-picture my-3">
     </div>
 
     <div class="col-12 col-md-4 mt-5">
@@ -123,7 +136,7 @@
 
 @section('site-link')
     <div class="my-5">
-        <i class="fas fa-link"></i> <a href="http://precedent34.ru" class="text-uppercase">precedent</a>
+        <i class="fas fa-link"></i> <a href="http://precedent34.ru" class="text-uppercase black-link">precedent</a>
     </div>
 @endsection
 
