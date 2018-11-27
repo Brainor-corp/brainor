@@ -245,3 +245,28 @@ svg {
     right: -9px;
     line-height: 0.7;
 }
+
+.price-calculation-section .price-calculation-steps-row{
+    border-bottom: 1px solid #48b71a;
+}
+
+.price-calculation-section .price-calculation-steps-row .steps{
+    position: relative;
+}
+
+.price-calculation-section .price-calculation-steps-row .past:hover{
+    cursor: pointer;
+}
+.price-calculation-section .price-calculation-steps-row .past{
+    color: #48b71a;
+}
+
+.price-calculation-section .price-calculation-steps-row .active::after{
+    content: "•";
+    color: #48b71a;
+    font-size: 3rem;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    line-height: 0.7;
+}

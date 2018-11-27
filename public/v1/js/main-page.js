@@ -15,4 +15,8 @@ $(document).ready(function () {
 
     var typed = new Typed("#dynamic_changed_text", options);
 
+    $('.past').on('click', function () {
+        $('.price-calculation-steps-row').find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
 });
