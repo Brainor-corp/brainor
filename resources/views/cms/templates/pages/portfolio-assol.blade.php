@@ -19,8 +19,10 @@
 
 
 @section('anim-images-bg')
-    <img src="{{asset('img/portfolios/assol/partials-bg/zajim.png')}}" alt="" class="img-fluid first-bg-item floating-portfolio-bg">
-    <img src="{{asset('img/portfolios/assol/partials-bg/scalpel.png')}}" alt="" class="img-fluid second-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/assol/partials-bg/zajim.png')}}" alt=""
+         class="img-fluid first-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/assol/partials-bg/scalpel.png')}}" alt=""
+         class="img-fluid second-bg-item floating-portfolio-bg">
 @endsection
 
 
@@ -43,7 +45,14 @@
 @endsection
 
 @section('project-details')
-    <div class="col-12 col-md-4 mt-5">
+    <div class="col-12 col-md-4 mt-5 holder">
+        <div class="block">
+            <h2>WordPress</h2>
+            Система управления содержимым сайта с открытым исходным кодом.
+            Сфера применения — от блогов до достаточно сложных
+            новостных ресурсов и интернет-магазинов. Встроенная система вместе с удачной архитектурой
+            позволяет конструировать проекты широкой функциональной сложности.
+        </div>
         <img src="{{asset('img/works/wordpress.png')}}" alt="" class="details-picture my-3">
     </div>
 
@@ -177,17 +186,17 @@
         </div>
     </div>
     {{--<div class="mocups-container text-center d-none d-lg-block">--}}
-        {{--<div class="mocups-row">--}}
-            {{--<div class="mac">--}}
-                {{--@include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/precedent/full-height-main.png')])--}}
-            {{--</div>--}}
-            {{--<div class="ipad">--}}
-                {{--@include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/precedent/full-main-ipad.png')])--}}
-            {{--</div>--}}
-            {{--<div class="iphone">--}}
-                {{--@include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/precedent/full-main-iphone.png')])--}}
-            {{--</div>--}}
-        {{--</div>--}}
+    {{--<div class="mocups-row">--}}
+    {{--<div class="mac">--}}
+    {{--@include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/precedent/full-height-main.png')])--}}
+    {{--</div>--}}
+    {{--<div class="ipad">--}}
+    {{--@include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/precedent/full-main-ipad.png')])--}}
+    {{--</div>--}}
+    {{--<div class="iphone">--}}
+    {{--@include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/precedent/full-main-iphone.png')])--}}
+    {{--</div>--}}
+    {{--</div>--}}
     {{--</div>--}}
 @endsection
 
