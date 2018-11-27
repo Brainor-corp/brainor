@@ -1,4 +1,4 @@
-<div class="container-fluid top-form p-xl-5 p-0">
+<div class="container-fluid top-form p-lg-5 p-3">
     <div class="row">
         <div class="col-12 col-lg-5">
             <h1 class="text-center text-lg-left text-uppercase">Комплексные решения по разработке <br> <span id="dynamic_changed_text"></span></h1>
