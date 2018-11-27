@@ -18,3 +18,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/ReportGenerate', ['uses' => 'ReportGeneratorController@generateReport'])->name("generateReport");
     Route::post('/SitemapGenerate', ['uses' => 'GeneratorController@generateSitemap'])->name("generateSitemap");
 });
+
+Auth::routes();
+
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
