@@ -69,9 +69,4 @@ class Users extends Section
         $model->password = Hash::make($request->password);
         $model->save();
     }
-
-//    public function isCreatable()
-//    {
-//        return false;
-//    }
 }
