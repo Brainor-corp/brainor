@@ -265,6 +265,13 @@ svg {
     cursor: pointer;
 }
 
-.price-calculation-section .checked{
+
+.price-calculation-section .checked,
+.price-calculation-content div:hover{
     border-bottom: 2px solid #48b71a;
 }
+
+.price-calculation-content div{
+    border-bottom: 2px solid transparent;
+}
+
