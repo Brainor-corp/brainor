@@ -1,0 +1,14 @@
+.start-now-banner .start-now-text{
+    font-size: 2.3rem;
+    font-weight: lighter;
+}
+
+.start-now-banner .btn a{
+    max-width: 300px;
+    color: black;
+    text-decoration: none !important;
+}
+
+.start-now-banner .btn:hover a{
+    color: white;
+}
