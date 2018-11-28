@@ -12,11 +12,17 @@
     box-shadow: none;
     outline: none;
 }
+
 .w-270px{
     width: 270px;
 }
+
 .green-block{
     border: 2px solid #48b71a;
+}
+
+.text-green{
+    color: #48b71a;
 }
 
 .green-link{
