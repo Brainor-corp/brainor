@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="{{asset('v1/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('v1/plugins/OwlCarousel2/dist/assets/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('v1/css/partials/start-now-banner.css')}}">
     @yield('styles')
     @yield('headScripts')
 
@@ -112,6 +113,8 @@
         </div>
     </div>
 </div>
+
+@include('v1.partials.banners.start-now-banner')
 
 
 {{--Подвал--}}
