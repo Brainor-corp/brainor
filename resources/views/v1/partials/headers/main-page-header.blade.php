@@ -2,9 +2,9 @@
 
         <img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics bg-pic-flower">
         <img src="{{asset('img/bg/keyboard.png')}}" alt="" class="bg-pics bg-pic-keyboard">
-        <img src="{{asset('img/bg/notebook.png')}}" alt="" class="bg-pics floating bg-pic-notebook">
-        <img src="{{asset('img/bg/pen.png')}}" alt="" class="bg-pics tossing bg-pic-pen">
-        <img src="{{asset('img/bg/mouse.png')}}" alt="" class="bg-pics floating-lr bg-pic-mouse">
+        <img src="{{asset('img/bg/notebook.png')}}" alt="" class="bg-pics bg-pic-notebook">
+        <img src="{{asset('img/bg/pen.png')}}" alt="" class="bg-pics bg-pic-pen">
+        <img src="{{asset('img/bg/mouse.png')}}" alt="" class="bg-pics bg-pic-mouse">
     <div class="w-100 h-100 blur-block">
         <img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics bg-pic-flower">
         <img src="{{asset('img/bg/keyboard.png')}}" alt="" class="bg-pics bg-pic-keyboard">

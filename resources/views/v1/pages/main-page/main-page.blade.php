@@ -3,6 +3,7 @@
 @section('styles')
     <link href="{{ asset("v1/css/pages/main-page/styles/main-page.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/main-page/media/main-page-media.css") }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('v1/css/partials/start-now-banner.css')}}">
 @endsection
 
 @section('headScripts')
