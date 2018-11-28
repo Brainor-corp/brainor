@@ -61,7 +61,6 @@ class ReportGeneratorController extends Controller
                     $vals['projects'][$project_name]['tasks'][$c]['date'] = date('d.m.Y', strtotime($col['D']));
                     $vals['projects'][$project_name]['tasks'][$c]['minutes'] = $col['E'];
                     $vals['projects'][$project_name]['tasks'][$c]['description'] = $col['F'];
-                    $vals['projects'][$project_name]['tasks'][$c]['check'] = $col['G'];
                     $c++;
                 }
                 else {
@@ -69,7 +68,6 @@ class ReportGeneratorController extends Controller
                         $vals['projects'][$project_name]['tasks'][$c]['date'] = date('d.m.Y', strtotime($col['D']));
                         $vals['projects'][$project_name]['tasks'][$c]['minutes'] = $col['E'];
                         $vals['projects'][$project_name]['tasks'][$c]['description'] = $col['F'];
-                        $vals['projects'][$project_name]['tasks'][$c]['check'] = $col['G'];
                         $c++;
                     }
                 }
@@ -109,9 +107,9 @@ class ReportGeneratorController extends Controller
             $TBS->Show(OPENTBS_FILE, storage_path('app/uploads/') . $doc_title);
         }
 
-        $phar = new \PharData(storage_path('app/uploads/') . 'Отчеты ' . date("d.m.Y") . '.tar');
+        $phar = new \PharData(storage_path('app/uploads/') . 'Отчеты ' . date("d.m.Y") . '.tar.gz');
         $phar->buildFromDirectory(storage_path('app/uploads/'), '/\.docx$/');
 
-        return response()->download(storage_path('app/uploads/') .'Отчеты ' . date("d.m.Y") . '.tar');
+        return response()->download(storage_path('app/uploads/') .'Отчеты ' . date("d.m.Y") . '.tar.gz');
     }
 }
