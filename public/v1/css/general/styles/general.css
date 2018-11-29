@@ -30,17 +30,13 @@
 .work-description{
     position: absolute;
     text-align: center;
-    bottom: 20px;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
     color: #000000;
-    text-shadow:
-            -0   -1px 20px rgba(255, 255, 255, 0.8),
-             0   -1px 20px rgba(255, 255, 255, 0.8),
-            -0    1px 20px rgba(255, 255, 255, 0.8),
-             0    1px 20px rgba(255, 255, 255, 0.8),
-            -1px -0   20px rgba(255, 255, 255, 0.8),
-             1px -0   20px rgba(255, 255, 255, 0.8),
-            -1px  0   20px rgba(255, 255, 255, 0.8),
-             1px  0   20px rgba(255, 255, 255, 0.8)
+    background: rgba(235,235,235,0.5);
+    width: 75%;
 }
 
 .black-link{
@@ -352,4 +348,11 @@ footer {
     top: 0;
     left: 0;
     width: 2px;
+}
+
+.our-clients-section .work-logo {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100px;
 }
