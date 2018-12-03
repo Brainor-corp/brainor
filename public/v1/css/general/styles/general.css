@@ -368,3 +368,16 @@ footer {
     max-width: 100%;
     max-height: 100px;
 }
+#toTop {
+    background-image: url("../../../../img/scroll.png");
+    width: 50px;
+    height: 50px;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+    z-index: 500;
+}
