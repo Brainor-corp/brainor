@@ -139,7 +139,7 @@
 
 @section('site-link')
     <div class="my-5">
-        <i class="fas fa-link"></i> <a href="http://precedent34.ru" class="text-uppercase black-link">precedent</a>
+        <i class="fas fa-link"></i> <a href="http://precedent34.ru" class="text-uppercase black-link" target="_blank">precedent</a>
     </div>
 @endsection
 

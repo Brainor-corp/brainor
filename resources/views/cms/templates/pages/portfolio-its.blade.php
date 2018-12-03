@@ -143,7 +143,7 @@
 
 @section('site-link')
     <div class="my-5">
-        <i class="fas fa-link"></i> <a href="http://itservis1c.ru" class="black-link text-uppercase">ИнформТехСервис</a>
+        <i class="fas fa-link"></i> <a href="http://itservis1c.ru" class="black-link text-uppercase" target="_blank">ИнформТехСервис</a>
     </div>
 @endsection
 

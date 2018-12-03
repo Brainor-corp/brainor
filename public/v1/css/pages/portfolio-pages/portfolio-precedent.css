@@ -1,7 +1,7 @@
 .project-logo{
     position: absolute;
-    top: -20px;
-    left: calc(50% - 105px);
+    top: 15px;
+    left: calc(50% - 108px);
     width: 200px;
     height: auto;
 }
@@ -47,8 +47,8 @@
 
 .first-bg-item{
     position: absolute;
-    width: 250px;
-    left:30px ;
+    width: 210px;
+    left:0px ;
     top: -250px;
     animation-name: floating-first;
     -webkit-animation-name: floating-first;

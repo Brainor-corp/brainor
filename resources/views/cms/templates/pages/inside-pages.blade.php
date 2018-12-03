@@ -36,7 +36,8 @@
         <div class="my-5">
             <div class="align-items-start">
                 <div class="text-justify my-5">
-                    <h3>"{!! $page->description !!}"</h3>
+                    <h1>{!! $page->title !!}</h1>
+                    <h3>{!! $page->description !!}</h3>
                 </div>
                 <div class="text-justify">
                     {!! $page->content !!}

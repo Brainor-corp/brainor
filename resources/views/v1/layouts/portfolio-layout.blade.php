@@ -20,7 +20,9 @@
 @include('v1.partials.headers.inside-pages-header')
 
 {{--Контент страницы--}}
-@yield('mocups')
+<div class="mt-5">
+    @yield('mocups')
+</div>
 
 
 <div class="container-fluid technical-details mt-5">
@@ -59,8 +61,10 @@
     </div>
 </div>
 
-<div class="container col-12">
-    @yield('anim-images-bg')
+<div class="container-fluid">
+    <div class="col-auto d-xl-block d-none">
+        @yield('anim-images-bg')
+    </div>
 </div>
 
 <div class="container">
