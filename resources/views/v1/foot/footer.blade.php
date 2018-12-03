@@ -17,7 +17,7 @@
                    @foreach($servises as $servise)
 
                            <a class="black-link" href="{{$servise->url}}">
-                               <h3> {{ $servise->title }}</h3>
+                               <p class="mb-0">{{ $servise->title }}</p>
                            </a>
 
                     @endforeach

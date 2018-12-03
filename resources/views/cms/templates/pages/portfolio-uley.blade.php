@@ -1,7 +1,7 @@
 <?php
 /**
  * class: BRPageTemplate
- * title: Шаблон страницы "Мам34"
+ * title: Шаблон страницы "улей"
  */
 ?>
 
@@ -12,26 +12,26 @@
     <link href="{{ asset("v1/css/pages/inside-pages/media/inside-pages-media.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/portfolio-pages/general.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/portfolio-pages/mocups.css") }}" rel="stylesheet">
-    <link href="{{ asset("v1/css/pages/portfolio-pages/portfolio-vitanova.css") }}" rel="stylesheet">
-    <link href="{{ asset("v1/css/pages/portfolio-pages/portfolio-mam34.css") }}" rel="stylesheet">
+    <link href="{{ asset("v1/css/pages/portfolio-pages/portfolio-uley.css") }}" rel="stylesheet">
+    <link href="{{ asset("v1/css/pages/portfolio-pages/portfolio-media.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/portfolio-pages/mocup-media.css") }}" rel="stylesheet">
 @endsection
 
 
 @section('anim-images-bg')
-    <img src="{{asset('img/portfolios/mam34/partials-bg/toy1.png')}}" alt="" class="img-fluid first-bg-item floating-portfolio-bg">
-    <img src="{{asset('img/portfolios/mam34/partials-bg/toy2.png')}}" alt="" class="img-fluid second-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/uley/partials-bg/count1.png')}}" alt="" class="img-fluid first-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/uley/partials-bg/count2.png')}}" alt="" class="img-fluid second-bg-item floating-portfolio-bg">
 @endsection
 
 
 @section('project-name')
-    ИнстаМамы – сайт сообщества инстамам Волгограда и Волжского.
+    Lorem ipsum dolor sit.
 @endsection
 @section('project-logo')
-    <img src="{{asset('img/works/logo-mam34.png')}}" alt="" class="project-logo">
+    <img src="{{asset('img/works/logo-uley.png')}}" alt="" class="project-logo">
 @endsection
 @section('project-task')
-    Разработка сайта сообщества и оптимизация под поисковое продвижение.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 @endsection
 
 @section('design')
@@ -39,7 +39,7 @@
 @endsection
 
 @section('design-description')
-    Перед нами была поставлена задача разработать удобный сайт с пожеланий заказчика и потребностей целевой аудитории.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, obcaecati.
 @endsection
 
 @section('project-details')
@@ -56,14 +56,14 @@
 
     <div class="col-12 col-md-4">
         <h1 class="details-number">
-            100+
+            220+
         </h1>
-        <span><b>часов разработки</b></span>
+        <span><b>страниц дизайна</b></span>
     </div>
 
     <div class="col-12 col-md-4">
         <h1 class="details-number">
-            10+
+            220+
         </h1>
         <span><b>страниц дизайна</b></span>
     </div>
@@ -73,63 +73,76 @@
     <div class="col-12 col-md-4 text-left">
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка технического задания</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка вариантов дизайна</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка 10+ прототипов </div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Адаптивная верстка в сетке Bootstrap v4</div>
+            <div class="col">Lorem</div>
+        </div>
+        <div class="my-4 row">
+            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+            <div class="col">Lorem</div>
         </div>
     </div>
     <div class="col-12 col-md-4 text-left">
 
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Раздел для статей</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">E-mail рассылка</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Поиск по сайту</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Система управления контентом</div>
+            <div class="col">Lorem</div>
+        </div>
+        <div class="my-4 row">
+            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+            <div class="col">Lorem</div>
         </div>
     </div>
     <div class="col-12 col-md-4 text-left">
+
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Мобильная адаптация сайта</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Контактные формы</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Запись на обучение</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Поисковая оптимизация сайта</div>
+            <div class="col">Lorem</div>
+        </div>
+        <div class="my-4 row">
+            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+            <div class="col">Lorem</div>
         </div>
     </div>
 @endsection
 
 @section('site-link')
     <div class="my-5">
-        <i class="fas fa-link"></i> <a href="http://mam34.ru" class="text-uppercase black-link" target="_blank">Insta Мамы Волгограда</a>
+        <i class="fas fa-link"></i> <a href="http://uleykf.ru" class="text-uppercase black-link" target="_blank">Улей</a>
     </div>
 @endsection
 
@@ -140,13 +153,13 @@
             <div class="col-12">
                 <div class="mocups-row">
                     <div class="mac">
-                        @include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/mam34/full-height-main.png')])
+                        @include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/uley/full-height-main.png')])
                     </div>
                     <div class="ipad">
-                        @include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/mam34/full-main-ipad.png')])
+                        @include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/uley/full-main-ipad.png')])
                     </div>
                     <div class="iphone">
-                        @include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/mam34/full-main-iphone.png')])
+                        @include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/uley/full-main-iphone.png')])
                     </div>
                 </div>
             </div>
@@ -158,13 +171,13 @@
             <div class="col-12">
                 <div class="owl-carousel owl-theme mocups-carousel">
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/mam34/full-mac.png')}}" alt="">
+                        <img src="{{asset('img/portfolios/uley/full-mac.png')}}" alt="">
                     </div>
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/mam34/full-ipad.png')}}" alt="">
+                        <img src="{{asset('img/portfolios/uley/full-ipad.png')}}" alt="">
                     </div>
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/mam34/full-iphone.png')}}" alt="">
+                        <img src="{{asset('img/portfolios/uley/full-iphone.png')}}" alt="">
                     </div>
                 </div>
             </div>
