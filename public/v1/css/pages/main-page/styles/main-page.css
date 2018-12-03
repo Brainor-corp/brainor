@@ -256,8 +256,8 @@ svg {
     color: #48b71a;
     font-size: 3rem;
     position: absolute;
-    top: 8px;
-    right: 11px;
+    top: 10px;
+    left: calc(50% - 8px);
     line-height: 0.7;
 }
 
@@ -277,6 +277,9 @@ svg {
 
 /* Switch 1 Specific Styles Start */
 
+.price-calculation-content .picture-next{
+    height: 160px;
+}
 
 .checkbox{
     margin:20px;
