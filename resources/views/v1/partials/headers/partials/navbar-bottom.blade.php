@@ -1,17 +1,17 @@
 <div class="row align-items-center mb-3">
     <div class="col-xl-7 col-12">
-        <ul class="navbar-nav navbar mb-2 py-xl-0">
+        <ul class="navbar-nav navbar mb-2 py-xl-0 px-0">
             <li class="nav-item">
-                <a class="nav-link black-link py-xl-0" href="#"><b>Услуги</b></a>
+                <a class="nav-link black-link py-xl-0" href="/servises"><b>Услуги</b></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link black-link py-xl-0" href="#"><b>Технологии</b></a>
+                <a class="nav-link black-link py-xl-0" href="/technologies"><b>Технологии</b></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link black-link py-xl-0" href="/portfolio"><b>Портфолио</b></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link black-link py-xl-0" href="#"><b>Компания</b></a>
+                <a class="nav-link black-link py-xl-0" href="/about-company"><b>Компания</b></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link black-link py-xl-0" href="/contacts"><b>Контакты</b></a>

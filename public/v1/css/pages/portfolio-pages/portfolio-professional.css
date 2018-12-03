@@ -1,7 +1,7 @@
 .project-logo{
     position: absolute;
-    top: -5px;
-    left: calc(50% - 100px);
+    top: 20px;
+    left: calc(50% - 97px);
     width: 200px;
     height: auto;
 }
@@ -94,7 +94,7 @@
 .second-bg-item{
     position: absolute;
     width: 220px;
-    right: 40px;
+    right: 0px;
     top: -150px;
     animation-name: floating-second;
     -webkit-animation-name: floating-second;
@@ -108,13 +108,13 @@
 }
 @keyframes floating-second {
     0% {
-        transform: translateY(0%) rotate(5deg);
+        transform: translateY(0%) rotate(90deg);
     }
     50% {
-        transform: translateY(40%) rotate(-5deg);
+        transform: translateY(40%) rotate(50deg);
     }
     100% {
-        transform: translateY(0%) rotate(5deg);
+        transform: translateY(0%) rotate(90deg);
     }
 }
 @-webkit-keyframes floating-second {

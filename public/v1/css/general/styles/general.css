@@ -38,6 +38,12 @@
     background: rgba(235,235,235,0.5);
     width: 75%;
 }
+.technology-img{
+    width: auto;
+    height: auto;
+    max-width: 75px;
+    max-height: 75px;
+}
 
 .black-link{
     color: #000!important;

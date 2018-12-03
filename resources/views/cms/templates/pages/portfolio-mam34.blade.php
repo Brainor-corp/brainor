@@ -19,8 +19,8 @@
 
 
 @section('anim-images-bg')
-    <img src="{{asset('img/portfolios/mam34/partials-bg/mikro.png')}}" alt="" class="img-fluid first-bg-item floating-portfolio-bg">
-    <img src="{{asset('img/portfolios/mam34/partials-bg/steto.png')}}" alt="" class="img-fluid second-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/mam34/partials-bg/toy1.png')}}" alt="" class="img-fluid first-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/mam34/partials-bg/toy2.png')}}" alt="" class="img-fluid second-bg-item floating-portfolio-bg">
 @endsection
 
 

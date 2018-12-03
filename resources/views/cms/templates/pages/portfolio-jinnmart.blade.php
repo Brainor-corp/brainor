@@ -19,8 +19,8 @@
 
 
 @section('anim-images-bg')
-    <img src="{{asset('img/portfolios/vitanova/partials-bg/mikro.png')}}" alt="" class="img-fluid first-bg-item floating-portfolio-bg">
-    <img src="{{asset('img/portfolios/vitanova/partials-bg/steto.png')}}" alt="" class="img-fluid second-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/jinnmart/partials-bg/shop.png')}}" alt="" class="img-fluid first-bg-item floating-portfolio-bg">
+    <img src="{{asset('img/portfolios/jinnmart/partials-bg/cart.png')}}" alt="" class="img-fluid second-bg-item floating-portfolio-bg">
 @endsection
 
 
@@ -45,13 +45,10 @@
 @section('project-details')
     <div class="col-12 col-md-4 mt-5 holder">
         <div class="block">
-            <h2>WordPress</h2>
-            Система управления содержимым сайта с открытым исходным кодом.
-            Сфера применения — от блогов до достаточно сложных
-            новостных ресурсов и интернет-магазинов. Встроенная система вместе с удачной архитектурой
-            позволяет конструировать проекты широкой функциональной сложности.
+            <h2>Laravel</h2>
+            веб-фреймворк с открытым кодом, предназначенный для разработки с использованием архитектурной модели MVC. Выпущен под лицензией MIT.
         </div>
-        <img src="{{asset('img/works/wordpress.png')}}" alt="" class="details-picture my-3">
+        <img src="{{asset('img/works/laravel.png')}}" alt="" class="details-picture my-3">
     </div>
 
     <div class="col-12 col-md-4 mt-5">

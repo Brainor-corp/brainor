@@ -1,8 +1,8 @@
 .project-logo{
     position: absolute;
-    top: -5px;
-    left: calc(50% - 100px);
-    width: 200px;
+    top: 15px;
+    left: calc(50% - 125px);
+    width: 250px;
     height: auto;
 }
 
