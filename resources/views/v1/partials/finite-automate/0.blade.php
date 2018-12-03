@@ -1,5 +1,5 @@
 <div class="price-calculation-steps-row mb-5 row justify-content-around">
-    <div class="steps px-0 col-auto"><span id="step1" class="active past">Шаг 1</span></div>
+    <div class="steps px-0 col-auto"><span id="step1" class="active past">Тип продукта</span></div>
 </div>
 <div class=" mt-5 row justify-content-around">
     <div id="choice1" class="my-4 my-md-0 col-md-4 col-12 next text-center align-self-center" data-price="0">
