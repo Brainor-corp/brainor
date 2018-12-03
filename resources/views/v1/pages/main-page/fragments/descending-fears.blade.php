@@ -28,8 +28,8 @@
                     @php($i++)
                 @endforeach
             </div>
-            <div class="row px-3">
-                <button class="btn hvr-bounce-to-bottom green-btn col-12 col-md-6">Просчитать стоимость проекта</button>
+            <div class="row px-3" id="price-btn-fears">
+                <a href="#price-form" class="btn hvr-bounce-to-bottom green-btn col-12 col-md-6">Просчитать стоимость проекта</a>
             </div>
         </div>
     </div>
