@@ -43,7 +43,7 @@
 @endsection
 
 @section('project-details')
-    <div class="col-12 col-md-4 mt-5 holder">
+    <div class="col-12 col-md-4 holder">
         <div class="block">
             <h2>WordPress</h2>
             Система управления содержимым сайта с открытым исходным кодом.
@@ -51,17 +51,17 @@
             новостных ресурсов и интернет-магазинов. Встроенная система вместе с удачной архитектурой
             позволяет конструировать проекты широкой функциональной сложности.
         </div>
-        <img src="{{asset('img/works/wordpress.png')}}" alt="" class="details-picture my-3">
+        <img src="{{asset('img/works/wordpress.png')}}" alt="" class="details-picture w-50">
     </div>
 
-    <div class="col-12 col-md-4 mt-5">
+    <div class="col-12 col-md-4">
         <h1 class="details-number">
             220+
         </h1>
         <span><b>страниц дизайна</b></span>
     </div>
 
-    <div class="col-12 col-md-4 mt-5">
+    <div class="col-12 col-md-4">
         <h1 class="details-number">
             220+
         </h1>
@@ -70,72 +70,72 @@
 @endsection
 
 @section('project-functionality')
-    <div class="col-12 col-md-4 text-center">
+    <div class="col-12 col-md-4 text-left">
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
     </div>
-    <div class="col-12 col-md-4 text-center">
+    <div class="col-12 col-md-4 text-left">
 
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
     </div>
-    <div class="col-12 col-md-4 text-center">
+    <div class="col-12 col-md-4 text-left">
 
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Lorem</div>
         </div>
     </div>
 @endsection
