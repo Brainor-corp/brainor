@@ -153,17 +153,10 @@ body{
 
 }
 
-.our-clients-section .work-logo{
-    height: auto;
-    width: auto;
-}
-
-.technology-section .technology-img{
-    width: auto;
-    height: auto;
-    max-width: 75px;
-    max-height: 75px;
-}
+/*.our-clients-section .work-logo{*/
+    /*height: auto;*/
+    /*width: auto;*/
+/*}*/
 
 /*.section-name{*/
     /*border-bottom: 1px solid;*/

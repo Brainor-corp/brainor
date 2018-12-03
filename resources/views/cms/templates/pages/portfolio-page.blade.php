@@ -32,7 +32,7 @@
                             <p>
                                 {!! html_entity_decode($page->content) !!}
                             </p>
-                           <div class="col-12">
+                           <div class="row our-clients-section">
                                @php
                                    $dateFrom = app('request')->input('filterDateFrom');
                                    $dateTo = app('request')->input('filterDateTo');
@@ -47,19 +47,25 @@
                                    ->when(isset($dateTo), function ($query) use ($dateTo){
                                        return $query->where('published_at', '<=', date('Y-m-d', strtotime($dateTo. ' + 1 days')));
                                    })
-                                   ->paginate(3);
+                                   ->paginate(6);
                                @endphp
                                @foreach($works as $work)
-                                   <div class="our-clients-img col-12 p-3 w-100" style="background-image: url({{'../../../../../img/works/' . $work->slug . '.png'}})">
+                                   <div class="our-clients-img col-12 col-md-6 p-3 w-100" style="background-image: url({{'../../../../../img/works/' . $work->slug . '.png'}})">
                                        <a href="{{$work->url}}">
                                            <div class="our-clients-img-blur"></div>
                                            <div class="our-clients-img-inner">
-                                                   <div class="row text-center h-100">
-                                                       <div class="col-12 align-self-center"><img class="img-fluid work-logo" src="{{asset('img/works/logo-' . $work->slug . '.png')}}" alt=""></div>
-                                                       @if(isset($work->description))<div class="col-12 align-self-center green-hover-link work-description w-100"><h4 class="my-2">{{$work->description}}</h4></div>@endif
+                                               <div class="row text-center h-100">
+                                                   <div class="col-12 align-self-center px-5">
+                                                       <img class="work-logo" src="{{asset('img/works/logo-' . $work->slug . '.png')}}" alt="">
                                                    </div>
+                                                   @if(isset($work->description))
+                                                       <div class="col-12 align-self-center green-hover-link work-description">
+                                                           <h4 class="my-2">{{$work->description}}
+                                                           </h4>
+                                                       </div>
+                                                   @endif
+                                               </div>
                                            </div>
-
                                        </a>
                                    </div>
                                @endforeach
