@@ -25,13 +25,13 @@
 
 
 @section('project-name')
-    Lorem ipsum dolor sit.
+    Профессионал – сайт клиники врачебной косметологии.
 @endsection
 @section('project-logo')
     <img src="{{asset('img/works/logo-professional.png')}}" alt="" class="project-logo">
 @endsection
 @section('project-task')
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Разработка сайта-каталога клиники и оптимизация под поисковое продвижение.
 @endsection
 
 @section('design')
@@ -39,11 +39,11 @@
 @endsection
 
 @section('design-description')
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, obcaecati.
+    Перед нами была поставлена задача разработать удобный сайт с пожеланий заказчика и потребностей целевой аудитории.
 @endsection
 
 @section('project-details')
-    <div class="col-12 col-md-4 mt-5 holder">
+    <div class="col-12 col-md-4 holder">
         <div class="block">
             <h2>WordPress</h2>
             Система управления содержимым сайта с открытым исходным кодом.
@@ -51,91 +51,94 @@
             новостных ресурсов и интернет-магазинов. Встроенная система вместе с удачной архитектурой
             позволяет конструировать проекты широкой функциональной сложности.
         </div>
-        <img src="{{asset('img/works/wordpress.png')}}" alt="" class="details-picture my-3">
+        <img src="{{asset('img/works/wordpress.png')}}" alt="" class="details-picture w-50">
     </div>
 
-    <div class="col-12 col-md-4 mt-5">
+    <div class="col-12 col-md-4">
         <h1 class="details-number">
-            220+
+            150+
         </h1>
-        <span><b>страниц дизайна</b></span>
+        <span><b>часов разработки</b></span>
     </div>
 
-    <div class="col-12 col-md-4 mt-5">
+    <div class="col-12 col-md-4">
         <h1 class="details-number">
-            220+
+            10+
         </h1>
         <span><b>страниц дизайна</b></span>
     </div>
 @endsection
 
 @section('project-functionality')
-    <div class="col-12 col-md-4 text-center">
+    <div class="col-12 col-md-4 text-left">
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Разработка технического задания</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Разработка вариантов дизайна</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Разработка 10+ прототипов </div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Адаптивная верстка в сетке Bootstrap v4</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Мобильная адаптация сайта</div>
         </div>
     </div>
-    <div class="col-12 col-md-4 text-center">
+    <div class="col-12 col-md-4 text-left">
 
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Каталог услуг</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Раздел для статей</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Поиск по сайту</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Поиск по сайту</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Контактные формы</div>
         </div>
     </div>
-    <div class="col-12 col-md-4 text-center">
-
+    <div class="col-12 col-md-4 text-left">
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="col">Запись на прием к специалистам</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Отзывы</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Видео-галерея</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Поисковая оптимизация сайта</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem ipsum dolor sit amet.</div>
+            <div class="col">Онлайн прайс-лист</div>
+        </div>
+        <div class="my-4 row">
+            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+            <div class="col">Виджет обратного звонка и чатов</div>
         </div>
     </div>
 @endsection

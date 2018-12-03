@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row justify-content-around text-md-center text-left">
            <div class="col-md-6 col-12 border-pricing d-flex px-md-0 p-md-2 p-4">
-               <div class="col-lg-10 col-9 text-right my-auto">Знакомство с проектом и подготовка пробного бесплатного прототипа</div>
+               <div class="col-lg-10 col-9 text-right my-auto">Знакомство с проектом и подготовка <b>пробного бесплатного прототипа</b></div>
                <div class="col-3 col-lg-2 my-auto counts">01</div>
            </div>
             <svg class="d-md-block d-none" height="365" width="40">
@@ -41,7 +41,7 @@
         </div>
         <div class="row justify-content-around text-md-center text-left">
             <div class="col-md-6 col-12 border-pricing d-flex px-md-0 p-md-2 p-4">
-                <div class="col-lg-10 col-9 text-right my-auto">Подключение сторонних сервисов (оплата, геолокация...)</div>
+                <div class="col-lg-10 col-9 text-right my-auto">Подключение сторонних сервисов (оплата, геолокация и т.д)</div>
                 <div class="col-3 col-lg-2 my-auto counts">07</div>
             </div>
             <div class="col-md-6 col-12 border-pricing d-flex px-md-0 p-md-2 p-4">
@@ -77,7 +77,7 @@
                 <div class="col-9">
                     <span class="bl-box-header">ГАРАНТИЯ</span>
                     <br>
-                    <span class="bl-box-desc">Пожизненная гарантия на все наши работы</span>
+                    <span class="bl-box-desc"><b>Пожизненная гарантия</b> на все наши работы</span>
                 </div>
             </div>
         </div>
