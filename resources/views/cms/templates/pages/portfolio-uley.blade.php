@@ -25,13 +25,13 @@
 
 
 @section('project-name')
-    Lorem ipsum dolor sit.
+    сайт компании по бухгалтерскому учету
 @endsection
 @section('project-logo')
     <img src="{{asset('img/works/logo-uley.png')}}" alt="" class="project-logo">
 @endsection
 @section('project-task')
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Разработка сайта-каталога компании по бухгалтерскому учету и оптимизация под поисковое продвижение.
 @endsection
 
 @section('design')
@@ -39,7 +39,7 @@
 @endsection
 
 @section('design-description')
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, obcaecati.
+    Перед нами была поставлена задача разработать удобный сайт с пожеланий заказчика и потребностей целевой аудитории.
 @endsection
 
 @section('project-details')
@@ -56,14 +56,14 @@
 
     <div class="col-12 col-md-4">
         <h1 class="details-number">
-            220+
+            100+
         </h1>
-        <span><b>страниц дизайна</b></span>
+        <span><b>часов разработки</b></span>
     </div>
 
     <div class="col-12 col-md-4">
         <h1 class="details-number">
-            220+
+            10+
         </h1>
         <span><b>страниц дизайна</b></span>
     </div>
@@ -73,69 +73,60 @@
     <div class="col-12 col-md-4 text-left">
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Разработка технического задания</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Разработка вариантов дизайна</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Разработка 10+ прототипов </div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
-        </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Адаптивная верстка в сетке Bootstrap v4</div>
         </div>
     </div>
     <div class="col-12 col-md-4 text-left">
 
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Каталог услуг</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Раздел для статей</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Система управления контентом</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Контактные формы</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Отзывы</div>
         </div>
     </div>
     <div class="col-12 col-md-4 text-left">
-
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Поисковая оптимизация сайта</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Онлайн прайс-лист</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Анимированные переходы</div>
         </div>
         <div class="my-4 row">
             <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
-        </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Lorem</div>
+            <div class="col">Мобильная адаптация сайта</div>
         </div>
     </div>
 @endsection
