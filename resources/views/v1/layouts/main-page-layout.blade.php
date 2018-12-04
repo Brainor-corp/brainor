@@ -11,7 +11,7 @@
     <title>@yield('title')</title>
 </head>
 
-<body class="raleway">
+<body class="raleway" data-spy="scroll">
 
 {{--Шапка--}}
 @include('v1.partials.headers.main-page-header')

@@ -108,11 +108,10 @@
                 </div>
                 @yield('site-link')
             </div>
-
-            <div class="col-12 mt-5">
+            <div class="col-12 mt-5"  @if(isset($isMainPage)) id="price-btn" @endif>
                 <h1>ПЛАНИРУЕТЕ ЗАПУСТИТЬ ПОДОБНЫЙ ПРОЕКТ?</h1>
                 <h4>Давайте обсудим возможное сотрудничество</h4>
-                <button class="hvr-bounce-to-bottom btn mt-5 bg-transparent">Предложить проект</button>
+                <a href="@if(!isset($isMainPage))/@endif#price-form" class="hvr-bounce-to-bottom btn mt-5 bg-transparent">Предложить проект</a>
             </div>
         </div>
     </div>

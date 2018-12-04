@@ -12,7 +12,7 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
-    Route::get('/', "MainPageController@index")->name('/');
+    Route::get('/', "MainPageController@index")->name('main-page');
     Route::get('/ins', "MainPageController@inside")->name('/i');
     Route::get('/search', "SearchController@search")->name('search');
     Route::post('/get-state', "CalculatorController@getState");
