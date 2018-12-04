@@ -10,7 +10,6 @@
 @endsection
 
 @section("content")
-    <div id="toTop"></div>
     @include("v1.pages.main-page.fragments.top-form")
     @include("v1.pages.main-page.fragments.about-pricing")
     @include("v1.pages.main-page.fragments.our-clients")
