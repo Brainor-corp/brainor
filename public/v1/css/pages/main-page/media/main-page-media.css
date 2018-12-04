@@ -16,14 +16,14 @@
     }
     .main-page-header .bg-pic-notebook{
         top: 440px;
-        left: 40%;
+        left: 45%;
         max-width: 450px;
         /*width: 400px;*/
         /*height: 467px;*/
     }
     .main-page-header .bg-pic-pen{
         top: 550px;
-        left: 60%;
+        left: 63%;
         max-width: 250px;
         /*width: 195px;*/
         /*height: 300px;*/
@@ -207,7 +207,7 @@
     }
     .main-page-header .bg-pic-notebook{
         top: 500px;
-        left: 35%;
+        left: 55%;
         max-width: 450px;
         /*width: 400px;*/
         /*height: 467px;*/
@@ -227,7 +227,6 @@
         /*height: 400px;*/
     }
 }
-
 @media (max-width: 991px) {
     .main-page-header .bg-pics{
         display: none;
@@ -236,6 +235,7 @@
         border-left: none;
     }
 }
+
 @media (max-width: 767px){
     .about-pricing-section .bl-box{
         border-left: none;
