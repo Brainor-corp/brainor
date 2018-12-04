@@ -3,7 +3,7 @@
         <div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">
             {{--<b>Услуги</b>--}}
             {{--<br>--}}
-            {{--<ul class="navbar-nav">--}}
+            <ul class="navbar-nav">
                {{--<li>--}}
                    {{--@php--}}
 
@@ -22,11 +22,11 @@
 
                     {{--@endforeach--}}
                {{--</li>--}}
-            {{--</ul>--}}
-        {{--</div>--}}
-        {{--<div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">--}}
+            </ul>
+        </div>
+        <div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">
             {{--<b>О компании</b>--}}
-            {{--<br>--}}
+            <br>
             {{--<ul class="navbar-nav">--}}
                 {{--<li>Сайты компании</li>--}}
                 {{--<li>Сайты компании</li>--}}
@@ -35,7 +35,7 @@
                 {{--<li>Сайты компании</li>--}}
                 {{--<li>Сайты компании</li>--}}
             {{--</ul>--}}
-        {{--</div>--}}
+        </div>
         <div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">
             <b>Контакты</b>
             <br>
