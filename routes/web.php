@@ -18,6 +18,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/get-state', "CalculatorController@getState");
     Route::post('/ReportGenerate', ['uses' => 'ReportGeneratorController@generateReport'])->name("generateReport");
     Route::post('/SitemapGenerate', ['uses' => 'GeneratorController@generateSitemap'])->name("generateSitemap");
+    Route::post('/SendMail', ['uses' => 'SendMailController@SendMail'])->name("SendMail");
 });
 
 Auth::routes();
