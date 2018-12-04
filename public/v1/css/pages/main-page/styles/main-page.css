@@ -261,13 +261,17 @@ svg {
     line-height: 0.7;
 }
 
+.price-calculation-section .price-calculation-content{
+    height: 400px;
+}
+
 .price-calculation-section .price-calculation-content .next:hover{
     cursor: pointer;
 }
 
 
 .price-calculation-section .checked,
-.price-calculation-content .next:hover{
+.price-calculation-content div.next:hover{
     border-bottom: 2px solid #48b71a;
 }
 
@@ -275,7 +279,7 @@ svg {
     border-bottom: 2px solid transparent;
 }
 
-/* Switch 1 Specific Styles Start */
+/* checkbox */
 
 .price-calculation-content .picture-next{
     height: 160px;
@@ -341,4 +345,4 @@ svg {
     -webkit-transition: color 0.3s ease-out;
 }
 
-/* Switch 1 Specific Style End */
+/* end checkbox */

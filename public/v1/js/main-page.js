@@ -16,3 +16,4 @@ $(document).ready(function () {
     var typed = new Typed("#dynamic_changed_text", options);
 
 });
+
