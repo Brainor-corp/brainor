@@ -92,7 +92,7 @@
             @yield('project-functionality')
         </div>
         <div>
-            <i class="fas fa-cogs mr-3 mb-5"></i>И еще более 40 полезных функций...
+            <i class="fas fa-cogs mr-3 mb-5"></i>И еще множество полезных функций...
         </div>
     </div>
 </div>
