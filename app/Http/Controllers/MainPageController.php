@@ -23,7 +23,9 @@ class MainPageController extends Controller
             ->limit(5)
             ->get();
 
-        return view("v1.pages.main-page.main-page")->with(compact('fears', 'works'));
+        $isMainPage = true;
+
+        return view("v1.pages.main-page.main-page")->with(compact('fears', 'works', 'isMainPage'));
     }
 
     public function search(){

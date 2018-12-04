@@ -10,7 +10,6 @@
 @endsection
 
 @section("content")
-    <div id="toTop"></div>
     @include("v1.pages.main-page.fragments.top-form")
     @include("v1.pages.main-page.fragments.about-pricing")
     @include("v1.pages.main-page.fragments.our-clients")
@@ -24,4 +23,5 @@
     <script src="{{ asset("v1/plugins/typed.js-master/lib/typed.js") }}"></script>
     <script src="{{ asset("v1/js/main-page.js") }}@include("v1.partials.versions.js")"></script>
     <script src="{{ asset("v1/js/price-calculator.js") }}@include("v1.partials.versions.js")"></script>
+    <script src="{{ asset("v1/js/send-mail.js") }}@include("v1.partials.versions.js")"></script>
 @endsection

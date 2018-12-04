@@ -12,6 +12,7 @@
 </head>
 
 <body class="raleway">
+<div id="toTop"></div>
 
 {{--Шапка--}}
 @include('v1.partials.headers.inside-pages-header')

@@ -18,7 +18,7 @@
             </li>
         </ul>
     </div>
-    <div class="col-xl-5 col-12 text-center" id="price-btn">
-        <a href="#price-form" class="btn float-xl-right w-270px hvr-bounce-to-bottom">Просчитать проект</a>
+    <div class="col-xl-5 col-12 text-center" @if(isset($isMainPage)) id="price-btn" @endif>
+        <a href="@if(!isset($isMainPage))/@endif#price-form" class="btn float-xl-right w-270px hvr-bounce-to-bottom">Просчитать проект</a>
     </div>
 </div>
