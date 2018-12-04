@@ -1,41 +1,41 @@
 <footer class="p-3 container-fluid">
     <div class="d-flex flex-wrap justify-content-around">
         <div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">
-            <b>Услуги</b>
-            <br>
-            <ul class="navbar-nav">
-               <li>
-                   @php
+            {{--<b>Услуги</b>--}}
+            {{--<br>--}}
+            {{--<ul class="navbar-nav">--}}
+               {{--<li>--}}
+                   {{--@php--}}
 
-                       $args = [
-                           'type' => 'page',
-                           'tags' => ['servises']
-                       ];
-                       $servises = \Bradmin\Cms\Helpers\CMSHelper::getQueryBuilder($args)
-                   ->get();
-                   @endphp
-                   @foreach($servises as $servise)
+                       {{--$args = [--}}
+                           {{--'type' => 'page',--}}
+                           {{--'tags' => ['servises']--}}
+                       {{--];--}}
+                       {{--$servises = \Bradmin\Cms\Helpers\CMSHelper::getQueryBuilder($args)--}}
+                   {{--->get();--}}
+                   {{--@endphp--}}
+                   {{--@foreach($servises as $servise)--}}
 
-                           <a class="black-link" href="{{$servise->url}}">
-                               <p class="mb-0">{{ $servise->title }}</p>
-                           </a>
+                           {{--<a class="black-link" href="{{$servise->url}}">--}}
+                               {{--<p class="mb-0">{{ $servise->title }}</p>--}}
+                           {{--</a>--}}
 
-                    @endforeach
-               </li>
-            </ul>
-        </div>
-        <div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">
-            <b>О компании</b>
-            <br>
-            <ul class="navbar-nav">
-                <li>Сайты компании</li>
-                <li>Сайты компании</li>
-                <li>Сайты компании</li>
-                <li>Сайты компании</li>
-                <li>Сайты компании</li>
-                <li>Сайты компании</li>
-            </ul>
-        </div>
+                    {{--@endforeach--}}
+               {{--</li>--}}
+            {{--</ul>--}}
+        {{--</div>--}}
+        {{--<div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">--}}
+            {{--<b>О компании</b>--}}
+            {{--<br>--}}
+            {{--<ul class="navbar-nav">--}}
+                {{--<li>Сайты компании</li>--}}
+                {{--<li>Сайты компании</li>--}}
+                {{--<li>Сайты компании</li>--}}
+                {{--<li>Сайты компании</li>--}}
+                {{--<li>Сайты компании</li>--}}
+                {{--<li>Сайты компании</li>--}}
+            {{--</ul>--}}
+        {{--</div>--}}
         <div class="d-flex flex-column mt-5 mx-4 mt-md-0 mx-lg-0 text-md-left text-center">
             <b>Контакты</b>
             <br>
