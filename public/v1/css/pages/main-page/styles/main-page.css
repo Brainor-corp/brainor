@@ -14,6 +14,14 @@ body{
 .main-page-header nav .logo-svg{
     width: 120px;
     height: auto;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.main-page-header nav .logo-svg-mobile{
+    width: 80px;
+    height: auto;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .main-page-header nav .nav-item {
