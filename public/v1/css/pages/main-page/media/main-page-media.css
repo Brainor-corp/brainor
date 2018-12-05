@@ -226,6 +226,10 @@
         /*width: 326px;*/
         /*height: 400px;*/
     }
+
+    .price-calculation-section .price-calculation-content {
+        height: 500px;
+    }
 }
 @media (max-width: 991px) {
     .main-page-header .bg-pics{
@@ -243,11 +247,28 @@
     .border-pricing{
         border-bottom: 1px solid #a6a6a66a;
     }
+
+    .price-calculation-section .price-calculation-content {
+        height: 670px;
+    }
+
 }
 
 @media (max-width: 420px){
     .about-pricing-section .fas,
     .about-pricing-section .far{
         font-size: 2rem;
+    }
+
+    .price-calculation-content .steps{
+        font-size: 0.8rem;
+    }
+
+    .price-calculation-section .price-calculation-steps-row .active::after{
+        top: 5px;
+    }
+
+    h1 {
+        font-size: 1.5rem!important;
     }
 }
