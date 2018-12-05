@@ -12,6 +12,9 @@
     .start-now-banner .start-now-text{
         font-size: 1.8rem!important;
     }
+    .height-nav-mobile{
+        height: 80vh;
+    }
 }
 @media (max-width: 450px){
     .w-270px{

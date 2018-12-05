@@ -6,6 +6,7 @@
     @include('v1.head.head')
 
     @yield('styles')
+        <link rel="stylesheet" href="{{ asset("v1/css/general/styles/general.css") }}">
     @yield('headScripts')
 
     <title>@yield('page-title')</title>

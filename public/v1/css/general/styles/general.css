@@ -381,3 +381,30 @@ footer {
     display:none;
     z-index: 500;
 }
+.fixed-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+    margin-left: -50px;
+}
+.nav-btn{
+    margin-top: 15px;
+    /*margin-left: -56px;*/
+    z-index: 5000;
+    background: #efefef;
+}
+.bg-grey{
+    background: #efefef;
+}
+.mobile-nav{
+    display: block;
+    border-radius: 10px;
+    /*height: auto;*/
+    overflow-y: auto;
+}
+.logo-svg-mobile{
+    width: 80px;
+    height: auto;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
