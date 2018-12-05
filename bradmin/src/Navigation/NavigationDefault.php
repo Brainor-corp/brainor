@@ -27,6 +27,11 @@ class NavigationDefault
                 'url' => '/bradmin/generator',
                 'icon' => 'fas fa-address-book',
                 'text' => 'Генератор'
+            ],
+            [
+                'url' => '/bradmin/Trello',
+                'icon' => 'fab fa-trello',
+                'text' => 'Генератор отчетов 2.0'
             ]
         ];
 
