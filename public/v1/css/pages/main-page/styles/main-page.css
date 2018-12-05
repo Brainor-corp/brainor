@@ -233,7 +233,7 @@ svg {
     font-size: 3rem;
     position: absolute;
     right: -9px;
-    line-height: 0.7;
+    top: calc(50% - 36px);
 }
 
 .price-calculation-section .price-calculation-steps-row{
@@ -283,6 +283,14 @@ svg {
 
 .price-calculation-content .picture-next{
     height: 160px;
+}
+
+.price-calculation-content .picture-next-picture{
+    height: 136px;
+}
+
+.price-calculation-content .picture-next-text{
+    border-bottom-width: 0px;
 }
 
 .checkbox{

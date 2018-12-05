@@ -251,6 +251,7 @@
     .price-calculation-section .price-calculation-content {
         height: 670px;
     }
+
 }
 
 @media (max-width: 420px){
@@ -265,5 +266,9 @@
 
     .price-calculation-section .price-calculation-steps-row .active::after{
         top: 5px;
+    }
+
+    h1 {
+        font-size: 1.5rem!important;
     }
 }

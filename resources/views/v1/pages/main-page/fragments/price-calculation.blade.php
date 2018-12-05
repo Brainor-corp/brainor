@@ -1,4 +1,4 @@
-<div class="container-fluid price-calculation-section py-5 px-0">
+<div class="container-fluid price-calculation-section pb-5 px-0">
     <div class="section-name my-5 text-center">
         <h1>Расчет стоимости проекта</h1>
     </div>
@@ -8,19 +8,34 @@
         </div>
         <div class="my-4 px-3 px-md-0 row justify-content-around">
             <div id="choice1" class="my-4 picture-next my-md-0 col-md-4 col-12 next text-center align-self-center priceable" data-price="0">
-                <img src="{{asset('img/calculator/site.png')}}" alt="">
-                <br>
-                <span>Лэндинг</span>
+                <div class="row h-100">
+                    <div class="col-12 align-self-start picture-next-picture">
+                        <img src="{{asset('img/calculator/site.png')}}" alt="">
+                    </div>
+                    <div class="col-12 align-self-end picture-next-text">
+                        <span>Лэндинг</span>
+                    </div>
+                </div>
             </div>
             <div id="choice2" class="my-4 picture-next my-md-0 col-md-4 col-12 next text-center align-self-center priceable" data-price="10000">
-                <img src="{{asset('img/calculator/cart.png')}}" alt="">
-                <br>
-                <span>Магазин</span>
+                <div class="row h-100">
+                    <div class="col-12 align-self-start picture-next-picture">
+                        <img src="{{asset('img/calculator/cart.png')}}" alt="">
+                    </div>
+                    <div class="col-12 align-self-end picture-next-text">
+                        <span>Магазин</span>
+                    </div>
+                </div>
             </div>
             <div id="choice3" class="my-4 picture-next my-md-0 col-md-4 col-12 next text-center align-self-center priceable" data-price="5000">
-                <img src="{{asset('img/calculator/site.png')}}" alt="">
-                <br>
-                <span>Сайт компании</span>
+                <div class="row h-100">
+                    <div class="col-12 align-self-start picture-next-picture">
+                        <i class="text-green far fa-7x fa-copyright"></i>
+                    </div>
+                    <div class="col-12 align-self-end picture-next-text">
+                        <span>Сайт компании</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row d-none d-md-block">
