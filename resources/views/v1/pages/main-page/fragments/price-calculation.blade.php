@@ -4,7 +4,7 @@
     </div>
     <div class="container price-calculation-content">
         <div class="price-calculation-steps-row mb-5 row justify-content-around">
-            <div class="steps px-0 col-auto"><span id="step1" class="active past" data-state="0">Тип</span></div>
+            <div class="steps px-0 col-auto"><span id="step1" class="active nav-step" data-state="0">Тип</span></div>
         </div>
         <div class="my-4 px-3 px-md-0 row justify-content-around">
             <div id="choice1" class="my-4 picture-next my-md-0 col-md-4 col-12 next text-center align-self-center priceable" data-price="0">

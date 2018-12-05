@@ -244,10 +244,10 @@ svg {
     position: relative;
 }
 
-.price-calculation-section .price-calculation-steps-row .past:hover{
+.price-calculation-section .price-calculation-steps-row .nav-step:hover{
     cursor: pointer;
 }
-.price-calculation-section .price-calculation-steps-row .past{
+.price-calculation-section .price-calculation-steps-row .nav-step{
     color: #48b71a;
 }
 

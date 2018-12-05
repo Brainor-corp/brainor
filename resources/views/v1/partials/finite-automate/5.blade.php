@@ -1,10 +1,10 @@
 {{--Выбор функционала магазина--}}
 
 <div class="price-calculation-steps-row row justify-content-around">
-    <div class="steps px-0 col-auto"><span id="step1" class="past">Тип</span></div>
-    <div class="steps px-0 col-auto"><span id="step2" class="past">Дизайн</span></div>
-    <div class="steps px-0 col-auto"><span id="step3" class="past">Товары</span></div>
-    <div class="steps px-0 col-auto"><span id="step4" class="active past">Функционал</span></div>
+    <div class="steps px-0 col-auto"><span id="step1" class="past nav-step">Тип</span></div>
+    <div class="steps px-0 col-auto"><span id="step2" class="past nav-step">Дизайн</span></div>
+    <div class="steps px-0 col-auto"><span id="step3" class="past nav-step">Товары</span></div>
+    <div class="steps px-0 col-auto"><span id="step4" class="active nav-step">Функционал</span></div>
 </div>
 <div class="mt-4 px-3 px-md-0 row text-center">
     <div class="col-12 text-center align-self-center">
