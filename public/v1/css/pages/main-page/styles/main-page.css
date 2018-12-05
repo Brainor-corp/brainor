@@ -226,7 +226,7 @@ svg {
     font-size: 3rem;
     position: absolute;
     right: -9px;
-    line-height: 0.7;
+    top: calc(50% - 36px);
 }
 
 .price-calculation-section .price-calculation-steps-row{
@@ -237,10 +237,10 @@ svg {
     position: relative;
 }
 
-.price-calculation-section .price-calculation-steps-row .past:hover{
+.price-calculation-section .price-calculation-steps-row .nav-step:hover{
     cursor: pointer;
 }
-.price-calculation-section .price-calculation-steps-row .past{
+.price-calculation-section .price-calculation-steps-row .nav-step{
     color: #48b71a;
 }
 
@@ -249,9 +249,13 @@ svg {
     color: #48b71a;
     font-size: 3rem;
     position: absolute;
-    top: 8px;
-    right: 11px;
+    top: 10px;
+    left: calc(50% - 8px);
     line-height: 0.7;
+}
+
+.price-calculation-section .price-calculation-content{
+    height: 400px;
 }
 
 .price-calculation-section .price-calculation-content .next:hover{
@@ -260,7 +264,7 @@ svg {
 
 
 .price-calculation-section .checked,
-.price-calculation-content div:hover{
+.price-calculation-content div.next:hover{
     border-bottom: 2px solid #48b71a;
 }
 
@@ -268,3 +272,78 @@ svg {
     border-bottom: 2px solid transparent;
 }
 
+/* checkbox */
+
+.price-calculation-content .picture-next{
+    height: 160px;
+}
+
+.price-calculation-content .picture-next-picture{
+    height: 136px;
+}
+
+.price-calculation-content .picture-next-text{
+    border-bottom-width: 0px;
+}
+
+.checkbox{
+    margin:20px;
+}
+
+.checkbox label {
+    min-height: 71px;
+    font-weight: normal;
+    cursor: pointer;
+    line-height:40px;
+}
+
+.c-checkbox span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 70px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.c-checkbox span:before{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center !important;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.c-checkbox input[type=checkbox]{
+    position:absolute;
+    margin: 4px 0 0;
+    opacity:0;
+}
+
+.c-checkbox input[type=checkbox]:checked {
+    color: #48b71a;
+    transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+}
+
+.c-checkbox input[type=checkbox]:checked + span{
+    border-color: #cccccc;
+    background-color: transparent;
+}
+
+.c-checkbox input[type=checkbox]:checked + span:before{
+    color: #48b71a;
+    opacity: 1;
+    transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+}
+
+/* end checkbox */
