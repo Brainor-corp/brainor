@@ -1,38 +1,3 @@
-.inside-pages-header nav .logo-svg{
-    width: 120px;
-    height: auto;
-}
-
-.inside-pages-header, footer{
-    background: #efefef;
-}
-
-.inside-pages-header nav .nav-item {
-    font-size: 1.1rem;
-}
-
-.inside-pages-header .searchbox {
-    border: 1px solid #000000;
-    border-radius: 5px;
-    outline: none;
-    color: #777;
-    background: inherit;
-    padding-left: 10px;
-}
-
-.inside-pages-header .searchboxwrapper {
-    position: relative;
-}
-
-.inside-pages-header .searchsubmit {
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-
 .child-list{
     font-size: 1.3rem;
     color: #48b71a;

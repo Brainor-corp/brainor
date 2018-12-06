@@ -6,7 +6,6 @@
     @include('v1.head.head')
 
     @yield('styles')
-        <link rel="stylesheet" href="{{ asset("v1/css/general/styles/general.css") }}">
     @yield('headScripts')
 
     <title>@yield('page-title')</title>
@@ -16,7 +15,7 @@
 <div id="toTop"></div>
 
 {{--Шапка--}}
-@include('v1.partials.headers.inside-pages-header')
+@include('v1.partials.headers.main-page-header')
 
 {{--Контент страницы--}}
 @yield('content')

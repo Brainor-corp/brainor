@@ -1,5 +1,5 @@
 <div class="container-fluid px-5 main-page-header">
-
+    @if(isset($isMainPage))
         <img src="{{asset('img/bg/flower.png')}}" alt="" class="bg-pics bg-pic-flower">
         <img src="{{asset('img/bg/keyboard.png')}}" alt="" class="bg-pics bg-pic-keyboard">
         <img src="{{asset('img/bg/notebook.png')}}" alt="" class="bg-pics bg-pic-notebook">
@@ -12,6 +12,7 @@
         <img src="{{asset('img/bg/pen.png')}}" alt="" class="bg-pics bg-pic-pen">
         <img src="{{asset('img/bg/mouse.png')}}" alt="" class="bg-pics bg-pic-mouse">
     </div>
+    @endif
     <div class="blur-color-block"></div>
 
     {{--nav-desktop--}}

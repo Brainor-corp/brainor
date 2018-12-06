@@ -39,7 +39,7 @@
 @endsection
 
 @section('design-description')
-    Перед нами была поставлена задача разработать удобный сайт с пожеланий заказчика и потребностей целевой аудитории.
+    Перед нами была поставлена задача разработать удобный сайт с пожеланиями заказчика и потребностями целевой аудитории.
 @endsection
 
 @section('project-details')
@@ -67,80 +67,108 @@
 @endsection
 
 @section('project-functionality')
-    <div class="col-12 col-md-4 text-left">
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка технического задания</div>
+    <div class="row text-left">
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Разработка технического задания</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка вариантов дизайна</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Разработка вариантов дизайна</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка 20+ прототипов </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Разработка 20+ прототипов</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Адаптивная верстка в сетке Bootstrap v4</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Адаптивная верстка в сетке Bootstrap v4</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Мобильная адаптация сайта</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Мобильная адаптация сайта</div>
+            </div>
         </div>
-    </div>
-    <div class="col-12 col-md-4 text-left">
-
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Нагрузочный проект (500 000+ товаров)</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Нагрузочный проект (500 000+ товаров)</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Каталог товаров</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Каталог товаров</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Конструктор товара</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Конструктор товара</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Корзина</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Корзина</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Система торгов</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Система торгов</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Система управления контентом</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Онлайн заказ</div>
+            </div>
         </div>
-    </div>
-    <div class="col-12 col-md-4 text-left">
-
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Онлайн заказ</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Личный кабинет</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Личный кабинет</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Поиск по сайту</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Поиск по сайту</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">E-mail рассылка</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">E-mail рассылка</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Система парсинга товаров</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Система парсинга товаров.</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Система управления контентом</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Поисковая оптимизация сайта</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Поисковая оптимизация сайта</div>
+            </div>
         </div>
     </div>
 @endsection
