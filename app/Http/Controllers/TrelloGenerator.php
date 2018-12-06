@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class TrelloGenerator extends Controller
 {
@@ -18,7 +19,7 @@ class TrelloGenerator extends Controller
         "end" => ["{e}"],
     ];
 
-    public function generateTrelloReport(Request $request){
+    public function generateTrelloReportPreview(Request $request){
         $workers = User::whereNotNull('trello_id')->get();
         $dateFrom = (new Carbon($request->dateFrom))->toIso8601ZuluString();
         $since = (new Carbon($dateFrom))->subMonth()->toIso8601ZuluString();
@@ -27,7 +28,7 @@ class TrelloGenerator extends Controller
 
         $groupedArray = [];
         foreach ($workers as $worker){
-            $actions = $this->getUsersActions($worker->trello_id, $since, $before);
+            $actions = self::getUsersActions($worker->trello_id, $since, $before);
             foreach ($actions as $action) {
                 if(self::getCommentCommand($action['data']['text'])) {
                     $groupedArray[$worker->name][$action['data']['board']['name']][$action['data']['card']['name']][] = ['text' => $action['data']['text'], 'date' => $action['date']];
@@ -36,33 +37,59 @@ class TrelloGenerator extends Controller
         }
 
         $resultArray = [];
-
         foreach($groupedArray as $worker => $actions){
             foreach ($actions as $board => $tasks){
                 foreach ($tasks as $task => $comments){
+                    $currentTimePaused = 0;
+                    $currentTimeSpend = 0;
                     foreach ($comments as $comment){
-                        $currentTaskName = null;
-                        $currentTimeSpend = null;
-                        $currentCompleteDate = null;
+                        $command = $this->getCommentCommand($comment['text']);
                         switch($state){
                             case 0:
-                                $state = 1;
+                                if($command === 'end' && (new Carbon($comment['date']))->greaterThanOrEqualTo(new Carbon($dateFrom))){
+                                    $currentTimeSpend += (new Carbon($comment['date']))->timestamp;
+                                    $currentCompleteDate = $comment['date'];
+                                    $state = 1;
+                                }
+                                else{
+                                    return 'error';
+                                }
                                 break;
                             case 1:
-
+                                if($command === 'continue'){
+                                    $state = 2;
+                                    $currentTimePaused += (new Carbon($comment['date']))->timestamp;
+                                }
+                                elseif($command === 'start'){
+                                    $currentTimeSpend -= (new Carbon($comment['date']))->timestamp;
+                                    $spendedMinutes = self::getRoundedTime(intval(round(($currentTimeSpend - $currentTimePaused) / 60)));
+                                    if($spendedMinutes) {
+                                        $resultArray[$board][] = ['text' => $task, 'date' => $currentCompleteDate ?? null, 'time' => self::getRoundedTime($spendedMinutes)];
+                                    }
+                                    $state = 0;
+                                }
+                                else{
+                                    //err
+                                }
                                 break;
                             case 2:
-                                $state = 0;
+                                if($command === 'pause'){
+                                    $state = 1;
+                                    $currentTimePaused -= (new Carbon($comment['date']))->timestamp;
+                                }
+                                else{
+                                    //err
+                                }
                                 break;
-                            case 3:
-                                $state = 1;
-                                break;
+
+                            default: break;
                         }
                     }
                 }
             }
         }
-        dd($groupedArray);
+
+        return view('v1.pages.admin-pages.trello-report-preview')->with(compact('resultArray'));
     }
 
     private function getUsersActions($userId, $since = '', $before = ''){
@@ -85,7 +112,7 @@ class TrelloGenerator extends Controller
         return $response;
     }
 
-    public function getCommentCommand($str) {
+    private function getCommentCommand($str) {
         foreach ($this->aliasesList as $key => $aliases) {
             if(in_array($str, $aliases)) {
                 return $key;
@@ -93,25 +120,14 @@ class TrelloGenerator extends Controller
         }
         return 0;
     }
-}
 
-//switch($state){
-//    case 0:
-//        $state = 1;
-//
-//        break;
-//    case 1:
-//        if($action['data']['text'] === '{s}'){
-//            $state = 2;
-//        }
-//        elseif($action['data']['text'] === '{c}'){
-//            $state = 3;
-//        }
-//        break;
-//    case 2:
-//        $state = 0;
-//        break;
-//    case 3:
-//        $state = 1;
-//        break;
-//}
+    private function getRoundedTime($minutes){
+        if($minutes % 5 == 0){
+            return $minutes;
+        }
+
+        $rounded = round($minutes / 10) * 10;
+
+        return $rounded < $minutes ? intval($rounded + 5) : intval($rounded);
+    }
+}

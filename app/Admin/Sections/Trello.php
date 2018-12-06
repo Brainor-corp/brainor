@@ -15,9 +15,17 @@ class Trello extends Section
 
 
     public static function onDisplay(Request $request){
+        $meta = new Meta;
+        $meta->setScripts([
+            'head' => [],
+            'body' => [
+                'trello' => asset('v1/js/bradmin/reportGenerator.js')
+            ]
+        ]);
 
         $display = Display::custom([])
-            ->setView(View::make('v1/pages/admin-pages/trello-report-generator'));
+            ->setView(View::make('v1/pages/admin-pages/trello-report-generator'))
+            ->setMeta($meta);
 
         return $display;
     }

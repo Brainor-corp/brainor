@@ -17,7 +17,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/search', "SearchController@search")->name('search');
     Route::post('/get-state', "CalculatorController@getState");
     Route::post('/ReportGenerate', ['uses' => 'ReportGeneratorController@generateReport'])->name("generateReport");
-    Route::post('/TrelloGenerator', ['uses' => 'TrelloGenerator@generateTrelloReport'])->name("generateTrelloReport");
+    Route::post('/TrelloReportPreview', ['uses' => 'TrelloGenerator@generateTrelloReportPreview'])->name("generateTrelloReportPreview");
     Route::post('/SitemapGenerate', ['uses' => 'GeneratorController@generateSitemap'])->name("generateSitemap");
     Route::post('/SendMail', ['uses' => 'SendMailController@SendMail'])->name("SendMail");
 });
