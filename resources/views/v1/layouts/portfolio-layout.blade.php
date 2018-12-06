@@ -18,7 +18,7 @@
 <div id="toTop"></div>
 
 {{--Шапка--}}
-@include('v1.partials.headers.inside-pages-header')
+@include('v1.partials.headers.main-page-header')
 
 {{--Контент страницы--}}
 

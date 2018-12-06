@@ -1,74 +1,9 @@
-.top-form, .main-page-header, .price-calculation-section, .our-clients-section, .start-now-banner{
+.top-form, .price-calculation-section, .our-clients-section, .start-now-banner{
     background-color: #efefef;
 }
 
 body{
     overflow-x: hidden;
-}
-
-.main-page-header {
-    position: relative;
-    margin-top: -10px;
-}
-
-.main-page-header nav .logo-svg{
-    width: 120px;
-    height: auto;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-.main-page-header nav .logo-svg-mobile{
-    width: 80px;
-    height: auto;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-.main-page-header nav .nav-item {
-    font-size: 1.1rem;
-}
-
-.main-page-header .searchbox {
-    border: 1px solid #000000;
-    border-radius: 5px;
-    outline: none;
-    color: #777;
-    /*width: 170px;*/
-    /*height: 26px;*/
-    background: inherit;
-    padding-left: 10px;
-}
-
-.main-page-header .searchboxwrapper {
-    position: relative;
-}
-
-
-.main-page-header .searchsubmit {
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-
-.blur-block{
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    position: absolute;
-    filter: blur(5px);
-}
-
-.blur-color-block{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    background: #efefef;
-    opacity: 0.6;
-    filter: blur(2px);
 }
 
 .top-form-container .form-group input:focus{
