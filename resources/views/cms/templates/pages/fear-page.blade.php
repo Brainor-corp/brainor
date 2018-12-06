@@ -20,7 +20,7 @@
 @endsection
 @section('content')
     <div class="container">
-        <div class="row my-5">
+        <div class="row my-5 pt-lg-0 pt-4">
             <div class="col-lg-9 col-md-8 col-12">
                 <div class="align-items-start">
                     <div class="text-justify">

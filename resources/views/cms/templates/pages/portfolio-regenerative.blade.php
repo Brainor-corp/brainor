@@ -31,7 +31,7 @@
     <img src="{{asset('img/works/logo-regenerative.png')}}" alt="" class="project-logo">
 @endsection
 @section('project-task')
-    Комплексная посадочного сайта для международного форума по регенеративной хирургии.
+    Комплексная разработка посадочного сайта для международного форума по регенеративной хирургии.
 @endsection
 
 @section('design')
@@ -39,7 +39,7 @@
 @endsection
 
 @section('design-description')
-    Перед нами была поставлена задача разработать удобный сайт с пожеланий заказчика и потребностей целевой аудитории.
+    Перед нами была поставлена задача разработать удобный сайт с пожеланями заказчика и потребностями целевой аудитории.
 @endsection
 
 @section('project-details')
@@ -67,48 +67,66 @@
 @endsection
 
 @section('project-functionality')
-    <div class="col-12 col-md-4 text-left">
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка технического задания</div>
+    <div class="row text-left">
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Разработка технического задания</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка вариантов дизайна</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Разработка вариантов дизайна</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Разработка 10+ прототипов </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Разработка 10+ прототипов</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Адаптивная верстка в сетке Bootstrap v4</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Адаптивная верстка в сетке Bootstrap v4</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Мобильная адаптация сайта</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Мобильная адаптация сайта</div>
+            </div>
         </div>
-    </div>
-    <div class="col-12 col-md-4 text-left">
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Онлайн программа</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Онлайн программа</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Онлайн оплата</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Онлайн оплата</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Онлайн регистрация на форум</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Онлайн регистрация на форум</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Анимированные переходы</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Анимированные переходы</div>
+            </div>
         </div>
-        <div class="my-4 row">
-            <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
-            <div class="col">Контактные формы</div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="my-2 row">
+                <div class="col-auto"><i class="fa-check fa fa-2x"></i></div>
+                <div class="col">Контактные формы</div>
+            </div>
         </div>
     </div>
 @endsection
