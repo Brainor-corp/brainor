@@ -88,7 +88,7 @@
         <h1 class="text-uppercase">
             Функционал проекта
         </h1>
-        <div class="row justify-content-between my-5">
+        <div class="row my-5">
             @yield('project-functionality')
         </div>
         <div>

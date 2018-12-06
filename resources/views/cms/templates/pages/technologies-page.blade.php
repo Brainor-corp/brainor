@@ -19,7 +19,7 @@
     {{$page->title}}
 @endsection
 @section('content')
-    <div class="container mt-5">
+    <div class="container mt-5 pt-lg-0 pt-4">
         <div class="mb-0 fs-breadcrumbs decoration-links">
             @php
                 foreach ($page->ancestors as $ancestor)
@@ -42,7 +42,9 @@
                     <h3>{!! $page->description !!}</h3>
                 </div>
                 <div class="text-justify">
-                    @include("v1.pages.main-page.fragments.technologies")
+                    <div class="container-fluid technology-section px-0">
+                        @include("v1.pages.main-page.fragments.technologies")
+                    </div>
                 </div>
             </div>
         </div>

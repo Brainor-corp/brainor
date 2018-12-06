@@ -19,7 +19,7 @@
     {{$page->title}}
 @endsection
 @section('content')
-    <div class="container mt-5">
+    <div class="container mt-5 pt-lg-0 pt-4">
         <div class="mb-5 fs-breadcrumbs decoration-links">
             @php
                 foreach ($page->ancestors as $ancestor)

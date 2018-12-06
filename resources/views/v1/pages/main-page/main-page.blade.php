@@ -13,7 +13,14 @@
     @include("v1.pages.main-page.fragments.top-form")
     @include("v1.pages.main-page.fragments.about-pricing")
     @include("v1.pages.main-page.fragments.our-clients")
+    <div class="container-fluid technology-section py-5 px-0">
+        <div class="section-name my-5 text-center">
+            <h1>Технологии</h1>
+        </div>
     @include("v1.pages.main-page.fragments.technologies")
+    </div>
+
+
     @include("v1.pages.main-page.fragments.price-calculation")
     @include("v1.pages.main-page.fragments.descending-fears")
     @include("v1.partials.banners.start-now-banner")
