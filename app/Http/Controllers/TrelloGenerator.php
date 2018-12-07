@@ -18,12 +18,20 @@ class TrelloGenerator extends Controller
         "continue" => ["{c}"],
         "end" => ["{e}"],
     ];
+    private $lateBoard = 'VGCO29MB';
 
     public function generateTrelloReportPreview(Request $request){
         $workers = User::whereNotNull('trello_id')->get();
+
         $dateFrom = (new Carbon($request->dateFrom))->toIso8601ZuluString();
         $since = (new Carbon($dateFrom))->subMonth()->toIso8601ZuluString();
-        $before = (new Carbon($request->dateTo))->toIso8601ZuluString();
+
+        $before = (new Carbon($request->dateTo));
+        $before->hour = 23;
+        $before->minute = 59;
+        $before->second = 59;
+        $before = $before->toIso8601ZuluString();
+
         $state = 0;
 
         $groupedArray = [];
@@ -36,7 +44,7 @@ class TrelloGenerator extends Controller
             }
         }
 
-        $resultArray = [];
+        $resultArray = null;
         foreach($groupedArray as $worker => $actions){
             foreach ($actions as $board => $tasks){
                 foreach ($tasks as $task => $comments){
@@ -51,8 +59,11 @@ class TrelloGenerator extends Controller
                                     $currentCompleteDate = $comment['date'];
                                     $state = 1;
                                 }
+                                elseif((new Carbon($comment['date']))<(new Carbon($dateFrom))){
+
+                                }
                                 else{
-                                    $resultArray['errors'][] = ['text' => 'У стейта "' . $state . '" нет пары, ИЛИ мы просто отсекли его по дате , комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
+                                    $resultArray['errors'][] = ['text' => 'В стейте "' . $state . '", нет пары у комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
                                 }
                                 break;
                             case 1:
@@ -88,6 +99,12 @@ class TrelloGenerator extends Controller
                 }
             }
         }
+        $lateActions = self::getLateComments($this->lateBoard);
+        foreach ($lateActions as $action){
+            if( (new Carbon($action['date']))->between(new Carbon($dateFrom), new Carbon($before))){
+                $resultArray[$action['board']][] = ['text' => $action['task'], 'date' => $action['date'], 'time' => self::getRoundedTime($action['time'])];
+            }
+        }
         return view('v1.pages.admin-pages.trello-report-preview')->with(compact('resultArray'));
     }
 
@@ -108,7 +125,35 @@ class TrelloGenerator extends Controller
 
         $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
+
         return $response;
+    }
+    private function getLateComments($boardId){
+        $getActionsByLateBoardUrl = $this->host .'boards/'. $boardId . '/actions?key=' . $this->key . '&token=' . $this->token . '&filter=commentCard&fields=id,data,date&memberCreator=false';
+
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $getActionsByLateBoardUrl,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+        ));
+
+        $response = json_decode(curl_exec($curl), true);
+        curl_close($curl);
+
+        foreach ($response as $key => $action){
+            $result[$key]['date'] = (new Carbon(explode(';', $action['data']['text'])[0]))->toIso8601ZuluString();
+            $result[$key]['time'] = explode(';', $action['data']['text'])[1];
+            $result[$key]['board'] = $action['data']['list']['name'];
+            $result[$key]['task'] = $action['data']['card']['name'];
+        }
+
+        return $result;
     }
 
     private function getCommentCommand($str) {
