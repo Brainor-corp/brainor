@@ -1,0 +1,18 @@
+.company-header{
+    background-color: #2a5788;
+    border-radius: 5px;
+
+}
+
+.company-header button{
+    color: #ffffff;
+}
+
+.company-header:hover{
+    cursor: pointer;
+}
+
+.company input{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}

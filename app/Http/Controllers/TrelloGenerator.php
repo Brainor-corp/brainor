@@ -46,13 +46,13 @@ class TrelloGenerator extends Controller
                         $command = $this->getCommentCommand($comment['text']);
                         switch($state){
                             case 0:
-                                if($command === 'end' && (new Carbon($comment['date']))->greaterThanOrEqualTo(new Carbon($dateFrom))){
+                                if($command === 'end' && (new Carbon($comment['date']))>=(new Carbon($dateFrom))){
                                     $currentTimeSpend += (new Carbon($comment['date']))->timestamp;
                                     $currentCompleteDate = $comment['date'];
                                     $state = 1;
                                 }
                                 else{
-                                    return 'error';
+                                    $resultArray['errors'][] = ['text' => 'У стейта "' . $state . '" нет пары, ИЛИ мы просто отсекли его по дате , комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
                                 }
                                 break;
                             case 1:
@@ -69,7 +69,7 @@ class TrelloGenerator extends Controller
                                     $state = 0;
                                 }
                                 else{
-                                    //err
+                                    $resultArray['errors'][] = ['text' => 'Ошибка стейта - ' . $state . ', комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
                                 }
                                 break;
                             case 2:
@@ -78,7 +78,7 @@ class TrelloGenerator extends Controller
                                     $currentTimePaused -= (new Carbon($comment['date']))->timestamp;
                                 }
                                 else{
-                                    //err
+                                    $resultArray['errors'][] = ['text' => 'Ошибка стейта - ' . $state . ', комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
                                 }
                                 break;
 
@@ -88,7 +88,6 @@ class TrelloGenerator extends Controller
                 }
             }
         }
-
         return view('v1.pages.admin-pages.trello-report-preview')->with(compact('resultArray'));
     }
 

@@ -24,4 +24,10 @@ $(document).ready(function () {
             }
         });
     });
+
+    $( document ).on('click', '.company-header', function () {
+        var parent = $(this).closest('.company');
+        parent.find('.collapse').collapse('toggle');
+    });
+
 });
