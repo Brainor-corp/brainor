@@ -1,7 +1,10 @@
 .company-header{
     background-color: #2a5788;
     border-radius: 5px;
+}
 
+.even{
+    background-color: #c4d9ed;
 }
 
 .company-header button{

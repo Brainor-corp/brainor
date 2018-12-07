@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('#generateReport').on('submit', function (e) {
         e.preventDefault();
 
