@@ -31,23 +31,27 @@
                             </h5>
                         </div>
 
-                        <div id="{{$companyName}}" class="collapse p-3 row" aria-labelledby="{{'heading' . $companyName}}">
-                            @foreach($tasks as $key => $task)
-                                <div class="company-inputs @if($key%2!=0) even @endif col-12">
-                                    <input class="m-1 w-100" id="task{{$key}}-text" type="text" name="text" value="{{$task['text']}}">
+                        <div id="{{$companyName}}" class="collapse p-3" aria-labelledby="{{'heading' . $companyName}}">
+                            <div class="task-place mb-3 row">
+                                @foreach($tasks as $key => $task)
+                                    <div id="task{{$key}}" class="company-inputs-{{$companyName}} @if($key%2!=0) even @endif col-12" data-index="{{$key}}">
+                                        <input class="mt-3 p-1 w-100" id="task{{$key}}-text" type="text" name="text" value="{{$task['text']}}">
 
-                                    <label for="task{{$key}}-date">Дата выполнения</label>
-                                    <input class="m-3" id="task{{$key}}-date" type="date" name="date" value="{{(new Carbon\Carbon($task['date']))->format('Y-m-d')}}">
+                                        <label for="task{{$key}}-date">Дата выполнения</label>
+                                        <input class="m-3 p-1" id="task{{$key}}-date" type="date" name="date" value="{{(new Carbon\Carbon($task['date']))->format('Y-m-d')}}">
 
-                                    <label for="task{{$key}}-time">Время выполнения(мин.)</label>
-                                    <input class="m-3" id="task{{$key}}-time" type="number" step="5" name="time" value="{{$task['time']}}">
-                                </div>
-                            @endforeach
+                                        <label for="task{{$key}}-time">Время выполнения(мин.)</label>
+                                        <input class="m-3 p-1" id="task{{$key}}-time" type="number" step="5" name="time" value="{{$task['time']}}">
+                                        <button type="button" class="delete-task btn btn-danger" data-task="task{{$key}}">Удалить таск</button>
+                                    </div>
+                                @endforeach
+                            </div>
+                            <button type="button" class="create-task btn btn-primary" data-target="company-inputs-{{$companyName}}">Добавить таск</button>
                         </div>
                     </div>
                 @endif
             @endforeach
-            <button class="btn btn-primary" type="submit">Скачать отчеты</button>
+            <button class="btn btn-success mt-5" type="submit">Скачать отчеты</button>
         </form>
     </div>
 @else
