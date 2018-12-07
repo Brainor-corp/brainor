@@ -9,16 +9,12 @@ use Illuminate\Support\Facades\View;
 
 class TrelloGenerator extends Controller
 {
-    private $host = 'https://api.trello.com/1/';
-    private $key = '7b558af4d32e2b1e567482305e812033';
-    private $token = '604655c36dc2adf64b921b48fd9d1a4ef77a46daeb4929c8626a68e0cba4ff9d';
     private $aliasesList = [
-        "start" => ["{s}"],
-        "pause" => ["{p}"],
-        "continue" => ["{c}"],
-        "end" => ["{e}"],
+        "start" =>      ["{s}", "!s", "/s", "start",    "начал"],
+        "pause" =>      ["{p}", "!p", "/p", "pause",    "пауза"],
+        "continue" =>   ["{c}", "!c", "/c", "continue", "продолжил", "{с}", "!с", "/с"],
+        "end" =>        ["{e}", "!e", "/e", "end",      "закончил"],
     ];
-    private $lateBoard = 'VGCO29MB';
 
     public function generateTrelloReportPreview(Request $request){
         $workers = User::whereNotNull('trello_id')->get();
@@ -99,7 +95,7 @@ class TrelloGenerator extends Controller
                 }
             }
         }
-        $lateActions = self::getLateComments($this->lateBoard);
+        $lateActions = self::getLateComments(env('TRELLO_LATE_BOARD_ID'));
         foreach ($lateActions as $action){
             if( (new Carbon($action['date']))->between(new Carbon($dateFrom), new Carbon($before))){
                 $resultArray[$action['board']][] = ['text' => $action['task'], 'date' => $action['date'], 'time' => self::getRoundedTime($action['time'])];
@@ -109,7 +105,7 @@ class TrelloGenerator extends Controller
     }
 
     private function getUsersActions($userId, $since = '', $before = ''){
-        $getActionsByUserPerMonthUrl = $this->host . 'members/' . $userId . '/actions?filter=commentCard&fields=id,data,date&key=' . $this->key . '&token=' . $this->token . '&since=' . $since . '&before=' . $before . '&memberCreator=false';
+        $getActionsByUserPerMonthUrl = env('TRELLO_HOST') . 'members/' . $userId . '/actions?filter=commentCard&fields=id,data,date&key=' . env('TRELLO_KEY') . '&token=' . env('TRELLO_TOKEN') . '&since=' . $since . '&before=' . $before . '&memberCreator=false';
 
         $curl = curl_init();
 
@@ -129,7 +125,7 @@ class TrelloGenerator extends Controller
         return $response;
     }
     private function getLateComments($boardId){
-        $getActionsByLateBoardUrl = $this->host .'boards/'. $boardId . '/actions?key=' . $this->key . '&token=' . $this->token . '&filter=commentCard&fields=id,data,date&memberCreator=false';
+        $getActionsByLateBoardUrl = env('TRELLO_HOST') .'boards/'. $boardId . '/actions?key=' . env('TRELLO_KEY') . '&token=' . env('TRELLO_TOKEN') . '&filter=commentCard&fields=id,data,date&memberCreator=false';
 
         $curl = curl_init();
 
