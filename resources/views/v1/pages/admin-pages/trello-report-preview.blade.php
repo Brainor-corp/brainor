@@ -19,7 +19,8 @@
                 </div>
             </div>
         @endif
-        <form action="" method="">
+        <form action="{{route('generateTrelloReportDownload')}}" method="post">
+            {{ csrf_field() }}
             @foreach($resultArray as $companyName => $tasks)
                 @if($companyName!='errors')
                     <div class="company my-3" id="{{'company-' . $companyName}}">
@@ -35,13 +36,13 @@
                             <div class="task-place mb-3 row">
                                 @foreach($tasks as $key => $task)
                                     <div id="task{{$key}}" class="company-inputs-{{$companyName}} @if($key%2!=0) even @endif col-12" data-index="{{$key}}">
-                                        <input class="mt-3 p-1 w-100" id="task{{$key}}-text" type="text" name="text" value="{{$task['text']}}">
+                                        <input class="mt-3 p-1 w-100" id="task{{$key}}-text" type="text" name="{{$companyName}}[tasks][text]" value="{{$task['text']}}">
 
                                         <label for="task{{$key}}-date">Дата выполнения</label>
-                                        <input class="m-3 p-1" id="task{{$key}}-date" type="date" name="date" value="{{(new Carbon\Carbon($task['date']))->format('Y-m-d')}}">
+                                        <input class="m-3 p-1" id="task{{$key}}-date" type="date" name="{{$companyName}}[tasks][date]" value="{{(new Carbon\Carbon($task['date']))->format('Y-m-d')}}">
 
                                         <label for="task{{$key}}-time">Время выполнения(мин.)</label>
-                                        <input class="m-3 p-1" id="task{{$key}}-time" type="number" step="5" name="time" value="{{$task['time']}}">
+                                        <input class="m-3 p-1" id="task{{$key}}-time" type="number" step="5" name="{{$companyName}}[tasks][time]" value="{{$task['time']}}">
                                         <button type="button" class="delete-task btn btn-danger" data-task="task{{$key}}">Удалить таск</button>
                                     </div>
                                 @endforeach
@@ -51,7 +52,25 @@
                     </div>
                 @endif
             @endforeach
+            <hr>
+            <div class="row">
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <label for="reporter-name">Введи имя того, кто будет в отчете</label>
+                            <input class="w-100" id="reporter-name" name="reporter-name" type="text" value="Выходцев Антон Игоревич">
+                        </div>
+                        <div class="col-12 my-2">
+                            <label for="report-date">Введи дату, которая будет в отчете</label>
+                            <input class="w-100" id="report-date" name="report-date" type="date" value="{{\Carbon\Carbon::now()->format('Y-m-d')}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <button class="btn btn-success mt-5" type="submit">Скачать отчеты</button>
+            <input id="report-start" name="report-start" type="hidden" value="">
+            <input id="report-end" name="report-end" type="hidden" value="">
         </form>
     </div>
 @else

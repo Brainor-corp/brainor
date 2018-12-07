@@ -15,7 +15,7 @@
     cursor: pointer;
 }
 
-.company input{
+input{
     border: 1px solid lightgray;
     border-radius: 5px;
 }

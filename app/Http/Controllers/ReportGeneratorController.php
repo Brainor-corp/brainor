@@ -83,6 +83,7 @@ class ReportGeneratorController extends Controller
             $vals['projects'][$project_name]['hours_summary'] = intval($vals['projects'][$project_name]['minutes_summary']) / 60;
         }
 
+        dd($vals['projects']);
         foreach ($vals['projects'] as $name => $values){
             $TBS = new clsTinyButStrong;
             $TBS->Plugin(TBS_INSTALL, clsOpenTBS::class);

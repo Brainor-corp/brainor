@@ -152,6 +152,64 @@ class TrelloGenerator extends Controller
         return $result;
     }
 
+    public function generateTrelloReportDownload(Request $request){
+        dd($request);
+
+        $tasks = [];
+        $report = [];
+        foreach ($request->request as $name => $values){
+            switch ($name){
+                case '_token': break;
+                case 'reporter-name':
+                    $report['reporterName'] = $values;
+                    break;
+                case 'report-date':
+                    $report['reportDate'] = $values;
+                    break;
+                case 'report-start':
+                    $report['reportDate'] = $values;
+                    break;
+                case 'report-end':
+                    $report['reportDate'] = $values;
+                    break;
+                default:
+
+                    break;
+            }
+        }
+        dd($report);
+
+
+//        foreach ($vals['projects'] as $name => $values){
+//            $TBS = new clsTinyButStrong;
+//            $TBS->Plugin(TBS_INSTALL, clsOpenTBS::class);
+//
+//            $TBS->LoadTemplate($template_path);
+//
+//            $TBS->SetOption('charset', false);
+//            $TBS->SetOption('render', TBS_OUTPUT);
+//
+//            $TBS->MergeField('project_name', $name);
+//            $TBS->MergeField('reporter', $vals['reporter']);
+//            $TBS->MergeField('report_date', $vals['report_date']);
+//            $TBS->MergeField('week_start', $values['week_start']);
+//            $TBS->MergeField('week_end', $values['week_end']);
+//            $TBS->MergeField('minutes_summary', $values['minutes_summary']);
+//            $TBS->MergeField('hours_summary', $values['hours_summary']);
+//            $TBS->MergeBlock('a', $values['tasks']);
+//
+//            $doc_title = 'Отчет ' . $name . ' ' . date_format(date_create($values['week_start']), 'd.m.Y') . '.docx';
+//
+//
+//            $TBS->Show(OPENTBS_FILE, storage_path('app/uploads/') . $doc_title);
+//        }
+//
+//        $phar = new \PharData(storage_path('app/uploads/') . 'Отчеты ' . date("d.m.Y") . '.tar.gz');
+//        $phar->buildFromDirectory(storage_path('app/uploads/'), '/\.docx$/');
+//
+//        return response()->download(storage_path('app/uploads/') .'Отчеты ' . date("d.m.Y") . '.tar.gz');
+    }
+
     private function getCommentCommand($str) {
         foreach ($this->aliasesList as $key => $aliases) {
             if(in_array($str, $aliases)) {
