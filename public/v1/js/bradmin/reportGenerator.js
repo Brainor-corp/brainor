@@ -55,6 +55,7 @@ $(document).ready(function () {
         key++;
 
         var even = (key%2!==0) ? "even" : "";
+
         button.siblings('.task-place').append('' +
             '<div id="task'+key+'" class="'+ company + ' ' + even + ' col-12" data-index="'+key+'">\<n></n>' +
                 '<input class="mt-3 p-1 w-100" id="task'+key+'-text" type="text" name="'+company+'['+key+'][description]">\<n></n>' +

@@ -145,6 +145,7 @@ class TrelloGenerator extends Controller
         $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
 
+        $result = [];
         foreach ($response as $key => $action){
             $result[$key]['date'] = (new Carbon(explode(';', $action['data']['text'])[0]))->toIso8601ZuluString();
             $result[$key]['time'] = explode(';', $action['data']['text'])[1];
@@ -183,7 +184,15 @@ class TrelloGenerator extends Controller
             }
         }
 
+
+
         foreach ($report['tasks'] as $company => $tasks){
+
+            usort($tasks, function ($a, $b) {
+                $t1 = strtotime($a['date']);
+                $t2 = strtotime($b['date']);
+                return $t1 - $t2;
+            });
 
             $minutes_summary = array_sum(array_column($tasks, 'minutes'));
             $hours_summary = $minutes_summary / 60;
@@ -225,7 +234,6 @@ class TrelloGenerator extends Controller
         foreach ($this->aliasesList as $key => $aliases) {
             if(in_array($str, $aliases)) {
                 return [$key, $text];
-
             }
         }
         return 0;
