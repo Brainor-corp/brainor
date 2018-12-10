@@ -60,7 +60,7 @@ class TrelloGenerator extends Controller
 
                                 }
                                 else{
-                                    $resultArray['errors'][] = ['text' => 'В стейте "' . $state . '", нет пары у комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
+                                    $resultArray['errors'][] = ['text' => 'В стейте "' . $state . '", не найдено завершающей команды у комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
                                 }
                                 break;
                             case 1:
