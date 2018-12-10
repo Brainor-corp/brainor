@@ -4,7 +4,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         var dateFrom = $('#dateFrom').val();
-        var dateTo =$('#dateTo').val();
+        var dateTo = $('#dateTo').val();
 
         $.ajaxSetup({
             headers: {
@@ -22,8 +22,8 @@ $(document).ready(function () {
             },
             success: function (html) {
                 $('.content').html(html);
-                document.getElementById('report-start').val(dateFrom);
-                document.getElementById('report-end').val(dateTo);
+                $(document.getElementById('report-start')).val(dateFrom);
+                $(document.getElementById('report-end')).val(dateTo);
             },
             error: function (err) {
                 console.log(err);
@@ -46,6 +46,7 @@ $(document).ready(function () {
         var button = $(this);
         var key = 0;
         var tasks = document.getElementsByClassName(button.data('target'));
+        var company = button.data('target');
 
         $(tasks).each(function () {
             (key < parseFloat($(this).data('index'))) ? key = $(this).data('index') : null;
@@ -54,14 +55,14 @@ $(document).ready(function () {
         key++;
 
         var even = (key%2!==0) ? "even" : "";
-        button.siblings('.task-place').append('<div id="task'+key+'" class="'+ button.data('target') + ' ' + even + ' col-12" data-index="'+key+'">\n' +
-            '                                    <input class="mt-3 p-1 w-100" id="task'+key+'-text" type="text" name="text[]">\n' +
-            '                                    <label for="task'+key+'-date">Дата выполнения</label>\n' +
-            '                                    <input class="m-3 p-1" id="task'+key+'-date" type="date" name="date[]">\n' +
-            '                                    <label for="task'+key+'-time">Время выполнения(мин.)</label>\n' +
-            '                                    <input class="m-3 p-1" id="task'+key+'-time" type="number" step="5" name="time[]">\n' +
-            '                                    <button type="button" class="delete-task btn btn-danger" data-task="task'+key+'">Удалить таск</button>\n' +
-            '                                </div>')
+        button.siblings('.task-place').append('' +
+            '<div id="task'+key+'" class="'+ company + ' ' + even + ' col-12" data-index="'+key+'">\<n></n>' +
+                '<input class="mt-3 p-1 w-100" id="task'+key+'-text" type="text" name="'+company+'['+key+'][description]">\<n></n>' +
+                '<label for="task'+key+'-date">Дата выполнения</label>\<n></n>' +
+                '<input class="m-3 p-1" id="task'+key+'-date" type="date" name="'+company+'['+key+'][date]">\<n></n>' +
+                '<label for="task'+key+'-time">Время выполнения(мин.)</label>\<n></n>' +
+                '<input class="m-3 p-1" id="task'+key+'-time" type="number" step="5" name="'+company+'['+key+'][minutes]">\<n></n>' +
+                '<button type="button" class="delete-task btn btn-danger" data-task="task'+key+'">Удалить таск</button>\n' +
+            '</div>')
     });
-
 });

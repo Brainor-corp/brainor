@@ -35,19 +35,19 @@
                         <div id="{{$companyName}}" class="collapse p-3" aria-labelledby="{{'heading' . $companyName}}">
                             <div class="task-place mb-3 row">
                                 @foreach($tasks as $key => $task)
-                                    <div id="task{{$key}}" class="company-inputs-{{$companyName}} @if($key%2!=0) even @endif col-12" data-index="{{$key}}">
-                                        <input class="mt-3 p-1 w-100" id="task{{$key}}-text" type="text" name="{{$companyName}}[tasks][text]" value="{{$task['text']}}">
+                                    <div id="task{{$key}}" class="{{$companyName}} @if($key%2!=0) even @endif col-12" data-index="{{$key}}">
+                                        <input class="mt-3 p-1 w-100" id="task{{$key}}-text" type="text" name="{{$companyName}}[{{$key}}][description]" value="{{$task['text']}}">
 
                                         <label for="task{{$key}}-date">Дата выполнения</label>
-                                        <input class="m-3 p-1" id="task{{$key}}-date" type="date" name="{{$companyName}}[tasks][date]" value="{{(new Carbon\Carbon($task['date']))->format('Y-m-d')}}">
+                                        <input class="m-3 p-1" id="task{{$key}}-date" type="date" name="{{$companyName}}[{{$key}}][date]" value="{{(new Carbon\Carbon($task['date']))->format('Y-m-d')}}">
 
                                         <label for="task{{$key}}-time">Время выполнения(мин.)</label>
-                                        <input class="m-3 p-1" id="task{{$key}}-time" type="number" step="5" name="{{$companyName}}[tasks][time]" value="{{$task['time']}}">
+                                        <input class="m-3 p-1" id="task{{$key}}-time" type="number" step="5" name="{{$companyName}}[{{$key}}][minutes]" value="{{$task['time']}}">
                                         <button type="button" class="delete-task btn btn-danger" data-task="task{{$key}}">Удалить таск</button>
                                     </div>
                                 @endforeach
                             </div>
-                            <button type="button" class="create-task btn btn-primary" data-target="company-inputs-{{$companyName}}">Добавить таск</button>
+                            <button type="button" class="create-task btn btn-primary" data-target="{{$companyName}}">Добавить таск</button>
                         </div>
                     </div>
                 @endif

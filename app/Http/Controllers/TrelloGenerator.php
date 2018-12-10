@@ -5,15 +5,16 @@ namespace App\Http\Controllers;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
 
 class TrelloGenerator extends Controller
 {
     private $aliasesList = [
         "start" =>      ["{s}", "!s", "/s", "start",    "начал"],
-        "pause" =>      ["{p}", "!p", "/p", "pause",    "пауза"],
+        "pause" =>      ["{p}", "!p", "/p", "pause",    "пауза",     "{р}", "!р", "/р"],
         "continue" =>   ["{c}", "!c", "/c", "continue", "продолжил", "{с}", "!с", "/с"],
-        "end" =>        ["{e}", "!e", "/e", "end",      "закончил"],
+        "end" =>        ["{e}", "!e", "/e", "end",      "закончил",  "{е}", "!е", "/е"],
     ];
 
     public function generateTrelloReportPreview(Request $request){
@@ -124,6 +125,7 @@ class TrelloGenerator extends Controller
 
         return $response;
     }
+
     private function getLateComments($boardId){
         $getActionsByLateBoardUrl = env('TRELLO_HOST') .'boards/'. $boardId . '/actions?key=' . env('TRELLO_KEY') . '&token=' . env('TRELLO_TOKEN') . '&filter=commentCard&fields=id,data,date&memberCreator=false';
 
@@ -153,9 +155,11 @@ class TrelloGenerator extends Controller
     }
 
     public function generateTrelloReportDownload(Request $request){
-        dd($request);
 
-        $tasks = [];
+        File::delete(File::allfiles(storage_path('app/uploads/')));
+
+        $template_path = storage_path('app/template/') . 'report template.docx';
+
         $report = [];
         foreach ($request->request as $name => $values){
             switch ($name){
@@ -167,47 +171,49 @@ class TrelloGenerator extends Controller
                     $report['reportDate'] = $values;
                     break;
                 case 'report-start':
-                    $report['reportDate'] = $values;
+                    $report['reportStart'] = $values;
                     break;
                 case 'report-end':
-                    $report['reportDate'] = $values;
+                    $report['reportEnd'] = $values;
                     break;
                 default:
-
+                    $report['tasks'][$name] = $values;
                     break;
             }
         }
-        dd($report);
+
+        foreach ($report['tasks'] as $company => $tasks){
+
+            $minutes_summary = array_sum(array_column($tasks, 'minutes'));
+            $hours_summary = $minutes_summary / 60;
+
+            $TBS = new \clsTinyButStrong();
+            $TBS->Plugin(TBS_INSTALL, \clsOpenTBS::class);
+
+            $TBS->LoadTemplate($template_path);
+
+            $TBS->SetOption('charset', false);
+            $TBS->SetOption('render', TBS_OUTPUT);
+
+            $TBS->MergeField('project_name', str_replace('_', '.', $company));
+            $TBS->MergeField('reporter', $report['reporterName']);
+            $TBS->MergeField('report_date', $report['reportDate']);
+            $TBS->MergeField('week_start', $report['reportStart']);
+            $TBS->MergeField('week_end', $report['reportEnd']);
+            $TBS->MergeField('minutes_summary', $minutes_summary);
+            $TBS->MergeField('hours_summary', $hours_summary);
+            $TBS->MergeBlock('a', $tasks);
+
+            $doc_title = 'Отчет ' . str_replace('_', '.', $company) . ' ' . date_format(date_create($report['reportStart']), 'd.m.Y') . '.docx';
 
 
-//        foreach ($vals['projects'] as $name => $values){
-//            $TBS = new clsTinyButStrong;
-//            $TBS->Plugin(TBS_INSTALL, clsOpenTBS::class);
-//
-//            $TBS->LoadTemplate($template_path);
-//
-//            $TBS->SetOption('charset', false);
-//            $TBS->SetOption('render', TBS_OUTPUT);
-//
-//            $TBS->MergeField('project_name', $name);
-//            $TBS->MergeField('reporter', $vals['reporter']);
-//            $TBS->MergeField('report_date', $vals['report_date']);
-//            $TBS->MergeField('week_start', $values['week_start']);
-//            $TBS->MergeField('week_end', $values['week_end']);
-//            $TBS->MergeField('minutes_summary', $values['minutes_summary']);
-//            $TBS->MergeField('hours_summary', $values['hours_summary']);
-//            $TBS->MergeBlock('a', $values['tasks']);
-//
-//            $doc_title = 'Отчет ' . $name . ' ' . date_format(date_create($values['week_start']), 'd.m.Y') . '.docx';
-//
-//
-//            $TBS->Show(OPENTBS_FILE, storage_path('app/uploads/') . $doc_title);
-//        }
-//
-//        $phar = new \PharData(storage_path('app/uploads/') . 'Отчеты ' . date("d.m.Y") . '.tar.gz');
-//        $phar->buildFromDirectory(storage_path('app/uploads/'), '/\.docx$/');
-//
-//        return response()->download(storage_path('app/uploads/') .'Отчеты ' . date("d.m.Y") . '.tar.gz');
+            $TBS->Show(OPENTBS_FILE, storage_path('app/uploads/') . $doc_title);
+        }
+
+        $phar = new \PharData(storage_path('app/uploads/') . 'Отчеты ' . date("d.m.Y") . '.tar.gz');
+        $phar->buildFromDirectory(storage_path('app/uploads/'), '/\.docx$/');
+
+        return response()->download(storage_path('app/uploads/') .'Отчеты ' . date("d.m.Y") . '.tar.gz');
     }
 
     private function getCommentCommand($str) {
