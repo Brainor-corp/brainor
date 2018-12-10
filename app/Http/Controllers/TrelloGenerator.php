@@ -51,7 +51,8 @@ class TrelloGenerator extends Controller
                         $command = $this->getCommentCommand($comment['text']);
                         switch($state){
                             case 0:
-                                if($command === 'end' && (new Carbon($comment['date']))>=(new Carbon($dateFrom))){
+                                if($command[0] === 'end' && (new Carbon($comment['date']))>=(new Carbon($dateFrom))){
+                                    isset($command[1][1]) ? $task = $command[1][1] : null;
                                     $currentTimeSpend += (new Carbon($comment['date']))->timestamp;
                                     $currentCompleteDate = $comment['date'];
                                     $state = 1;
@@ -64,11 +65,11 @@ class TrelloGenerator extends Controller
                                 }
                                 break;
                             case 1:
-                                if($command === 'continue'){
+                                if($command[0] === 'continue'){
                                     $state = 2;
                                     $currentTimePaused += (new Carbon($comment['date']))->timestamp;
                                 }
-                                elseif($command === 'start'){
+                                elseif($command[0] === 'start'){
                                     $currentTimeSpend -= (new Carbon($comment['date']))->timestamp;
                                     $spendedMinutes = self::getRoundedTime(intval(round(($currentTimeSpend - $currentTimePaused) / 60)));
                                     if($spendedMinutes) {
@@ -81,7 +82,7 @@ class TrelloGenerator extends Controller
                                 }
                                 break;
                             case 2:
-                                if($command === 'pause'){
+                                if($command[0] === 'pause'){
                                     $state = 1;
                                     $currentTimePaused -= (new Carbon($comment['date']))->timestamp;
                                 }
@@ -99,7 +100,7 @@ class TrelloGenerator extends Controller
         $lateActions = self::getLateComments(env('TRELLO_LATE_BOARD_ID'));
         foreach ($lateActions as $action){
             if( (new Carbon($action['date']))->between(new Carbon($dateFrom), new Carbon($before))){
-                $resultArray[$action['board']][] = ['text' => $action['task'], 'date' => $action['date'], 'time' => self::getRoundedTime($action['time'])];
+                $resultArray[$action['board']][] = ['text' => $action['task'], 'date' => $action['date'], 'time' => self::getRoundedTime($action['time']), 'late' => true];
             }
         }
         return view('v1.pages.admin-pages.trello-report-preview')->with(compact('resultArray'));
@@ -217,9 +218,14 @@ class TrelloGenerator extends Controller
     }
 
     private function getCommentCommand($str) {
+        $found = preg_match('/{t:(.*)}/', $str, $text);
+        if($found){
+            $str = preg_filter('/{t:.*}$/', '', $str);
+        }
         foreach ($this->aliasesList as $key => $aliases) {
             if(in_array($str, $aliases)) {
-                return $key;
+                return [$key, $text];
+
             }
         }
         return 0;

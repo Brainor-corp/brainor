@@ -6,6 +6,9 @@
 .even{
     background-color: #c4d9ed;
 }
+.late{
+    background-color: #ffcccc!important;
+}
 
 .company-header button{
     color: #ffffff;
