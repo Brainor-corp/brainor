@@ -20,6 +20,9 @@ $(document).ready(function () {
                 dateFrom: dateFrom,
                 dateTo: dateTo
             },
+            beforeSend: function(){
+                $('.generate-btn').prop('disabled', true).css('cursor', 'not-allowed').prepend('<div class="loader"></div>');
+            },
             success: function (html) {
                 $('.content').html(html);
                 $(document.getElementById('report-start')).val(dateFrom);
@@ -27,6 +30,8 @@ $(document).ready(function () {
             },
             error: function (err) {
                 console.log(err);
+                $('.generate-btn').prop('disabled', false).css('cursor', 'pointer').text("Произошла ошибка.");
+                $('.loader').remove();
             }
         });
     });
@@ -57,7 +62,7 @@ $(document).ready(function () {
         var even = (key%2!==0) ? "even" : "";
 
         button.siblings('.task-place').append('' +
-            '<div id="task'+key+'" class="'+ company + ' ' + even + ' col-12" data-index="'+key+'">\<n></n>' +
+            '<div id="task'+key+'" class="' + even + ' col-12" data-index="'+key+'">\<n></n>' +
                 '<input class="mt-3 p-1 w-100" id="task'+key+'-text" type="text" name="'+company+'['+key+'][description]">\<n></n>' +
                 '<label for="task'+key+'-date">Дата выполнения</label>\<n></n>' +
                 '<input class="m-3 p-1" id="task'+key+'-date" type="date" name="'+company+'['+key+'][date]">\<n></n>' +

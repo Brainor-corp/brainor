@@ -6,15 +6,13 @@ use Bradmin\Section;
 use Bradmin\SectionBuilder\Display\BaseDisplay\Display;
 use Bradmin\SectionBuilder\Meta\Meta;
 use Illuminate\Support\Facades\View;
-use Illuminate\Http\Request;
 
 
 class Trello extends Section
 {
     protected $title = 'Генератор отчетов v2.0';
 
-
-    public static function onDisplay(Request $request){
+    public static function onDisplay(){
         $meta = new Meta;
         $meta
             ->setStyles([
@@ -33,9 +31,5 @@ class Trello extends Section
 
         return $display;
     }
-
-    public function isDeletable()
-    {
-        return true;
-    }
+    
 }

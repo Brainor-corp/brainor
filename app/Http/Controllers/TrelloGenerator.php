@@ -6,7 +6,6 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\View;
 
 class TrelloGenerator extends Controller
 {
@@ -35,8 +34,7 @@ class TrelloGenerator extends Controller
         foreach ($workers as $worker){
             $actions = self::getUsersActions($worker->trello_id, $since, $before);
             foreach ($actions as $action) {
-                $name = null;
-                $time = null;
+                $name = $time = null;
                 $foundName = preg_match('/{n:(.*)}/', $action['data']['text'], $textName);
                 $foundTime = preg_match('/{t:(.*)}/', $action['data']['text'], $textTime);
                 if($foundName){
@@ -52,54 +50,53 @@ class TrelloGenerator extends Controller
                 }
             }
         }
-//        dd($groupedArray);
 
-        $test = [];
         $resultArray = null;
         foreach($groupedArray as $worker => $actions){
             foreach ($actions as $board => $tasks){
                 foreach ($tasks as $task => $comments){
-                    $currentTimePaused = 0;
-                    $currentTimeSpend = 0;
-                    $customTime = 0;
-                    array_push($test, $comments);
-                    foreach ($comments as $comment){
+                    $currentTimePaused = $currentTimeSpend = $customTime = 0;
+                    $currentCompleteDate = null;
+                    foreach ($comments as $key => $comment){
                         $command = $this->getCommentCommand($comment['text']);
                         $spendedMinutes = $resultArray[$board][$task]['time'] ?? 0;
                         switch($state){
                             case 0:
-                                if($command === 'end' && (new Carbon($comment['date']))>=(new Carbon($dateFrom))){
+                                if($command === 'end' && (new Carbon($comment['date'])) >= (new Carbon($dateFrom))){
                                     if(isset($comment['customName'])){
                                         $task = $comment['customName'];
                                     }
-                                    $currentTimeSpend += (new Carbon($comment['date']))->timestamp;
-                                    $currentCompleteDate = $comment['date'];
-                                    $state = 1;
+                                    if($this->getCommentCommand($comments[$key+1]['text']) === 'pause'){
+                                        $currentTimeSpend += (new Carbon($comments[$key+1]['date']))->timestamp;
+                                    }
+                                    else{
+                                        $currentTimeSpend += (new Carbon($comment['date']))->timestamp;
+                                    }
+                                    if($currentCompleteDate == null){
+                                        $currentCompleteDate = $comment['date'];
+                                    }
                                     if(isset($comment['customTime'])){
                                         $customTime = intval($comment['customTime']);
                                     }
+                                    $state = 1;
                                 }
-                                elseif((new Carbon($comment['date']))<(new Carbon($dateFrom))){
-
-                                }
-                                else{
+                                elseif((new Carbon($comment['date'])) >= (new Carbon($dateFrom))){
                                     $resultArray['errors'][] = ['text' => 'В стейте "' . $state . '", не найдено завершающей команды у комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
                                 }
                                 break;
                             case 1:
                                 if($command === 'continue'){
-                                    $state = 2;
                                     $currentTimePaused += (new Carbon($comment['date']))->timestamp;
                                     if(isset($comment['customTime'])){
                                         $customTime = intval($comment['customTime']);
                                     }
+                                    $state = 2;
                                 }
                                 elseif($command === 'start'){
                                     $currentTimeSpend -= (new Carbon($comment['date']))->timestamp;
                                     if(isset($comment['customTime'])){
                                         $customTime = intval($comment['customTime']);
                                     }
-                                    array_push($test, $customTime);
                                     $spendedMinutes += self::getRoundedTime(intval(round(($currentTimeSpend - $currentTimePaused + ($customTime * 60)) / 60)));
                                     if($spendedMinutes) {
                                         $resultArray[$board][$task] = ['text' => $task, 'date' => $currentCompleteDate ?? null, 'time' => self::getRoundedTime($spendedMinutes)];
@@ -112,11 +109,11 @@ class TrelloGenerator extends Controller
                                 break;
                             case 2:
                                 if($command === 'pause'){
-                                    $state = 1;
                                     $currentTimePaused -= (new Carbon($comment['date']))->timestamp;
                                     if(isset($comment['customTime'])){
                                         $customTime = intval($comment['customTime']);
                                     }
+                                    $state = 1;
                                 }
                                 else{
                                     $resultArray['errors'][] = ['text' => 'Ошибка стейта - ' . $state . ', комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
@@ -129,7 +126,6 @@ class TrelloGenerator extends Controller
                 }
             }
         }
-//        dd($resultArray);
         $lateActions = self::getLateComments(env('TRELLO_LATE_BOARD_ID'));
         foreach ($lateActions as $action){
             if( (new Carbon($action['date']))->between(new Carbon($dateFrom), new Carbon($before))){

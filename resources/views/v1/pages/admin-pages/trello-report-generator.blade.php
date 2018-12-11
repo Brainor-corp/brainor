@@ -8,7 +8,8 @@
             <input class="w-100 form-control" id="dateTo" name="dateTo" type="date" value="{{\Carbon\Carbon::now()->format('Y-m-d')}}"><span>Введи дату конца отчетного периода</span>
         </div>
         <div class="col-12 p-2">
-            <button type="submit" class="btn btn-success"><span>Сгенерировать</span></button>
+            <button type="submit" class="btn generate-btn w-100 btn-success">Сгенерировать</button>
         </div>
+
     </form>
 </div>

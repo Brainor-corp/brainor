@@ -21,8 +21,8 @@
         @endif
         <form action="{{route('generateTrelloReportDownload')}}" method="post">
             {{ csrf_field() }}
+            @php($key = 0)
             @foreach($resultArray as $companyName => $tasks)
-                @php($key = 0)
                 @if($companyName!='errors')
                     <div class="company my-3" id="{{'company-' . $companyName}}">
                         <div class="company-header" id="{{'heading' . $companyName}}">
@@ -37,7 +37,7 @@
                             <div class="task-place mb-3 row">
                                 @foreach($tasks as $taskName => $task)
                                     @php($key++)
-                                    <div id="task{{$key}}" class="{{$companyName}} @if($key%2!=0) even @endif @if(isset($task['late'])) late @endif col-12" data-index="{{$key}}">
+                                    <div id="task{{$key}}" class="@if($key%2!=0) even @endif @if(isset($task['late'])) late @endif col-12" data-index="{{$key}}">
                                         <input class="mt-3 p-1 w-100" id="task{{$key}}-text" type="text" name="{{$companyName}}[{{$key}}][description]" value="{{$task['text']}}">
 
                                         <label for="task{{$key}}-date">Дата выполнения</label>
