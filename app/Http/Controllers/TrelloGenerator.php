@@ -62,8 +62,10 @@ class TrelloGenerator extends Controller
                     $currentTimePaused = 0;
                     $currentTimeSpend = 0;
                     $customTime = 0;
+                    array_push($test, $comments);
                     foreach ($comments as $comment){
                         $command = $this->getCommentCommand($comment['text']);
+                        $spendedMinutes = $resultArray[$board][$task]['time'] ?? 0;
                         switch($state){
                             case 0:
                                 if($command === 'end' && (new Carbon($comment['date']))>=(new Carbon($dateFrom))){
@@ -98,9 +100,9 @@ class TrelloGenerator extends Controller
                                         $customTime = intval($comment['customTime']);
                                     }
                                     array_push($test, $customTime);
-                                    $spendedMinutes = self::getRoundedTime(intval(round(($currentTimeSpend - $currentTimePaused + ($customTime * 60)) / 60)));
+                                    $spendedMinutes += self::getRoundedTime(intval(round(($currentTimeSpend - $currentTimePaused + ($customTime * 60)) / 60)));
                                     if($spendedMinutes) {
-                                        $resultArray[$board][] = ['text' => $task, 'date' => $currentCompleteDate ?? null, 'time' => self::getRoundedTime($spendedMinutes)];
+                                        $resultArray[$board][$task] = ['text' => $task, 'date' => $currentCompleteDate ?? null, 'time' => self::getRoundedTime($spendedMinutes)];
                                     }
                                     $state = 0;
                                 }
@@ -127,7 +129,7 @@ class TrelloGenerator extends Controller
                 }
             }
         }
-//        dd($test);
+//        dd($resultArray);
         $lateActions = self::getLateComments(env('TRELLO_LATE_BOARD_ID'));
         foreach ($lateActions as $action){
             if( (new Carbon($action['date']))->between(new Carbon($dateFrom), new Carbon($before))){
@@ -224,8 +226,6 @@ class TrelloGenerator extends Controller
                 $t2 = strtotime($b['date']);
                 return $t1 - $t2;
             });
-
-            dd($report);
 
             $minutes_summary = array_sum(array_column($tasks, 'minutes'));
             $hours_summary = $minutes_summary / 60;
