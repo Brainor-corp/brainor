@@ -20,14 +20,19 @@ class NavigationDefault
             ],
             [
                 'url' => '/bradmin/ReportGenerator',
-                'icon' => 'fas fa-address-book',
+                'icon' => 'far fa-trash-alt',
                 'text' => 'Генератор отчетов'
+            ],
+            [
+                'url' => '/bradmin/Trello',
+                'icon' => 'fab fa-trello',
+                'text' => 'Генератор отчетов 2.0'
             ],
             [
                 'url' => '/bradmin/generator',
                 'icon' => 'fas fa-address-book',
                 'text' => 'Генератор'
-            ]
+            ],
         ];
 
         return $navigation;
