@@ -35,27 +35,47 @@ class TrelloGenerator extends Controller
         foreach ($workers as $worker){
             $actions = self::getUsersActions($worker->trello_id, $since, $before);
             foreach ($actions as $action) {
+                $name = null;
+                $time = null;
+                $foundName = preg_match('/{n:(.*)}/', $action['data']['text'], $textName);
+                $foundTime = preg_match('/{t:(.*)}/', $action['data']['text'], $textTime);
+                if($foundName){
+                    $action['data']['text'] = preg_filter('/{n:.*}$/', '', $action['data']['text']);
+                    $name = $textName[1];
+                }
+                if($foundTime){
+                    $action['data']['text'] = preg_filter('/{t:.*}$/', '', $action['data']['text']);
+                    $time = $textTime[1];
+                }
                 if(self::getCommentCommand($action['data']['text'])) {
-                    $groupedArray[$worker->name][$action['data']['board']['name']][$action['data']['card']['name']][] = ['text' => $action['data']['text'], 'date' => $action['date']];
+                    $groupedArray[$worker->name][$action['data']['board']['name']][$action['data']['card']['name']][] = ['text' => $action['data']['text'], 'customName' => $name, 'customTime' => $time, 'date' => $action['date']];
                 }
             }
         }
+//        dd($groupedArray);
 
+        $test = [];
         $resultArray = null;
         foreach($groupedArray as $worker => $actions){
             foreach ($actions as $board => $tasks){
                 foreach ($tasks as $task => $comments){
                     $currentTimePaused = 0;
                     $currentTimeSpend = 0;
+                    $customTime = 0;
                     foreach ($comments as $comment){
                         $command = $this->getCommentCommand($comment['text']);
                         switch($state){
                             case 0:
-                                if($command[0] === 'end' && (new Carbon($comment['date']))>=(new Carbon($dateFrom))){
-                                    isset($command[1][1]) ? $task = $command[1][1] : null;
+                                if($command === 'end' && (new Carbon($comment['date']))>=(new Carbon($dateFrom))){
+                                    if(isset($comment['customName'])){
+                                        $task = $comment['customName'];
+                                    }
                                     $currentTimeSpend += (new Carbon($comment['date']))->timestamp;
                                     $currentCompleteDate = $comment['date'];
                                     $state = 1;
+                                    if(isset($comment['customTime'])){
+                                        $customTime = intval($comment['customTime']);
+                                    }
                                 }
                                 elseif((new Carbon($comment['date']))<(new Carbon($dateFrom))){
 
@@ -65,13 +85,20 @@ class TrelloGenerator extends Controller
                                 }
                                 break;
                             case 1:
-                                if($command[0] === 'continue'){
+                                if($command === 'continue'){
                                     $state = 2;
                                     $currentTimePaused += (new Carbon($comment['date']))->timestamp;
+                                    if(isset($comment['customTime'])){
+                                        $customTime = intval($comment['customTime']);
+                                    }
                                 }
-                                elseif($command[0] === 'start'){
+                                elseif($command === 'start'){
                                     $currentTimeSpend -= (new Carbon($comment['date']))->timestamp;
-                                    $spendedMinutes = self::getRoundedTime(intval(round(($currentTimeSpend - $currentTimePaused) / 60)));
+                                    if(isset($comment['customTime'])){
+                                        $customTime = intval($comment['customTime']);
+                                    }
+                                    array_push($test, $customTime);
+                                    $spendedMinutes = self::getRoundedTime(intval(round(($currentTimeSpend - $currentTimePaused + ($customTime * 60)) / 60)));
                                     if($spendedMinutes) {
                                         $resultArray[$board][] = ['text' => $task, 'date' => $currentCompleteDate ?? null, 'time' => self::getRoundedTime($spendedMinutes)];
                                     }
@@ -82,9 +109,12 @@ class TrelloGenerator extends Controller
                                 }
                                 break;
                             case 2:
-                                if($command[0] === 'pause'){
+                                if($command === 'pause'){
                                     $state = 1;
                                     $currentTimePaused -= (new Carbon($comment['date']))->timestamp;
+                                    if(isset($comment['customTime'])){
+                                        $customTime = intval($comment['customTime']);
+                                    }
                                 }
                                 else{
                                     $resultArray['errors'][] = ['text' => 'Ошибка стейта - ' . $state . ', комментария = "' . $comment['text'] . '", от даты - ' . $comment['date'] . ', таска - ' . $task];
@@ -97,6 +127,7 @@ class TrelloGenerator extends Controller
                 }
             }
         }
+//        dd($test);
         $lateActions = self::getLateComments(env('TRELLO_LATE_BOARD_ID'));
         foreach ($lateActions as $action){
             if( (new Carbon($action['date']))->between(new Carbon($dateFrom), new Carbon($before))){
@@ -194,6 +225,8 @@ class TrelloGenerator extends Controller
                 return $t1 - $t2;
             });
 
+            dd($report);
+
             $minutes_summary = array_sum(array_column($tasks, 'minutes'));
             $hours_summary = $minutes_summary / 60;
 
@@ -227,13 +260,9 @@ class TrelloGenerator extends Controller
     }
 
     private function getCommentCommand($str) {
-        $found = preg_match('/{t:(.*)}/', $str, $text);
-        if($found){
-            $str = preg_filter('/{t:.*}$/', '', $str);
-        }
         foreach ($this->aliasesList as $key => $aliases) {
-            if(in_array($str, $aliases)) {
-                return [$key, $text];
+            if(in_array(strtolower(trim($str)), $aliases)) {
+                return $key;
             }
         }
         return 0;
