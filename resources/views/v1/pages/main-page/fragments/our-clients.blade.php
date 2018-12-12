@@ -27,7 +27,7 @@
             <div class="our-clients-img-inner">
                 <div class="row text-center h-100">
                     <div class="col-12 align-self-center"><h1 class="text-uppercase">еще работы</h1></div>
-                    <div class="col-12 align-self-center"><a href="/portfolio" class="hvr-bounce-to-bottom btn bg-transparent">Смотреть все работы</a></div>
+                    <div class="col-12 align-self-center"><a href="/portfolio" class="hvr-bounce-to-bottom btn bg-transparent">Смотреть другие работы</a></div>
                 </div>
             </div>
         </div>
