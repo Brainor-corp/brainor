@@ -2,6 +2,7 @@
 echo "Change work directory"
 cd /var/www/www-root/data/www/test1.brainor.ru/
 echo "Update working files"
+git reset --hard origin/master
 git pull origin master
 echo "Change files owner"
 chown -R nginx:nginx /var/www/www-root/data/www/test1.brainor.ru/app
