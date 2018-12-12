@@ -8,7 +8,7 @@
                 @php($i=0)
                 @foreach($fears as $fear)
                     <li class="nav-item fear-block">
-                        <a class="nav-link py-5 d-flex flex-row  @if($i==0) active @endif flex-md-nowrap flex-wrap" id="tab{{$fear->id}}" data-toggle="tab" href="#fear{{$fear->id}}" role="tab" aria-controls="fear{{$fear->id}}" aria-selected="true">
+                        <a class="nav-link py-5 d-flex fear flex-row  @if($i==0) active @endif flex-md-nowrap flex-wrap" id="tab{{$fear->id}}" data-toggle="tab" href="#fear{{$fear->id}}" role="tab" aria-controls="fear{{$fear->id}}" aria-selected="true">
                             <span class="text-nowrap mr-3">Страх #
                                 <span class="descend-fears-fear-number">{{++$i}}</span>:
                             </span>

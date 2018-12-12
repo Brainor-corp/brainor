@@ -46,12 +46,12 @@
                 <li class="nav-item my-2">
                     <span class="text-nowrap"><i class="fas fa-envelope mr-2"></i><a class="black-link" href="mailto:tasks@brainor.ru">tasks@brainor.ru</a></span>
                 </li>
-                <li class="nav-item my-2 flex-row">
-                    <span><a href="http://vk.com" class="black-link"><i class="fab fa-2x fa-vk mr-1"></i></a></span>
-                    <span><a href="http://youtube.ru" class="black-link"><i class="fab fa-2x fa-youtube mr-2"></i></a></span>
-                    <span><a href="http://instagram.com" class="black-link"><i class="fab fa-2x fa-instagram mr-2"></i></a></span>
-                    <span><a href="http://facebook.com" class="black-link"><i class="fab fa-2x fa-facebook-f"></i></a></span>
-                </li>
+                {{--<li class="nav-item my-2 flex-row">--}}
+                    {{--<span><a href="http://vk.com" class="black-link"><i class="fab fa-2x fa-vk mr-1"></i></a></span>--}}
+                    {{--<span><a href="http://youtube.ru" class="black-link"><i class="fab fa-2x fa-youtube mr-2"></i></a></span>--}}
+                    {{--<span><a href="http://instagram.com" class="black-link"><i class="fab fa-2x fa-instagram mr-2"></i></a></span>--}}
+                    {{--<span><a href="http://facebook.com" class="black-link"><i class="fab fa-2x fa-facebook-f"></i></a></span>--}}
+                {{--</li>--}}
             </ul>
         </div>
     </div>

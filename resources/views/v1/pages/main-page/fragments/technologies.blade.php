@@ -54,7 +54,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/Kotlin.png')}}" alt="">
+                    <img class="technology-img" src="{{asset('img/technologies/kotlin.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
