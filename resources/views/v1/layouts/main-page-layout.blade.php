@@ -11,7 +11,7 @@
     <title>@yield('title')</title>
 </head>
 
-<body class="raleway" data-spy="scroll">
+<body class="raleway">
 <div id="toTop"></div>
 
 {{--Шапка--}}

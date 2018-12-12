@@ -3,9 +3,9 @@ $(document).ready(function () {
     var options = {
         strings: [
             'интернет магазинов',
-            'всяких приколов',
-            'простаты',
-            'кеков и лелов',
+            'лэндингов',
+            'сайтов компаний',
+            'веб-приложений',
         ],
         typeSpeed: 40,
         backSpeed: 40,
@@ -13,7 +13,11 @@ $(document).ready(function () {
 
     };
 
-    var typed = new Typed("#dynamic_changed_text", options);
+    new Typed("#dynamic_changed_text", options);
+
+    $('.fear').on('click', function () {
+        $('body,html').animate({scrollTop:$('#myTabContent').offset().top},800);
+    });
 
 });
 
