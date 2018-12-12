@@ -290,3 +290,11 @@ svg {
 }
 
 /* end checkbox */
+
+.descend-fears-section .fear,
+.price-calculation-content .past,
+.price-calculation-content .picture-next-picture,
+.price-calculation-content .next{
+    cursor: pointer;
+}
+
