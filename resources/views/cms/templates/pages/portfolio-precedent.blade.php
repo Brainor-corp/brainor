@@ -44,21 +44,21 @@
 @endsection
 
 @section('project-details')
-    <div class="col-12 col-md-4 holder">
+    <div class="col-12 col-md-4 holder my-md-0 my-4">
         <div class="block">
             <h2>Laravel</h2>
-            веб-фреймворк с открытым кодом, предназначенный для разработки с использованием архитектурной модели MVC. Выпущен под лицензией MIT.
+            веб-фреймворк с открытым кодом, предназначенный для разработки с использованием архитектурной модели MVC.
         </div>
         <img src="{{asset('img/works/laravel.png')}}" alt="" class="details-picture w-50">
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 my-md-0 my-4">
         <h1 class="details-number">
             150+
         </h1>
         <span><b>часов разработки</b></span>
     </div>
 
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 my-md-0 my-4">
         <h1 class="details-number">
             5+
         </h1>

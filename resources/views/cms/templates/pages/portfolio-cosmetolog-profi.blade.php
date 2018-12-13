@@ -43,25 +43,24 @@
 @endsection
 
 @section('project-details')
-    <div class="col-12 col-md-4 holder">
+    <div class="col-12 col-md-4 holder my-md-0 my-4">
         <div class="block">
             <h2>WordPress</h2>
             Система управления содержимым сайта с открытым исходным кодом.
             Сфера применения — от блогов до достаточно сложных
-            новостных ресурсов и интернет-магазинов. Встроенная система вместе с удачной архитектурой
-            позволяет конструировать проекты широкой функциональной сложности.
+            новостных ресурсов и интернет-магазинов.
         </div>
         <img src="{{asset('img/works/wordpress.png')}}" alt="" class="details-picture w-50">
     </div>
 
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 my-md-0 my-4">
         <h1 class="details-number">
             100+
         </h1>
         <span><b>часов разработки</b></span>
     </div>
 
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 my-md-0 my-4">
         <h1 class="details-number">
             15+
         </h1>

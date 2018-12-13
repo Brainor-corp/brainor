@@ -50,6 +50,18 @@
     transition: 1s;
     opacity: 1;
 }
+@media (max-width: 767px) {
+    .bg-mocups{
+        background-color: #efefef;
+    }
+    .owl-carousel .owl-stage {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
 
 /*.work-logo{*/
     /*max-width: 10px!important;*/

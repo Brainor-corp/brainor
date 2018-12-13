@@ -56,13 +56,13 @@
                 @yield('design')
             </h1>
         </div>
-        <div class="col-5 mt-5 text-center">
+        <div class="col-md-5 col-12 mt-5 text-center">
             <span>@yield('design-description')</span>
         </div>
     </div>
 </div>
 
-<div class="mt-5">
+<div class="my-5 bg-mocups">
     @yield('mocups')
 </div>
 
