@@ -89,8 +89,7 @@
                     <div class="modal-body">
                             <input type="text" name="name" class="form-control my-2 border-left-0 border-right-0 border-top-0 rounded-0" placeholder="Ваше имя" required>
                             <input type="tel" name="tel" class="form-control my-2 border-left-0 border-right-0 border-top-0 rounded-0" placeholder="Ваш телефон" required>
-                            <input type="text" name="text" class="form-control my-2 border-left-0 border-right-0 border-top-0 rounded-0" placeholder="Особенности проекта">
-
+                            <textarea type="text" name="text" class="form-control bg-transparent my-2 no-focus" placeholder="Особенности проекта" cols="30" rows="2"></textarea>
                             <div class="d-none text-center" id="waitRegister">
                                 <img src="{{ asset('img/wait.gif') }}" class="w-25">
                             </div>

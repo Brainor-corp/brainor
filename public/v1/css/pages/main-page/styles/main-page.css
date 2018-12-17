@@ -17,6 +17,16 @@ body{
     background: transparent;
     border-bottom: 1px solid grey;
 }
+.no-focus:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0rem;
+}
+.top-form-container .form-group textarea{
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid grey;
+}
 
 .about-pricing-section{
     max-width: 1400px !important;
