@@ -46,7 +46,7 @@ body{
     font-size: 1.3rem;
 }
 .about-pricing-section .bl-box-desc{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .our-clients-img{
@@ -296,5 +296,8 @@ svg {
 .price-calculation-content .picture-next-picture,
 .price-calculation-content .next{
     cursor: pointer;
+}
+.design-icons{
+    font-size: 7em;
 }
 

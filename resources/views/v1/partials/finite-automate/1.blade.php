@@ -5,16 +5,16 @@
     <div class="steps px-0 col-auto"><span id="step2" class="active nav-step">Дизайн</span></div>
 </div>
 <div class="mt-4 px-3 px-md-0 row justify-content-around">
-    <div class="col-12 text-center align-self-center">
+    <div class="my-md-4 my-0 col-12 text-center align-self-center">
         <h1>Вы хотите заказать дизайн у нас?</h1>
     </div>
-    <div id="choice1" class="my-4 col-md-6 col-12 next text-center align-self-center" data-price="10000">
-        <i class="fas fa-7x text-green fa-check"></i>
+    <div id="choice1" class="my-md-4 my-0 col-6 next text-center align-self-md-center align-self-start priceable" data-price="10000">
+        <i class="fas design-icons text-green fa-check"></i>
         <br>
         <span>Да</span>
     </div>
-    <div id="choice2" class="my-4 my-md-0 col-md-6 col-12 next text-center align-self-center priceable" data-price="5000">
-        <i class="fas fa-7x text-danger fa-times"></i>
+    <div id="choice2" class="my-md-4 my-0 col-6 next text-center align-self-md-center align-self-start priceable" data-price="5000">
+        <i class="fas design-icons text-danger fa-times"></i>
         <br>
         <span>Нет, я предоставлю свой</span>
     </div>

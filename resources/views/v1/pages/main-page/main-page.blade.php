@@ -17,7 +17,12 @@
         <div class="section-name my-5 text-center">
             <h1>Технологии</h1>
         </div>
-    @include("v1.pages.main-page.fragments.technologies")
+        <div class="d-md-block d-none">
+            @include("v1.pages.main-page.fragments.technologies")
+        </div>
+        <div class="d-md-none d-block">
+            @include("v1.pages.main-page.fragments.technologies-mobile")
+        </div>
     </div>
 
 

@@ -19,6 +19,11 @@
         </ul>
     </div>
     <div class="col-lg-5 col-12 text-center" @if(isset($isMainPage)) id="price-btn" @endif>
-        <a href="@if(!isset($isMainPage))/@endif#price-form" class="btn float-lg-right w-270px hvr-bounce-to-bottom">Просчитать проект</a>
+        {{--<a href="@if(!isset($isMainPage))/@endif#price-form" class="btn float-lg-right w-270px hvr-bounce-to-bottom">Просчитать проект</a>--}}
+        @if(!isset($isMainPage))
+            <a class="btn float-lg-right w-270px hvr-bounce-to-bottom" href="#questModal" data-toggle="modal" data-target="#questModal">Просчитать проект</a>
+        @else
+            <a class="btn float-lg-right w-270px hvr-bounce-to-bottom" href="#price-form">Просчитать проект</a>
+        @endif
     </div>
 </div>

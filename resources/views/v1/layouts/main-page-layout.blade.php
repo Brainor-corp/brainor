@@ -12,7 +12,7 @@
 </head>
 
 <body class="raleway">
-<div id="toTop"></div>
+<div id="toTop"><i class="fa fa-angle-up text-white fa-2x"></i></div>
 
 {{--Шапка--}}
 @include('v1.partials.headers.main-page-header')

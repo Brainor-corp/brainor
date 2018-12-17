@@ -15,6 +15,7 @@
     <link href="{{ asset("v1/css/pages/portfolio-pages/portfolio-vitanova.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/portfolio-pages/portfolio-media.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/portfolio-pages/mocup-media.css") }}" rel="stylesheet">
+    <link href="{{ asset("v1/plugins/lightbox/src/css/lightbox.css") }}" rel="stylesheet">
 @endsection
 
 
@@ -189,13 +190,19 @@
             <div class="col-12">
                 <div class="owl-carousel owl-theme mocups-carousel">
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/vitanova/full-mac.png')}}" alt="">
+                        <a href="{{asset('img/portfolios/for-lightbox/vitanova/mac.png')}}" data-lightbox="full-mac">
+                            <img src="{{asset('img/portfolios/vitanova/full-mac.png')}}" alt="">
+                        </a>
                     </div>
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/vitanova/full-ipad.png')}}" alt="">
+                        <a href="{{asset('img/portfolios/for-lightbox/vitanova/ipad.png')}}" data-lightbox="full-ipad">
+                            <img src="{{asset('img/portfolios/vitanova/full-ipad.png')}}" alt="">
+                        </a>
                     </div>
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/vitanova/full-iphone.png')}}" alt="">
+                        <a href="{{asset('img/portfolios/for-lightbox/vitanova/iphone.png')}}" data-lightbox="full-ipad">
+                            <img src="{{asset('img/portfolios/vitanova/full-iphone.png')}}" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -218,4 +225,5 @@
 
 @section('footScripts')
     <script src="{{asset('v1/js/portfolio-pages/precedent.js')}}"></script>
+    <script src="{{ asset("v1/plugins/lightbox/src/js/lightbox.js") }}"></script>
 @endsection
