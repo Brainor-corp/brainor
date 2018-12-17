@@ -4,6 +4,10 @@
     background-color: #efefef;
 }
 
+.top-margin{
+    margin-top: 60px;
+}
+
 .main-page-header {
     position: relative;
     margin-top: -10px;
@@ -16,7 +20,9 @@
     transition: all 0.4s ease;
 }
 .main-page-header nav .logo-svg-mobile{
-    width: 80px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50px;
     height: auto;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -157,7 +163,22 @@ footer {
     color: #4f4d51;
     border: 1px solid #48b71a;
 }
-
+.hvr-bounce-to-bottom span {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
 .hvr-bounce-to-bottom:before {
     content: "";
     position: absolute;
@@ -181,9 +202,19 @@ footer {
 .hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
     color: white;
 }
+.hvr-bounce-to-bottom:hover span, .hvr-bounce-to-bottom:focus span, .hvr-bounce-to-bottom:active span {
+    color: white;
+}
 
 
 .hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+
+}
+.hvr-bounce-to-bottom:hover:before span, .hvr-bounce-to-bottom:focus:before span, .hvr-bounce-to-bottom:active:before span {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -203,6 +234,13 @@ footer {
     transition-duration: 0.5s;
     color: #4f4d51;
     border: 1px solid #B73645;
+}
+
+.red-button{
+    background: #B73645;
+}
+.red-button:hover{
+    background: #d63d4d;
 }
 
 .hvr-bounce-to-top:before {
@@ -225,12 +263,12 @@ footer {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.hvr-bounce-to-top:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+.hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
     color: white;
 }
 
 
-.hvr-bounce-to-top:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+.hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -439,17 +477,22 @@ footer {
     max-height: 100px;
 }
 #toTop {
-    background-image: url("../../../../img/scroll.png");
+    /*background-image: url("../../../../img/scroll.png");*/
+    border-radius: 5px;
+    background-color: #48b71a;
     width: 50px;
     height: 50px;
     text-align:center;
     padding:5px;
     position:fixed;
-    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    bottom:-10px; /* отступ кнопки от нижнего края страницы*/
     right:10px;
     cursor:pointer;
     display:none;
     z-index: 500;
+}
+#toTop:hover {
+    background-color: black;
 }
 .fixed-nav{
     position: fixed;
@@ -458,7 +501,6 @@ footer {
     margin-left: -50px;
 }
 .nav-btn{
-    margin-top: 15px;
     /*margin-left: -56px;*/
     z-index: 5000;
     background: #efefef;
@@ -477,4 +519,13 @@ footer {
     height: auto;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+}
+.footer-border{
+    border-top: 1px solid #48b71a;
+}
+.modal-portfolio-margin{
+    margin-top: 55px;
+}
+.footer-logo-svg{
+    width: 80px;
 }

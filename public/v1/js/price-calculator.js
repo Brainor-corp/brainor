@@ -9,45 +9,51 @@ $( document ).on( 'click', '.past', function () {
         clickBlock = true;
         let click = $(this)[0];
         let step = $(click)[0].id.slice(-1) - 1;
-        currentState = steps[step - 1] ? steps[step - 1]['state'] : 0;
-        currentPrice = steps[step - 1] ? steps[step - 1]['price'] : 0;
+        getStep(click, step);
 
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-
-        $.ajax({
-            type: 'post',
-            url: '/get-state',
-            cache: false,
-            data: {
-                state: currentState
-            },
-            success: function (html) {
-                $('.price-calculation-content').animate({'opacity': 0}, 400, function () {
-                    $(this).html(html).animate({'opacity': 1}, 400);
-                    $(steps[step]['selected']).each(function () {
-                        let choice = $(document.getElementById(this));
-                        if (choice[0].tagName === 'DIV') {
-                            $(document.getElementById(this)).addClass('checked');
-                        }
-                        else {
-                            $(document.getElementById(this)).prop('checked', true);
-                            $(document.getElementById(this)).addClass('priced');
-                        }
-                    });
-                    $('.price-calculation-total').text(currentPrice);
-                    clickBlock = false;
-                });
-            },
-            error: function (data) {
-                console.log(data);
-            }
-        });
     }
 });
+
+function getStep(button, step){
+    currentState = steps[step - 1] ? steps[step - 1]['state'] : 0;
+    currentPrice = steps[step - 1] ? steps[step - 1]['price'] : 0;
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    $.ajax({
+        type: 'post',
+        url: '/get-state',
+        cache: false,
+        data: {
+            state: currentState
+        },
+        success: function (html) {
+            $('.price-calculation-content').animate({'opacity': 0}, 400, function () {
+                $(this).html(html).animate({'opacity': 1}, 400);
+                $(steps[step]['selected']).each(function () {
+                    let choice = $(document.getElementById(this));
+                    if (choice[0].tagName === 'DIV') {
+                        $(document.getElementById(this)).addClass('checked');
+                    }
+                    else {
+                        $(document.getElementById(this)).prop('checked', true);
+                        $(document.getElementById(this)).addClass('priced');
+                    }
+                });
+                $('.price-calculation-total').text(currentPrice);
+                clickBlock = false;
+            });
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+}
+
 
 $( document ).on('change', '.priceable-cb',function () {
     $(this).each(function () {
@@ -182,3 +188,11 @@ function priceCalc(){
     arr['state'] = currentState;
     steps.push(arr);
 }
+
+$( document ).on('click', '.calc-again',function () {
+    if(!clickBlock) {
+        clickBlock = true;
+        let click = $(this)[0];
+        getStep(click, 0);
+    }
+});

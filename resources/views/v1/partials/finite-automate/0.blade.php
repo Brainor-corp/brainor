@@ -2,30 +2,30 @@
     <div class="steps px-0 col-auto"><span id="step1" class="active nav-step" data-state="0">Тип</span></div>
 </div>
 <div class="my-4 px-3 px-md-0 row justify-content-around">
-    <div id="choice1" class="my-4 picture-next my-md-0 col-md-4 col-12 next text-center align-self-center priceable" data-price="0">
+    <div id="choice1" class="my-4 picture-next my-md-0 col-4 next text-center align-self-center priceable" data-price="0">
         <div class="row h-100">
             <div class="col-12 align-self-start picture-next-picture">
-                <img src="{{asset('img/calculator/site.png')}}" alt="">
+                <img class="img-fluid" src="{{asset('img/calculator/site.png')}}" alt="">
             </div>
             <div class="col-12 align-self-end picture-next-text">
                 <span>Лэндинг</span>
             </div>
         </div>
     </div>
-    <div id="choice2" class="my-4 picture-next my-md-0 col-md-4 col-12 next text-center align-self-center priceable" data-price="10000">
+    <div id="choice2" class="my-4 picture-next my-md-0 col-4 next text-center align-self-center priceable" data-price="10000">
         <div class="row h-100">
             <div class="col-12 align-self-start picture-next-picture">
-                <img src="{{asset('img/calculator/cart.png')}}" alt="">
+                <img class="img-fluid" src="{{asset('img/calculator/cart.png')}}" alt="">
             </div>
             <div class="col-12 align-self-end picture-next-text">
                 <span>Магазин</span>
             </div>
         </div>
     </div>
-    <div id="choice3" class="my-4 picture-next my-md-0 col-md-4 col-12 next text-center align-self-center priceable" data-price="5000">
+    <div id="choice3" class="my-4 picture-next my-md-0 col-4 next text-center align-self-center priceable" data-price="5000">
         <div class="row h-100">
             <div class="col-12 align-self-start picture-next-picture">
-                <i class="text-green far fa-7x fa-copyright"></i>
+                <img class="img-fluid" src="{{asset('img/calculator/copyright.png')}}" alt="">
             </div>
             <div class="col-12 align-self-end picture-next-text">
                 <span>Сайт компании</span>

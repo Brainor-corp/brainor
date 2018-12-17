@@ -15,7 +15,7 @@
 </head>
 
 <body class="raleway">
-<div id="toTop"></div>
+<div id="toTop"><i class="fa fa-angle-up text-white fa-2x"></i></div>
 
 {{--Шапка--}}
 @include('v1.partials.headers.main-page-header')
@@ -56,13 +56,13 @@
                 @yield('design')
             </h1>
         </div>
-        <div class="col-5 mt-5 text-center">
+        <div class="col-md-5 col-12 mt-5 text-center">
             <span>@yield('design-description')</span>
         </div>
     </div>
 </div>
 
-<div class="mt-5">
+<div class="my-5 bg-mocups">
     @yield('mocups')
 </div>
 
@@ -91,8 +91,9 @@
         <div class="row my-5">
             @yield('project-functionality')
         </div>
-        <div>
-            <i class="fas fa-cogs mr-3 mb-5"></i>И еще множество полезных функций...
+        <div class="mb-5">
+            <i class="fas fa-cogs mr-3"></i>
+            И еще множество полезных функций...
         </div>
     </div>
 </div>
@@ -110,10 +111,11 @@
                 </div>
                 @yield('site-link')
             </div>
-            <div class="col-12 mt-5"  @if(isset($isMainPage)) id="price-btn" @endif>
+            <div class="col-12 mt-5">
                 <h1>ПЛАНИРУЕТЕ ЗАПУСТИТЬ ПОДОБНЫЙ ПРОЕКТ?</h1>
                 <h4>Давайте обсудим возможное сотрудничество</h4>
-                <a href="@if(!isset($isMainPage))/@endif#price-form" class="hvr-bounce-to-bottom btn mt-5 bg-transparent">Предложить проект</a>
+                {{--<a href="@if(!isset($isMainPage))/@endif#price-form" class="hvr-bounce-to-bottom btn mt-5 bg-transparent">Предложить проект</a>--}}
+                <a href="#" data-toggle="modal" data-target="#questModal" class="hvr-bounce-to-bottom btn mt-5 bg-transparent">Предложить проект</a>
             </div>
         </div>
     </div>

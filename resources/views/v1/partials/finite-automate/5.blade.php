@@ -11,7 +11,7 @@
         <h1>Какой функционал Вы хотите видеть в своем магазине?</h1>
     </div>
 
-    <div class="my-md-0 col-md-4 col-12 text-center align-self-center">
+    <div class="my-md-0 col-4 text-center align-self-center">
         <div class="checkbox c-checkbox">
             <label>
                 <div class="row">
@@ -26,7 +26,7 @@
             </label>
         </div>
     </div>
-    <div class="my-md-0 col-md-4 col-12 text-center align-self-center">
+    <div class="my-md-0 col-4 text-center align-self-center">
         <div class="checkbox c-checkbox">
             <label>
                 <div class="row">
@@ -41,7 +41,7 @@
             </label>
         </div>
     </div>
-    <div class="my-md-0 col-md-4 col-12 text-center align-self-center">
+    <div class="my-md-0 col-4 text-center align-self-center">
         <div class="checkbox c-checkbox">
             <label>
                 <div class="row">

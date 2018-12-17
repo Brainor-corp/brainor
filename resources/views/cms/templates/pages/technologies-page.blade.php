@@ -43,7 +43,12 @@
                 </div>
                 <div class="text-justify">
                     <div class="container-fluid technology-section px-0">
-                        @include("v1.pages.main-page.fragments.technologies")
+                        <div class="d-md-block d-none">
+                            @include("v1.pages.main-page.fragments.technologies")
+                        </div>
+                        <div class="d-md-none d-block">
+                            @include("v1.pages.main-page.fragments.technologies-mobile")
+                        </div>
                     </div>
                 </div>
             </div>
