@@ -529,3 +529,9 @@ footer {
 .footer-logo-svg{
     width: 80px;
 }
+.modal-body textarea{
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 1px solid #cbcbcb;
+}
