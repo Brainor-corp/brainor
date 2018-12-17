@@ -43,22 +43,22 @@
 @endsection
 
 @section('project-details')
-    <div class="col-12 col-md-4 holder">
+    <div class="col-12 col-md-4 holder my-md-0 my-4">
         <div class="block">
             <h2>Laravel</h2>
-            веб-фреймворк с открытым кодом, предназначенный для разработки с использованием архитектурной модели MVC. Выпущен под лицензией MIT.
+            веб-фреймворк с открытым кодом, предназначенный для разработки с использованием архитектурной модели MVC.
         </div>
         <img src="{{asset('img/works/laravel.png')}}" alt="" class="details-picture w-50">
     </div>
 
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 my-md-0 my-4">
         <h1 class="details-number">
             400+
         </h1>
         <span><b>часов разработки</b></span>
     </div>
 
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 my-md-0 my-4">
         <h1 class="details-number">
             20+
         </h1>
@@ -198,7 +198,9 @@
             <div class="col-12">
                 <div class="owl-carousel owl-theme mocups-carousel">
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/jinnmart/full-mac.png')}}" alt="">
+                        <a href="#" data-toggle="modal" data-target="#mac">
+                            <img src="{{asset('img/portfolios/jinnmart/full-mac.png')}}" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -217,6 +219,27 @@
             {{--</div>--}}
         {{--</div>--}}
     {{--</div>--}}
+
+
+    {{--MODALS--}}
+    <div class="modal fade modal-portfolio-margin" id="mac" tabindex="-1" role="dialog" aria-labelledby="mac" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="{{asset('img/portfolios/jinnmart/full-height-main.png')}}" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('footScripts')

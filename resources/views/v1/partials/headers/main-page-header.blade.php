@@ -23,6 +23,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="col-12">
                     @include('v1.partials.headers.partials.navbar-top')
@@ -42,13 +43,14 @@
 
 {{--nav-mobile--}}
     <div class="d-lg-none d-block fixed-nav">
-        <nav class="navbar navbar-expand-lg navbar-light pb-0">
+        <nav class="navbar navbar-expand-lg navbar-light pb-0 bg-grey">
             <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContentMobile" aria-controls="navbarSupportedContentMobile" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a href="/"><img src="{{asset('img/logo/animate-logo.svg')}}" alt="" class="logo-svg-mobile"></a>
             <div class="collapse navbar-collapse w-100 bg-grey mobile-nav" id="navbarSupportedContentMobile">
                 <div class="col-12 w-100 text-center my-3 height-nav-mobile">
-                    <a href="/"><img src="{{asset('img/logo/animate-logo.svg')}}" alt="" class="logo-svg-mobile"></a>
+
                     @include('v1.partials.headers.partials.navbar-top')
                     @include('v1.partials.headers.partials.navbar-bottom')
                 </div>
