@@ -523,6 +523,9 @@ footer {
 .footer-border{
     border-top: 1px solid #48b71a;
 }
+.modal-portfolio-margin{
+    margin-top: 55px;
+}
 .footer-logo-svg{
     width: 80px;
 }

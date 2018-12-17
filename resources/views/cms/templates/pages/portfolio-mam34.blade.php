@@ -176,13 +176,19 @@
             <div class="col-12">
                 <div class="owl-carousel owl-theme mocups-carousel">
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/mam34/full-mac.png')}}" alt="">
+                        <a href="#" data-toggle="modal" data-target="#mac">
+                            <img src="{{asset('img/portfolios/mam34/full-mac.png')}}" alt="">
+                        </a>
                     </div>
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/mam34/full-ipad.png')}}" alt="">
+                        <a href="#" data-toggle="modal" data-target="#ipad">
+                            <img src="{{asset('img/portfolios/mam34/full-ipad.png')}}" alt="">
+                        </a>
                     </div>
                     <div class="item text-center">
-                        <img src="{{asset('img/portfolios/mam34/full-iphone.png')}}" alt="">
+                        <a href="#" data-toggle="modal" data-target="#iphone">
+                            <img src="{{asset('img/portfolios/mam34/full-iphone.png')}}" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -201,6 +207,63 @@
             {{--</div>--}}
         {{--</div>--}}
     {{--</div>--}}
+
+
+    {{--MODALS--}}
+    <div class="modal fade modal-portfolio-margin" id="mac" tabindex="-1" role="dialog" aria-labelledby="mac" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="{{asset('img/portfolios/mam34/full-height-main.png')}}" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-portfolio-margin" id="ipad" tabindex="-1" role="dialog" aria-labelledby="mac" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="{{asset('img/portfolios/mam34/full-main-ipad.png')}}" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-portfolio-margin" id="iphone" tabindex="-1" role="dialog" aria-labelledby="mac" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="{{asset('img/portfolios/mam34/full-main-iphone.png')}}" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('footScripts')

@@ -15,7 +15,6 @@
     <link href="{{ asset("v1/css/pages/portfolio-pages/portfolio-vitanova.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/portfolio-pages/portfolio-media.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/portfolio-pages/mocup-media.css") }}" rel="stylesheet">
-    <link href="{{ asset("v1/plugins/lightbox/src/css/lightbox.css") }}" rel="stylesheet">
 @endsection
 
 
@@ -190,17 +189,17 @@
             <div class="col-12">
                 <div class="owl-carousel owl-theme mocups-carousel">
                     <div class="item text-center">
-                        <a href="{{asset('img/portfolios/for-lightbox/vitanova/mac.png')}}" data-lightbox="full-mac">
+                        <a href="#" data-toggle="modal" data-target="#mac">
                             <img src="{{asset('img/portfolios/vitanova/full-mac.png')}}" alt="">
                         </a>
                     </div>
                     <div class="item text-center">
-                        <a href="{{asset('img/portfolios/for-lightbox/vitanova/ipad.png')}}" data-lightbox="full-ipad">
+                        <a href="#" data-toggle="modal" data-target="#ipad">
                             <img src="{{asset('img/portfolios/vitanova/full-ipad.png')}}" alt="">
                         </a>
                     </div>
                     <div class="item text-center">
-                        <a href="{{asset('img/portfolios/for-lightbox/vitanova/iphone.png')}}" data-lightbox="full-ipad">
+                        <a href="#" data-toggle="modal" data-target="#iphone">
                             <img src="{{asset('img/portfolios/vitanova/full-iphone.png')}}" alt="">
                         </a>
                     </div>
@@ -221,9 +220,68 @@
             {{--</div>--}}
         {{--</div>--}}
     {{--</div>--}}
+
+
+    {{--MODALS--}}
+    <div class="modal fade modal-portfolio-margin" id="mac" tabindex="-1" role="dialog" aria-labelledby="mac" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="{{asset('img/portfolios/vitanova/full-height-main.png')}}" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-portfolio-margin" id="ipad" tabindex="-1" role="dialog" aria-labelledby="mac" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="{{asset('img/portfolios/vitanova/full-main-ipad.png')}}" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-portfolio-margin" id="iphone" tabindex="-1" role="dialog" aria-labelledby="mac" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="{{asset('img/portfolios/vitanova/full-main-iphone.png')}}" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 @endsection
 
 @section('footScripts')
     <script src="{{asset('v1/js/portfolio-pages/precedent.js')}}"></script>
-    <script src="{{ asset("v1/plugins/lightbox/src/js/lightbox.js") }}"></script>
 @endsection
