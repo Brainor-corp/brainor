@@ -7,7 +7,7 @@
 </div>
 <div class="mt-4 px-3 px-md-0 row justify-content-around">
     <div class="my-4 col-12 text-center align-self-center">
-        <h3>Предварительная цена составляет <span class="final-price text-green"></span> р.</h3>
+        <h3>Предварительная цена составляет от <span class="final-price text-green"></span> р.</h3>
     </div>
     <button class="btn hvr-bounce-to-bottom bg-transparent text-uppercase calc-again">
         просчитать заново
