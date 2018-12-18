@@ -4,6 +4,8 @@
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<meta name="google-site-verification" content="0gjCL_wVnd54xg6M7z1jxH6nW8eu6WPKPXvjdFA-Lzc" />
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
