@@ -68,11 +68,12 @@
         /*height: 300px;*/
     }
     .main-page-header .bg-pic-mouse{
-        top: 500px;
-        left: 75%;
+        top: 404px;
+        left: 78%;
         max-width: 300px;
-        /*width: 326px;*/
-        /*height: 400px;*/
+        /* width: 326px; */
+        /* height: 400px; */
+        transform: rotate(-94deg);
     }
 }
 @media (max-width: 1679px){
@@ -106,8 +107,8 @@
         /*height: 300px;*/
     }
     .main-page-header .bg-pic-mouse{
-        top: 500px;
-        left: 82%;
+        top: 450px;
+        left: 80%;
         max-width: 300px;
         /*width: 326px;*/
         /*height: 400px;*/
@@ -144,8 +145,8 @@
         /*height: 300px;*/
     }
     .main-page-header .bg-pic-mouse{
-        top: 500px;
-        left: 82%;
+        top: 435px;
+        left: 75%;
         max-width: 300px;
         /*width: 326px;*/
         /*height: 400px;*/
@@ -182,8 +183,8 @@
         /*height: 300px;*/
     }
     .main-page-header .bg-pic-mouse{
-        top: 500px;
-        left: 82%;
+        top: 420px;
+        left: 65%;
         max-width: 300px;
         /*width: 326px;*/
         /*height: 400px;*/
@@ -220,8 +221,8 @@
         /*height: 300px;*/
     }
     .main-page-header .bg-pic-mouse{
-        top: 450px;
-        left: 85%;
+        top: 420px;
+        left: 65%;
         max-width: 300px;
         /*width: 326px;*/
         /*height: 400px;*/
