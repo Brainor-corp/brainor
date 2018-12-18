@@ -9,14 +9,9 @@ class NavigationDefault
     {
         $navigation = [
             [
-                'url' => '/bradmin/users',
+                'url' => '/bradmin/Users',
                 'icon' => 'fas fa-users',
                 'text' => 'Пользователи'
-            ],
-            [
-                'url' => '/bradmin/contacts',
-                'icon' => 'fas fa-address-book',
-                'text' => 'Контакты'
             ],
             [
                 'url' => '/bradmin/ReportGenerator',
@@ -29,7 +24,7 @@ class NavigationDefault
                 'text' => 'Генератор отчетов 2.0'
             ],
             [
-                'url' => '/bradmin/generator',
+                'url' => '/bradmin/Generator',
                 'icon' => 'fas fa-address-book',
                 'text' => 'Генератор'
             ],
