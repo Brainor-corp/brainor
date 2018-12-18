@@ -67,7 +67,7 @@
 </div>
 
 
-<div class="container-fluid technical-details mt-5">
+<div class="container-fluid technical-details">
     <div class="container">
         <div class="row align-items-center text-center my-5">
 
