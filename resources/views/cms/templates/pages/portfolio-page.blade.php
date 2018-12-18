@@ -47,6 +47,7 @@
                                    ->when(isset($dateTo), function ($query) use ($dateTo){
                                        return $query->where('published_at', '<=', date('Y-m-d', strtotime($dateTo. ' + 1 days')));
                                    })
+                                   ->orderBy('published_at','desc')
                                    ->paginate(6);
                                @endphp
                                @foreach($works as $work)
