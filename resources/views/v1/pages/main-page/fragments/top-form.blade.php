@@ -3,7 +3,7 @@
         <div class="col-12 col-lg-7 col-xl-5 top-margin mt-lg-0">
             <h1 class="text-center animate-headline text-lg-left text-uppercase">Комплексные решения по разработке <br> <span id="dynamic_changed_text"></span></h1>
             <div class="top-form-container triangle-border mt-3">
-                <div class="form-group left-right-border p-5 text-center" id="price-form">
+                <div class="form-group left-right-border p-md-5 p-4 text-center" id="price-form">
                     <form id="SendMailForm" method="post" action="/SendMail">
                         <h4 class="mb-md-5 mb-3">Заполните форму и узнайте стоимость вашего проекта</h4>
                         <input type="text" name="name" class="form-control my-2" placeholder="Ваше имя" required>
