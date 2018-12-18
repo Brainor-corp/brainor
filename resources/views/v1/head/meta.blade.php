@@ -6,6 +6,8 @@
 
 <meta name="google-site-verification" content="0gjCL_wVnd54xg6M7z1jxH6nW8eu6WPKPXvjdFA-Lzc" />
 
+<meta name="yandex-verification" content="6f308a1b27e7281e" />
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
