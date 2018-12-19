@@ -1,4 +1,4 @@
-<footer class="p-3 container-fluid footer-border">
+<footer class="p-3 container-fluid footer-border @if(!isset($isMainPage)) inside-page-footer @endif">
     <div class="d-flex flex-wrap justify-content-around align-items-center">
         <div class="d-flex flex-column col-lg-auto col-12 mt-5 mx-4 mt-lg-0 mx-lg-0 text-lg-left text-center">
             <a href="/"><img src="{{asset('img/logo/animate-logo.svg')}}" alt="" class="footer-logo-svg"></a>
@@ -10,48 +10,9 @@
                 <a class="black-link" href="#price-form"><b>Задать вопрос</b></a>
             @endif
 
-
-
-
-
-            {{--<b>Услуги</b>--}}
-            {{--<br>--}}
-            <ul class="navbar-nav">
-               {{--<li>--}}
-                   {{--@php--}}
-
-                       {{--$args = [--}}
-                           {{--'type' => 'page',--}}
-                           {{--'tags' => ['servises']--}}
-                       {{--];--}}
-                       {{--$servises = \Bradmin\Cms\Helpers\CMSHelper::getQueryBuilder($args)--}}
-                   {{--->get();--}}
-                   {{--@endphp--}}
-                   {{--@foreach($servises as $servise)--}}
-
-                           {{--<a class="black-link" href="{{$servise->url}}">--}}
-                               {{--<p class="mb-0">{{ $servise->title }}</p>--}}
-                           {{--</a>--}}
-
-                    {{--@endforeach--}}
-               {{--</li>--}}
-            </ul>
         </div>
         <div class="d-flex flex-column mt-5 mx-4 mt-lg-0 mx-lg-0 text-lg-left text-center col-lg-auto col-12 px-0">
             <a class="black-link" href="/technologies"><b>Технологии</b></a>
-
-
-
-            {{--<b>О компании</b>--}}
-
-            {{--<ul class="navbar-nav">--}}
-                {{--<li>Сайты компании</li>--}}
-                {{--<li>Сайты компании</li>--}}
-                {{--<li>Сайты компании</li>--}}
-                {{--<li>Сайты компании</li>--}}
-                {{--<li>Сайты компании</li>--}}
-                {{--<li>Сайты компании</li>--}}
-            {{--</ul>--}}
         </div>
         <div class="d-flex flex-column mt-5 mx-4 mt-lg-0 mx-lg-0 text-lg-left text-center col-lg-auto col-12 px-0">
             <a class="black-link" href="/portfolio"><b>Портфолио</b></a>
@@ -66,12 +27,6 @@
                 <li class="nav-item my-2">
                     <span class="text-nowrap"><i class="fas fa-envelope mr-2"></i><a class="black-link" href="mailto:tasks@brainor.ru">tasks@brainor.ru</a></span>
                 </li>
-                {{--<li class="nav-item my-2 flex-row">--}}
-                    {{--<span><a href="http://vk.com" class="black-link"><i class="fab fa-2x fa-vk mr-1"></i></a></span>--}}
-                    {{--<span><a href="http://youtube.ru" class="black-link"><i class="fab fa-2x fa-youtube mr-2"></i></a></span>--}}
-                    {{--<span><a href="http://instagram.com" class="black-link"><i class="fab fa-2x fa-instagram mr-2"></i></a></span>--}}
-                    {{--<span><a href="http://facebook.com" class="black-link"><i class="fab fa-2x fa-facebook-f"></i></a></span>--}}
-                {{--</li>--}}
             </ul>
         </div>
     </div>

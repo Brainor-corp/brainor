@@ -1,6 +1,6 @@
 <div class="row align-items-center mb-3">
-    <div class="col-lg-4 col-12 px-0">
-        <ul class="navbar-nav navbar mb-2 py-lg-0 px-0">
+    <div class="col-lg-4 col-12 px-0 align-self-center">
+        <ul class="navbar-nav navbar py-lg-0 px-0">
             {{--<li class="nav-item">--}}
                 {{--<a class="nav-link black-link py-lg-0" href="/servises"><b>Услуги</b></a>--}}
             {{--</li>--}}
