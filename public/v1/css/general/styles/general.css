@@ -75,6 +75,10 @@
     filter: blur(2px);
 }
 
+.blur-color-block.inside-page-header {
+    filter: unset;
+    border-bottom: 1px solid #48b71a;
+}
 
 .raleway{
     font-family: Raleway;
