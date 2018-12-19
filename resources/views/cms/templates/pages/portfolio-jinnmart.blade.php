@@ -186,7 +186,7 @@
             <div class="col-12">
                 <div class="mocups-row">
                     <div class="mac">
-                        @include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/jinnmart/full-height-main.png')])
+                        @include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/jinnmart/full-height-main.jpg')])
                     </div>
                 </div>
             </div>
@@ -232,7 +232,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img class="img-fluid" src="{{asset('img/portfolios/jinnmart/full-height-main.png')}}" alt="">
+                    <img class="img-fluid" src="{{asset('img/portfolios/jinnmart/full-height-main.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
