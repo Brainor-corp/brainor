@@ -13,7 +13,7 @@
         <img src="{{asset('img/bg/mouse.png')}}" alt="" class="bg-pics bg-pic-mouse">
     </div>
     @endif
-    <div class="blur-color-block"></div>
+    <div class="blur-color-block @if(!isset($isMainPage)) inside-page-header @endif"></div>
 
     {{--nav-desktop--}}
     <div class="d-lg-block d-none">
