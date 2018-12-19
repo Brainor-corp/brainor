@@ -4,7 +4,7 @@
 }
 
 .technical-details{
-    background-color: #efefef;
+    background-color: #fafafa;
 }
 
 .details-picture{
@@ -17,13 +17,13 @@
 }
 
 .project-functionality{
-    background-color: #efefef;
+    background-color: #fafafa;
     font-size: 1.3rem;
 }
 
 .planing-block{
     margin-top: 150px;
-    background-color: #efefef;
+    background-color: #fafafa;
 }
 
 .link-block{
@@ -52,7 +52,7 @@
 }
 @media (max-width: 767px) {
     .bg-mocups{
-        background-color: #efefef;
+        background-color: #fafafa;
     }
     .owl-carousel .owl-stage {
         display: flex;
