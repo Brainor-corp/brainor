@@ -174,13 +174,13 @@
             <div class="col-12">
                 <div class="mocups-row">
                     <div class="mac">
-                        @include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/uok/full-height-main.png')])
+                        @include('v1.partials.mocups.mac', ['path' => asset('img/portfolios/uok/full-height-main.jpg')])
                     </div>
                     <div class="ipad">
-                        @include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/uok/full-main-ipad.png')])
+                        @include('v1.partials.mocups.ipad', ['path' => asset('img/portfolios/uok/full-main-ipad.jpg')])
                     </div>
                     <div class="iphone">
-                        @include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/uok/full-main-iphone.png')])
+                        @include('v1.partials.mocups.iphone', ['path' => asset('img/portfolios/uok/full-main-iphone.jpg')])
                     </div>
                 </div>
             </div>
@@ -236,7 +236,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img class="img-fluid" src="{{asset('img/portfolios/uok/full-height-main.png')}}" alt="">
+                    <img class="img-fluid" src="{{asset('img/portfolios/uok/full-height-main.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
@@ -254,7 +254,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img class="img-fluid" src="{{asset('img/portfolios/uok/full-main-ipad.png')}}" alt="">
+                    <img class="img-fluid" src="{{asset('img/portfolios/uok/full-main-ipad.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
@@ -272,7 +272,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <img class="img-fluid" src="{{asset('img/portfolios/uok/full-main-iphone.png')}}" alt="">
+                    <img class="img-fluid" src="{{asset('img/portfolios/uok/full-main-iphone.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn hvr-bounce-to-top bg-transparent" data-dismiss="modal">Закрыть</button>
