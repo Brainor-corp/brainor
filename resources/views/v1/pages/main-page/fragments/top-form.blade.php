@@ -1,6 +1,6 @@
 <div class="container-fluid top-form p-lg-4 p-3">
     <div class="row">
-        <div class="col-12 col-lg-7 col-xl-5 top-margin mt-lg-0">
+        <div class="col-12 col-lg-7 col-xl-5 top-margin mt-lg-0 ml-lg-5">
             <h2 class="text-center animate-headline text-lg-left text-uppercase">Комплексные решения по разработке <br> <span id="dynamic_changed_text"></span></h2>
             <div class="top-form-container triangle-border mt-3">
                 <div class="form-group left-right-border p-4 text-center" id="price-form">
