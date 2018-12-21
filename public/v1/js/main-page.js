@@ -19,5 +19,9 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop:$('#myTabContent').offset().top},800);
     });
 
+    new LazyLoad({
+        elements_selector: ".lazy"
+    });
+
 });
 
