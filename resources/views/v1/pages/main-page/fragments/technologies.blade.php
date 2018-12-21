@@ -3,7 +3,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/laravel.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/laravel.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -20,7 +20,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/vue.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/vue.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -37,7 +37,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/wordpress.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/wordpress.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -54,7 +54,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/bitrics.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/bitrics.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -71,7 +71,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/php.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/php.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -88,7 +88,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/js.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/js.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -105,7 +105,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/ajax.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/ajax.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -122,7 +122,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/json.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/json.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -139,7 +139,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/html5.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/html5.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -156,7 +156,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/kotlin.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/kotlin.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -173,7 +173,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/api.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/api.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -190,7 +190,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/xml.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/xml.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -207,7 +207,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/nginx.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/nginx.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -224,7 +224,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/apache.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/apache.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -241,7 +241,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/postgesql.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/postgesql.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -258,7 +258,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/mysql.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/mysql.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -275,7 +275,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/windows.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/windows.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -292,7 +292,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/linux.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/linux.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -309,7 +309,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/android.jpg')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/android.jpg')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
@@ -326,7 +326,7 @@
         <div class="col-12 col-md-6 col-xl-3 text-center my-4">
             <div class="row">
                 <div class="col-12 col-md-3 pr-md-0 align-self-center">
-                    <img class="technology-img" src="{{asset('img/technologies/ios.png')}}" alt="">
+                    <img class="technology-img lazy" data-src="{{asset('img/technologies/ios.png')}}" alt="">
                 </div>
                 <div class="col-12 col-md-9 pl-md-0 align-self-center">
                     <div class="row">
