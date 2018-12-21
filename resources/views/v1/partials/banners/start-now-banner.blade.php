@@ -3,7 +3,7 @@
         <div class="start-now-text text-uppercase col-lg-auto col-12"><b>начните развивать свой бизнес прямо сейчас</b></div>
         <div class="btn red-button align-text-bottom text-uppercase col-lg-auto col-12 ml-lg-5 p-0">
             <a href="{{ asset('docs/brif.doc') }}">
-                <div class="w-100 h-100 px-5 py-1 text-white">
+                <div class="w-100 px-5 py-1 text-white">
                     заполнить бриф
                 </div>
             </a>
