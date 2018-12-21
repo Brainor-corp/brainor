@@ -56,7 +56,7 @@
                                    ->paginate(6);
                                @endphp
                                @foreach($works as $work)
-                                   <div class="our-clients-img col-12 col-md-6 p-3 w-100" style="background-image: url({{'../../../../../img/works/' . $work->slug . '.png'}})">
+                                   <div class="our-clients-img col-12 col-md-6 p-3 w-100" style="background-image: url({{'../../../../../img/works/' . $work->slug . '.jpg'}})">
                                        <a href="{{$work->url}}">
                                            <div class="our-clients-img-blur"></div>
                                            <div class="our-clients-img-inner">
