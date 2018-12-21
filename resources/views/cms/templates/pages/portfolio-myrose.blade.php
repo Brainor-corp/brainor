@@ -7,8 +7,8 @@
 
 @extends('v1.layouts.portfolio-layout')
 
-<title>Портфолио | СВОЯ РОЗА</title>
 @section('meta')
+    <title>Портфолио | СВОЯ РОЗА</title>
     <meta name="description" content="Портфолио | СВОЯ РОЗА – интернет-магазин сети магазинов по продаже цветов." />
 @endsection
 
@@ -236,7 +236,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/myrose/full-height-main.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
@@ -254,7 +254,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/myrose/full-main-ipad.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
@@ -272,7 +272,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/myrose/full-main-iphone.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">

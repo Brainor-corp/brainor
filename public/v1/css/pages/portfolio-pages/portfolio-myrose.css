@@ -15,7 +15,7 @@
 .mocups-carousel img{
     width: auto !important;
     max-height: 400px;
-    max-width: 100%;
+    max-width: 90%;
     display: inline-block !important;
 }
 

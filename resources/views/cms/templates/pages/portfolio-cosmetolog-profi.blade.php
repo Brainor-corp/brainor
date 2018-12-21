@@ -7,8 +7,8 @@
 
 @extends('v1.layouts.portfolio-layout')
 
-<title>Портфолио | Professional</title>
 @section('meta')
+    <title>Портфолио | Professional</title>
     <meta name="description" content="Портфолио | Professional  – сайт международного учебного цента." />
 @endsection
 
@@ -236,7 +236,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/cosmetolog/full-height-main.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
@@ -254,7 +254,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/cosmetolog/full-main-ipad.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
@@ -272,7 +272,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/cosmetolog/full-main-iphone.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
