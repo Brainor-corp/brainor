@@ -1,3 +1,7 @@
+new LazyLoad({
+    elements_selector: ".lazy"
+});
+
 $(document).ready(function () {
     $("#price-btn").on("click", "a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке

@@ -7,7 +7,6 @@
 @endsection
 
 @section('headScripts')
-    <script src="{{ asset("/v1/plugins/LazyLoad/lazyload.min.js") }}"></script>
 @endsection
 
 @section("content")
