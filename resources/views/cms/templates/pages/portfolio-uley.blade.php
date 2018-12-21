@@ -7,8 +7,8 @@
 
 @extends('v1.layouts.portfolio-layout')
 
-<title>Портфолио | Улей</title>
 @section('meta')
+    <title>Портфолио | Улей</title>
     <meta name="description" content="Портфолио | Улей – Cайт компании по бухгалтерскому учету." />
 @endsection
 
@@ -230,7 +230,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body scroll-modal-mobile">
                             <img class="img-fluid" src="{{asset('img/portfolios/uley/full-height-main.jpg')}}" alt="">
                         </div>
                         <div class="modal-footer">
@@ -248,7 +248,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body scroll-modal-mobile">
                             <img class="img-fluid" src="{{asset('img/portfolios/uley/full-main-ipad.jpg')}}" alt="">
                         </div>
                         <div class="modal-footer">
@@ -266,7 +266,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body scroll-modal-mobile">
                             <img class="img-fluid" src="{{asset('img/portfolios/uley/full-main-iphone.jpg')}}" alt="">
                         </div>
                         <div class="modal-footer">

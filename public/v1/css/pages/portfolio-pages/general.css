@@ -46,6 +46,10 @@
     opacity: 0;
     transition: 1s;
 }
+.scroll-modal-mobile{
+    height: 65vh;
+    overflow-y: scroll;
+}
 .holder:hover .block{
     transition: 1s;
     opacity: 1;
