@@ -7,6 +7,11 @@
 
 @extends('v1.layouts.inside-pages-layout')
 
+<title>Портфолио</title>
+@section('meta')
+    <meta name="description" content="Cраница портфолио web-студии Brainor." />
+@endsection
+
 @section('styles')
     <link href="{{ asset("v1/css/pages/inside-pages/styles/inside-pages.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/inside-pages/media/inside-pages-media.css") }}" rel="stylesheet">

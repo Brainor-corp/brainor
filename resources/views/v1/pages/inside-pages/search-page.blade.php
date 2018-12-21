@@ -1,5 +1,10 @@
 @extends('v1.layouts.inside-pages-layout')
 
+
+@section('meta')
+    <meta name="description" content="Поиск по сайту студии web-разработки brainor" />
+@endsection
+
 @section('styles')
     <link href="{{ asset("v1/css/pages/inside-pages/styles/inside-pages.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/inside-pages/media/inside-pages-media.css") }}" rel="stylesheet">

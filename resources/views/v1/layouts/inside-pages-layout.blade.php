@@ -4,6 +4,7 @@
 <head>
     @include('v1.head.meta')
     @include('v1.head.head')
+    @yield('meta')
 
     @yield('styles')
     @yield('headScripts')

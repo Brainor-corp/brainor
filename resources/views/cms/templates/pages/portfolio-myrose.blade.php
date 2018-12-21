@@ -7,6 +7,11 @@
 
 @extends('v1.layouts.portfolio-layout')
 
+<title>Портфолио | СВОЯ РОЗА</title>
+@section('meta')
+    <meta name="description" content="Портфолио | СВОЯ РОЗА – интернет-магазин сети магазинов по продаже цветов." />
+@endsection
+
 @section('styles')
     <link href="{{ asset("v1/css/pages/inside-pages/styles/inside-pages.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/inside-pages/media/inside-pages-media.css") }}" rel="stylesheet">
@@ -158,7 +163,8 @@
 
 @section('site-link')
     <div class="my-5">
-        <i class="fas fa-link"></i> <a href="http://myrose.ru" class="black-link text-uppercase" target="_blank">своя роза</a>
+        {{--<i class="fas fa-link"></i> <a href="http://myrose.ru" class="black-link text-uppercase" target="_blank">своя роза</a>--}}
+        временно недоступна
     </div>
 @endsection
 

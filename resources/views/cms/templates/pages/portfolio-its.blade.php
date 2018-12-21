@@ -7,6 +7,11 @@
 
 @extends('v1.layouts.portfolio-layout')
 
+<title>Портфолио | Мандарин</title>
+@section('meta')
+    <meta name="description" content="Портфолио | Мандарин – сайт партнера компании 1с." />
+@endsection
+
 @section('styles')
     <link href="{{ asset("v1/css/pages/inside-pages/styles/inside-pages.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/inside-pages/media/inside-pages-media.css") }}" rel="stylesheet">
@@ -26,7 +31,7 @@
 
 
 @section('project-name')
-    ИнформТехСервис – сайт партнера компании 1с.
+    Мандарин – сайт партнера компании 1с.
 @endsection
 @section('project-logo')
     <img src="{{asset('img/works/logo-its.png')}}" alt="" class="project-logo">
@@ -160,7 +165,7 @@
 
 @section('site-link')
     <div class="my-5">
-        <i class="fas fa-link"></i> <a href="http://itservis1c.ru" class="black-link text-uppercase" target="_blank">ИнформТехСервис</a>
+        <i class="fas fa-link"></i> <a href="http://mandarin1c.ru/" class="black-link text-uppercase" target="_blank">Мандарин</a>
     </div>
 @endsection
 
