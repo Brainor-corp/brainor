@@ -8,7 +8,7 @@
     <div class="row p-0 align-items-center">
         @foreach($works as $work)
 
-            <div class="our-clients-img col-12 p-3 col-xl-4 w-100" style="background-image: url({{'../../../../../img/works/' . $work->slug . '.png'}})">
+            <div class="our-clients-img col-12 p-3 col-xl-4 w-100" style="background-image: url({{'../../../../../img/works/' . $work->slug . '.jpg'}})">
                 <a href="{{$work->url}}">
 
                     <div class="our-clients-img-blur"></div>
@@ -22,7 +22,7 @@
                 </div>
 
         @endforeach
-        <div class="our-clients-img col-12 p-3 col-xl-4 w-100" style="background-image: url({{'../../../../../img/works/us.png'}})">
+        <div class="our-clients-img col-12 p-3 col-xl-4 w-100" style="background-image: url({{'../../../../../img/works/us.jpg'}})">
             <div class="our-clients-img-blur"></div>
             <div class="our-clients-img-inner">
                 <div class="row text-center h-100">
