@@ -4,6 +4,7 @@
 <head>
     @include('v1.head.meta')
     @include('v1.head.head')
+    <meta name="description" content="Разработка сайтов | Web-студия  BRAINOR в Волгограде" />
 
     @yield('styles')
     @yield('headScripts')

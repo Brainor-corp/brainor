@@ -29,11 +29,12 @@
         /*height: 300px;*/
     }
     .main-page-header .bg-pic-mouse{
-        top: 500px;
-        left: 75%;
+        top: 404px;
+        left: 78%;
         max-width: 300px;
-        /*width: 326px;*/
-        /*height: 400px;*/
+        /* width: 326px; */
+        /* height: 400px; */
+        transform: rotate(-94deg);
     }
 }
 

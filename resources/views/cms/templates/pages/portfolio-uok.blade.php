@@ -7,6 +7,11 @@
 
 @extends('v1.layouts.portfolio-layout')
 
+<title>Портфолио | Расчетный центр</title>
+@section('meta')
+    <meta name="description" content="Портфолио | Расчетный центр – портал агрегатора услуг ЖКХ." />
+@endsection
+
 @section('styles')
     <link href="{{ asset("v1/css/pages/inside-pages/styles/inside-pages.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/inside-pages/media/inside-pages-media.css") }}" rel="stylesheet">

@@ -7,6 +7,10 @@
 
 @extends('v1.layouts.inside-pages-layout')
 
+@section('meta')
+    <meta name="description" content="Технологии, используемые при разработке сайтов web-студией Brainor." />
+@endsection
+
 @section('styles')
     <link href="{{ asset("v1/css/pages/inside-pages/styles/inside-pages.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/inside-pages/media/inside-pages-media.css") }}" rel="stylesheet">

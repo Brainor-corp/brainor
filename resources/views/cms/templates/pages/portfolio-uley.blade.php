@@ -7,6 +7,11 @@
 
 @extends('v1.layouts.portfolio-layout')
 
+<title>Портфолио | Улей</title>
+@section('meta')
+    <meta name="description" content="Портфолио | Улей – Cайт компании по бухгалтерскому учету." />
+@endsection
+
 @section('styles')
     <link href="{{ asset("v1/css/pages/inside-pages/styles/inside-pages.css") }}" rel="stylesheet">
     <link href="{{ asset("v1/css/pages/inside-pages/media/inside-pages-media.css") }}" rel="stylesheet">
@@ -25,7 +30,7 @@
 
 
 @section('project-name')
-    Cайт компании по бухгалтерскому учету
+    Улей – Cайт компании по бухгалтерскому учету.
 @endsection
 @section('project-logo')
     <img src="{{asset('img/works/logo-uley.png')}}" alt="" class="project-logo">
