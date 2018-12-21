@@ -6,6 +6,10 @@
 ?>
 
 @extends('v1.layouts.portfolio-layout')
+<title>Портфолио | Ассоль</title>
+@section('meta')
+    <meta name="description" content="Портфолио | Ассоль – сайт клиники пластической хирургии." />
+@endsection
 
 @section('styles')
     <link href="{{ asset("v1/css/pages/inside-pages/styles/inside-pages.css") }}" rel="stylesheet">

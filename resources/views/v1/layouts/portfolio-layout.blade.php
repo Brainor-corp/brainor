@@ -4,6 +4,7 @@
 <head>
     @include('v1.head.meta')
     @include('v1.head.head')
+    @yield('meta')
 
     <link rel="stylesheet" href="{{asset('v1/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('v1/plugins/OwlCarousel2/dist/assets/owl.theme.default.min.css')}}">
