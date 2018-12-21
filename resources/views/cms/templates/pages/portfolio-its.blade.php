@@ -7,8 +7,8 @@
 
 @extends('v1.layouts.portfolio-layout')
 
-<title>Портфолио | Мандарин</title>
 @section('meta')
+    <title>Портфолио | Мандарин</title>
     <meta name="description" content="Портфолио | Мандарин – сайт партнера компании 1с." />
 @endsection
 
@@ -237,7 +237,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/its/full-height-main.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
@@ -255,7 +255,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/its/full-main-ipad.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
@@ -273,7 +273,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/its/full-main-iphone.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">

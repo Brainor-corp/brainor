@@ -7,8 +7,8 @@
 
 @extends('v1.layouts.portfolio-layout')
 
-<title>Портфолио | ИнстаМамы</title>
 @section('meta')
+    <title>Портфолио | ИнстаМамы</title>
     <meta name="description" content="Портфолио | ИнстаМамы – сайт сообщества инстамам Волгограда и Волжского." />
 @endsection
 
@@ -224,7 +224,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/mam34/full-height-main.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
@@ -242,7 +242,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/mam34/full-main-ipad.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
@@ -260,7 +260,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/mam34/full-main-iphone.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">

@@ -3,4 +3,4 @@ Disallow:
 Disallow: /login
 Disallow: /register
 Disallow: /password/reset
-Sitemap: /sitemap.xml
+Sitemap: http://www.brainor.ru/sitemap.xml

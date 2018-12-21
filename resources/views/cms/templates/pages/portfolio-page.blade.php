@@ -7,9 +7,9 @@
 
 @extends('v1.layouts.inside-pages-layout')
 
-<title>Портфолио</title>
 @section('meta')
-    <meta name="description" content="Cраница портфолио web-студии Brainor." />
+    <title>Портфолио</title>
+    <meta name="description" content="Страница портфолио web-студии Brainor." />
 @endsection
 
 @section('styles')

@@ -7,8 +7,8 @@
 
 @extends('v1.layouts.portfolio-layout')
 
-<title>Портфолио | Джинмарт</title>
 @section('meta')
+    <title>Портфолио | Джинмарт</title>
     <meta name="description" content="Портфолио | Джинмарт – антиаукцион онлайн." />
 @endsection
 
@@ -236,7 +236,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body scroll-modal-mobile">
                     <img class="img-fluid" src="{{asset('img/portfolios/jinnmart/full-height-main.jpg')}}" alt="">
                 </div>
                 <div class="modal-footer">
