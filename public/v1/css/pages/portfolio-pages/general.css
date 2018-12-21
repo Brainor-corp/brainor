@@ -30,7 +30,7 @@
     margin-top: -100px;
     background-color:#39de53;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
 }
 .holder{
     position:relative;
