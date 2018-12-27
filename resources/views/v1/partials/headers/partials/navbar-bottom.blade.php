@@ -21,9 +21,9 @@
     <div class="col-lg-8 col-12 text-center" @if(isset($isMainPage)) id="price-btn" @endif>
         {{--<a href="@if(!isset($isMainPage))/@endif#price-form" class="btn float-lg-right w-270px hvr-bounce-to-bottom">Просчитать проект</a>--}}
         @if(!isset($isMainPage))
-            <a class="btn float-lg-right w-270px hvr-bounce-to-bottom" href="#questModal" data-toggle="modal" data-target="#questModal">Просчитать проект</a>
+            <a class="btn float-lg-right w-270px green-button" href="#questModal" data-toggle="modal" data-target="#questModal">Просчитать проект</a>
         @else
-            <a class="btn float-lg-right w-270px hvr-bounce-to-bottom" href="#price-form">Просчитать проект</a>
+            <a class="btn float-lg-right w-270px green-button" href="#price-form">Просчитать проект</a>
         @endif
     </div>
 </div>
