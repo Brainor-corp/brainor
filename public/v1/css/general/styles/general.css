@@ -246,6 +246,14 @@ footer {
 .red-button:hover{
     background: #d63d4d;
 }
+.green-button{
+    background: #48b71a;
+    color: white;
+}
+.green-button:hover{
+    background: #4bd21a;
+    color: white;
+}
 
 .hvr-bounce-to-top:before {
     content: "";
