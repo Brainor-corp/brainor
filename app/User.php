@@ -27,4 +27,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function apiSession()
+    {
+        return $this->belongsTo(ApiSession::class, 'id', 'user_id');
+    }
 }

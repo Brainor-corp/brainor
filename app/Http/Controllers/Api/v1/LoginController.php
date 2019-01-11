@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api\v1;
 
 use App\ApiSession;
-use App\Http\Controllers\Controller;
 use App\Http\Helpers\Api\Generate;
 use App\User;
 use Illuminate\Http\Request;
@@ -13,11 +12,11 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Validator;
 
-class AuthController extends Controller
+class LoginController
 {
     private $errors;
 
-    public function login(Request $request){
+    public function execute(Request $request){
         $validation = Validator::make($request->all(),[
             'email' => 'required',
             'password' => 'required',
@@ -52,6 +51,8 @@ class AuthController extends Controller
             'key' => Generate::uniqueUserSession(),
             'expire' => Carbon::now()->addMinutes(Config::get('constants.api.session_expire')),
         ]);
+
+        $session->save();
 
         return Response::json([
             'token' => $user->api_token,

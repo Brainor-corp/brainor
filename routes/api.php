@@ -17,4 +17,10 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-Route::post('/login', 'Api\AuthController@login');
+Route::post('/login', 'Api\v1\LoginController@execute');
+
+Route::group(['middleware' => ['api_auth']], function () {
+
+    Route::get('/tasks', 'Api\v1\TasksController@execute');
+
+});
