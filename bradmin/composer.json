@@ -1,12 +1,12 @@
 {
-    "name": "Bradmin",
+    "name": "bradmin/bradmin",
     "description": "Admin's panel",
     "keywords": ["BRAdmin", "panel"],
     "license": "MIT",
     "type": "project",
     "require": {
-        "cviebrock/eloquent-sluggable": "4.6",
-        "kalnoy/nestedset": "^4.3",
+        "cviebrock/eloquent-sluggable": "^9.0",
+        "kalnoy/nestedset": "^6.0",
         "intervention/image": "2.*"
     },
     "autoload": {
@@ -24,7 +24,10 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
