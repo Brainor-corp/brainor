@@ -3,9 +3,9 @@
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Kalnoy\Nestedset\NestedSet;
 
-class ScopedNodeTest extends PHPUnit_Framework_TestCase
+class ScopedNodeTest extends PHPUnit\Framework\TestCase
 {
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         $schema = Capsule::schema();
 
@@ -23,7 +23,7 @@ class ScopedNodeTest extends PHPUnit_Framework_TestCase
         Capsule::enableQueryLog();
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         $data = include __DIR__.'/data/menu_items.php';
 
@@ -36,7 +36,7 @@ class ScopedNodeTest extends PHPUnit_Framework_TestCase
         date_default_timezone_set('America/Denver');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         Capsule::table('menu_items')->truncate();
     }
@@ -159,11 +159,10 @@ class ScopedNodeTest extends PHPUnit_Framework_TestCase
         $this->assertOtherScopeNotAffected();
     }
 
-    /**
-     * @expectedException \Illuminate\Database\Eloquent\ModelNotFoundException
-     */
     public function testInsertionToParentFromOtherScope()
     {
+        $this->expectException(\Illuminate\Database\Eloquent\ModelNotFoundException::class);
+
         $node = MenuItem::create([ 'menu_id' => 2, 'parent_id' => 5 ]);
     }
 
@@ -193,28 +192,28 @@ class ScopedNodeTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(1, $node->getLft());
     }
 
-    public function testRebuildsTree()
+    // Commented, cause there is no assertion here and otherwise the test is marked as risky in PHPUnit 7.
+    // What's the purpose of this method? @todo: remove/update?
+    /*public function testRebuildsTree()
     {
         $data = [];
         MenuItem::scoped([ 'menu_id' => 2 ])->rebuildTree($data);
-    }
+    }*/
 
-    /**
-     * @expectedException LogicException
-     */
     public function testAppendingToAnotherScopeFails()
     {
+        $this->expectException(LogicException::class);
+
         $a = MenuItem::find(1);
         $b = MenuItem::find(3);
 
         $a->appendToNode($b)->save();
     }
 
-    /**
-     * @expectedException LogicException
-     */
     public function testInsertingBeforeAnotherScopeFails()
     {
+        $this->expectException(LogicException::class);
+
         $a = MenuItem::find(1);
         $b = MenuItem::find(3);
 
